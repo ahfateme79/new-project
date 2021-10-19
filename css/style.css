@@ -18,6 +18,8 @@
 @import './home-propage.css';
 /* styles of section story class */
 @import './story.css';
+/* styles of section award class */
+@import './award.css';
 /* styles of footer */
 @import './footer.css';
 
