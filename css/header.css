@@ -1,0 +1,208 @@
+header {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 100px;
+    background-color: #1f1e28;
+    padding: 0 50px;
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    z-index: 5;
+}
+
+/* header */
+.logo {
+    width: 30%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.menu {
+    width: 70%; 
+
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+/* nav style */
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    font-size: 1.2rem;
+    color: #c8d2db;
+}
+
+.login-btn-desktop,.login-btn-mobile {
+    display: flex;
+    align-items: center;
+}
+.login-btn-desktop a ,.login-btn-mobile a{
+    width: 120px;
+    height: 40px;
+    margin: 0 10px;
+    border: 1px solid #2493df;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-btn-desktop a:last-child, .login-btn-mobile a:last-child{
+    background-color: #2493df;
+    border: none;
+}
+
+
+/* hamburger-menu */
+
+.toggle-wrap {
+    padding: 10px;
+    position: absolute;
+    cursor: pointer;
+    /* float: left; */
+    right: 20px;
+    display: none;
+    font-size: 1.4rem;
+  
+    /* disable selection
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; */
+  }
+  .toggle-bar,
+  .toggle-bar::before,
+  .toggle-bar::after,
+  .toggle-wrap.active .toggle-bar,
+  .toggle-wrap.active .toggle-bar::before,
+  .toggle-wrap.active .toggle-bar::after {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  .toggle-bar {
+    width: 38px;
+    margin: 10px 5px;
+    position: relative;
+    border-top: 6px solid var(--color);
+    display: block;
+  }
+  .toggle-bar::before,
+  .toggle-bar::after {
+    content: "";
+    display: block;
+    background: var(--color);
+    height: 6px;
+    width: 38px;
+    position: absolute;
+    top: -16px;
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -ms-transform-origin: 13%;
+    -webkit-transform-origin: 13%;
+    transform-origin: 13%;
+  }
+  .toggle-bar::after {
+    top: 4px;
+  }
+  .toggle-wrap.active .toggle-bar {
+    border-top: 6px solid transparent;
+  }
+  .toggle-wrap.active .toggle-bar::before {
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .toggle-wrap.active .toggle-bar::after {
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  /* responsive menu */
+  .nav-menu{
+      position: fixed;
+      width: 100%;
+      top: 100px;
+      left: 0;
+      right: 0;
+      background-color: #ffffff;
+      height: 50vh;
+      display: none;
+      border: .2px solid #2d3846;
+      box-shadow: 0 6px 20px rgb(0 0 0 / 20%);
+      transition: all .2s ease-in-out
+  }
+  .fixed{
+      display: block;
+  }
+  .nav-menu ul{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 20px 10px;
+      height: 250px;
+      border-bottom: .2px solid #2d3846;
+
+  }
+  nav .nav-menu li{
+      margin: 7px;
+  }
+
+
+
+  /* responsive header */
+@media screen and (max-width:1100px){
+    .toggle-wrap {
+        display: flex;
+    }
+    header{
+        padding: 0 20px;
+        overflow-x: hidden;
+    }
+    .logo span{
+        display: none;
+    }
+    .deskop-menu {display: none;}
+    .login-btn-desktop {
+        display: none
+    }
+    .login-btn-mobile{
+        height: 70px;
+        justify-content: center;
+    }
+    
+}
+@media screen and (min-width:700px) and (max-width:1100px){
+    .nav-menu{
+        width: 50%;
+        right: 0;
+        left: auto;
+    }
+}
+
+
+

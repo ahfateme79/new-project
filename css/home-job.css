@@ -1,0 +1,49 @@
+/* home-job */
+.home-job {
+    width: 100%;
+    min-height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-job h1 {
+    font-size: 2.4rem;
+    color: #1f1e28;
+    padding: 0 20px;
+}
+
+.home-job mark {
+    color: #2493df;
+    background-color: transparent;
+}
+
+.change {
+    display: inline-flex;
+    width: 420px;
+    animation: opacity 2s ease infinite;
+    justify-content: center;
+}
+
+@media screen and (max-width:768px) {
+    .home-job {
+        padding: 30px;
+    }
+
+    .home-job h1 {
+        font-size: 2rem;
+        padding: 0;
+    }
+
+    .change {
+        width: 100%;
+        display: block;
+    }
+
+}
+@media screen and (min-width:768px) and (max-width:1200px){
+    .home-job h1 {
+        font-size: 2.2rem
+    }
+
+}

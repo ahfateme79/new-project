@@ -1,0 +1,138 @@
+/* home-solo */
+
+.home-solo {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(233, 238, 241);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 300px 0 50px 0;
+}
+
+.cards {
+    /* position: absolute; */
+    top: 200px;
+    width: 90%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+}
+
+@media screen and (max-width:900px) {
+    .cards {
+        grid-template-columns: 100%;
+    }
+}
+
+.cards>div {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards>div h2 {
+    font-size: 2rem;
+    color: #1f1e28;
+}
+
+.cards>div>p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #413f55;
+}
+
+.cards div:nth-child(4) {
+    flex-direction: row;
+    justify-content: space-between;
+    /* min-height: 480px; */
+    grid-column: 1 / 3;
+}
+
+.cards div:nth-child(4) p {
+    font-size: 1.2rem;
+    color: #413f55;
+}
+
+.cards>div>img {
+    width: 350px;
+}
+
+.social-icon {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-icon img {
+    width: 150px;
+    margin: 20px 0;
+}
+
+@media screen and (max-width:900px) {
+
+    .cards>div,
+    .cards div:nth-child(4) {
+        /* width: 100%; */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards>div>img {
+        width: 300px;
+    }
+    .home-solo {
+        padding: 160px 0 50px 0;
+    }
+    
+    .cards div:nth-child(4) {
+        flex-wrap: wrap;
+        /* min-height: 480px; */
+        justify-content: center;
+        align-items: center;
+        grid-column: auto;
+    }
+
+    .social-icon {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .social-icon img {
+        margin: 0;
+    }
+
+    .cards>div h2 {
+        font-size: 1.5rem;
+        color: #1f1e28;
+        text-align: center;
+    }
+
+    .cards>div p {
+        text-align: center;
+        font-size: 1rem;
+        color: #413f55;
+    }
+
+    .cards div:nth-child(4) p {
+        font-size: 1.2rem;
+        color: #413f55;
+    }
+
+
+}
+@media screen and (min-width:768px) and (max-width:1200px){
+    .home-solo {
+        padding: 350px 0 50px 0;
+    }
+
+}
+

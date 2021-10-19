@@ -1,0 +1,162 @@
+/* why-code */
+.why-code {
+    width: 100%;
+    min-height: 90vh;
+    background-color: rgb(233, 238, 241);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.why-code>div {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mycode-heading {
+    min-height: 300px;
+}
+
+.why-code h1 {
+    text-align: center;
+    color: #1f1e28;
+    font-size: 4rem;
+}
+
+.why-code h1 span {
+    background: #d4e4ee;
+    padding: 0 5px;
+    color: #2493df;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.why-code h1 span::after {
+    content: '|';
+    color: #1f1e28;
+    animation: opacity 1s linear infinite;
+}
+
+
+@keyframes opacity {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: .2;
+    }
+}
+
+.answer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.answer>div {
+    width: 30%;
+    height: 300px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.answer div img {
+    transform: translateY(-150px);
+}
+
+.answer>div div {
+    transform: translateY(-120px);
+    text-align: center;
+    padding: 0 30px;
+}
+
+.answer div h3 {
+    font-size: 2rem;
+    color: #3c3a4e;
+}
+
+.why-code p {
+    font-size: 1.3rem;
+    color: #575572;
+}
+
+.why-code-description {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 200px;
+    text-align: center;
+}
+
+.why-code-description a {
+    width: 220px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #2493df;
+    color: #fff;
+    display: grid;
+    align-content: center;
+    margin: 20px 0;
+}
+
+@media screen and (max-width:768px) {
+    .answer>div {
+        width: 100%;
+        margin: 120px 0;
+    }
+
+    .mycode-heading {
+        display: flex;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+
+    .why-code h1 {
+        font-size: 2.5rem;
+    }
+
+    .answer div img {
+        width: 300px;
+        transform: translateY(-200px);
+
+    }
+
+    .why-code-description {
+        width: 100%;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1200px){
+    .answer{
+        justify-content: center;
+    }
+    .answer>div {
+        width: 27%;
+        margin: 120px 15px;
+    }
+    .answer div img {
+        width: 300px;
+        /* transform: translateY(-200px); */
+
+    }
+    .answer>div div {
+        transform: translateY(-85px);
+        text-align: center;
+        padding: 0 30px;
+    }
+    
+}

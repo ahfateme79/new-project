@@ -1,0 +1,47 @@
+/* home-learn */
+.home-learn {
+    width: 100%;
+    transform: translateY(100px);
+    min-height: 100vh;
+    background-color: #1f1e28;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-learn>div {
+    padding: 40px;
+    margin: 50px 0;
+}
+
+.home-learn h1 {
+    color: #fff;
+    font-size: 5rem;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.start {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.start p {
+    text-align: center;
+    color: rgb(240, 235, 235);
+    font-size: 1.5rem;
+}
+
+.start button {
+    width: 210px;
+    height: 50px;
+    background-color: #2493df;
+    color: #fff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}

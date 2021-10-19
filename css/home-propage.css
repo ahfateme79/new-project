@@ -1,0 +1,165 @@
+/* home-propage */
+.home-propage {
+    width: 100%;
+    min-height: 90vh;
+    background-color: #2d3846;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.home-propage>div {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-propage-head {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-propage-head h1 {
+    font-size: 4.5rem;
+    color: #fff;
+}
+
+.home-propage-head h1::after {
+    content: 'PRO';
+    background-color: #fbb461;
+    color: rgb(102, 43, 4);
+    border-radius: 50px;
+    font-size: 1.7rem;
+    padding: 3px 20px;
+    display: inline-block;
+    transform: translateY(-8px);
+}
+
+.home-propage-flexbox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: auto;
+}
+
+.home-propage-flexbox div {
+    width: 30%;
+    min-height: 330px;
+    border: 1px solid #f0ece9;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 40px;
+}
+
+.home-propage-flexbox div h3 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.home-propage-flexbox div span {
+    font-size: 3.5rem;
+    color: #fbb461;
+    margin: 15px 0;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.home-propage-flexbox div p {
+    color: #c5c4d6;
+    font-size: 1.3rem;
+}
+
+.home-propage-flexbox mark {
+    background-color: transparent;
+    color: #fbb461;
+}
+
+.items {
+    width: 80%;
+    display: flex;
+    min-height: 200px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.items div {
+    margin: 0 25px;
+    color: #fbb461;
+    font-size: 1.5rem;
+    display: inline-flex;
+    align-items: center;
+}
+.items i{
+    margin: 0 3px;
+}
+.btn-pro {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-pro a {
+    width: 90%;
+    height: 60px;
+    background-color: #fbb461;
+    color: rgb(102, 43, 4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+@media screen and (max-width:768px) {
+    .home-propage {
+        padding: 50px 20px;
+    }
+
+    .home-propage-head h1 {
+        font-size: 2.5rem;
+    }
+
+    .home-propage-flexbox div {
+        width: 100%;
+    }
+
+    .items {
+        justify-content: flex-start;
+    }
+
+    .items div {
+        margin: 15px 0;
+        display: inline-flex;
+        justify-content: center;
+    }
+
+    .btn-pro {
+        width: 100%;
+    }
+
+}
+@media screen and (min-width:768px) and (max-width:1200px){
+
+    .home-propage-flexbox div {
+        width: 90%;
+    }
+    .home-propage-flexbox{
+        justify-content: center;
+        padding: 40px 0;
+    }
+    .items {
+        width: 90%;
+    }
+    
+}

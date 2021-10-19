@@ -1,0 +1,151 @@
+/* story */
+.story {
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.story>div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.success-story {
+    width: 100%;
+    position: relative;
+}
+
+.success-story>img {
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.success-story-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(196, 189, 189);
+    padding: 30px 0;
+}
+
+.absolute {
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 0px rgb(233, 228, 228);
+    border-radius: 10px;
+    height: 60px;
+    min-width: 50px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sertificate {
+    top: 60%;
+    left: -70px;
+}
+
+.Kotlin {
+    top: 40%;
+    right: -50px;
+}
+.Kotlin img,.sertificate img{
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+.dubble-qutation {
+    top: -20px;
+    right: 70px;
+}
+
+.story-title {
+    padding: 30px 0;
+}
+
+.story-title h1 {
+    font-size: 4rem;
+    color: #2d3846;
+}
+
+.story-title span {
+    font-size: 2.5rem;
+    color: #2493df;
+    text-align: center;
+    display: block;
+    font-family: cursive;
+    font-weight: normal
+}
+
+.story-description p,
+.story-description span {
+    font-size: 1.2rem;
+    color: #575572;
+}
+
+.story-description span {
+    margin: 20px 0;
+    display: inline-block;
+}
+
+.thanks {
+    padding: 20px 0;
+    color: red;
+    display: flex;
+    font-size: 1.2rem;
+}
+
+.thanks p {
+    color: #575572;
+    margin: 0 5px;
+}
+
+@media screen and (max-width:768px) {
+    .story {
+        padding: 50px 30px;
+    }
+
+    .story>div {
+        width: 95%;
+        align-items: flex-start;
+    }
+
+    .story-title h1 {
+        font-size: 1.5rem;
+    }
+
+    .story-title span {
+        margin: 0;
+        font-size: 1.5rem;
+        text-align: left;
+    }
+
+    .sertificate,
+    .Kotlin,
+    .dubble-qutation {
+        display: none;
+    }
+
+    .success-story-wrapper {
+        align-items: flex-start;
+    }
+
+}
+@media screen and (min-width:768px) and (max-width:1200px){
+    .story>div {
+        width: 80%;
+        align-items: flex-start;
+    }
+
+}
