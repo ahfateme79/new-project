@@ -2,7 +2,7 @@ let link = document.querySelectorAll("nav ul li a")
 window.addEventListener("scroll", () => {
     if (window.scrollY < 10000) {
         document.querySelector("header").style.background = "rgb(240, 236, 233)";
-        document.querySelector('.logo-icon').src = './img/sololearn.png'
+        document.querySelector('.logo-icon').src = '../img/sololearn.png'
         document.documentElement.style.setProperty('--color', "black")
         document.querySelector('.logo').style.color = 'black'
         document.querySelector('.login').style.color = '#2493df'
@@ -21,7 +21,7 @@ window.addEventListener("scroll", () => {
         document.documentElement.style.setProperty('--color', "#fff")
         document.querySelector('.nav-menu').style.background = "#1f1e28"
 
-        document.querySelector('.logo-icon').src = './img/WnyXWTp.png'
+        document.querySelector('.logo-icon').src = '../img/WnyXWTp.png'
         document.querySelector('.logo').style.color = '#fff'
         document.querySelector('.login').style.color = '#fff'
         document.querySelector('.login-mobile').style.color = '#fff'
