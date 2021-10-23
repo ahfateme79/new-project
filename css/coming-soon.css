@@ -1,0 +1,69 @@
+.coming_soon {
+    background: radial-gradient(dimgray, black);
+    height: 100vh;
+    width: 100%;
+}
+
+.coming_soon h3 {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-family: Times New Roman, serif;
+    /* background: -webkit-linear-gradient(deeppink, yellow, deeppink, purple);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent; */
+    font-size: 6.5vw;
+    /* text-transform: uppercase; */
+}
+
+.coming_soon h3:before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: bottom;
+    transform: rotateX(180deg);
+    line-height: 1.14em;
+    background: linear-gradient(0deg, #000000 0, transparent 70%);
+    background-clip: text;
+    -webkit-text-color: transparent;
+    opacity: 0.3;
+}
+
+.countdown{
+    width: 300px;
+    color: rgb(228, 228, 220);
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, 50%);
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    text-align: center;
+}
+.time-slot:not(:last-child)::after{
+    content: '';
+    position: absolute;
+    width: .5px;
+    height: 40px;
+    top: 30%;
+    background-color: rgb(14, 14, 19);
+    margin:0 15px;
+}
+@media screen and (max-width:768px){
+    .countdown{
+        top: 50%;
+        font-size: .7rem;
+        width: 200px;
+    }
+    .time-slot:not(:last-child)::after{
+        height: 20px;
+    }
+    
+    
+}
