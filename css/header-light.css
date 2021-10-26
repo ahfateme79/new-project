@@ -1,0 +1,208 @@
+.header-light {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 100px;
+    background-color: rgb(240, 236, 233);
+    padding: 0 50px;
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    z-index: 5;
+}
+
+/* header */
+.logo-light-header {
+    width: 30%;
+    color: black;
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.menu {
+    width: 70%; 
+
+}
+
+.header-light nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+/* nav style */
+.header-light nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.header-light nav ul li {
+    margin: 0 20px;
+}
+
+.header-light nav ul li a {
+    font-size: 1.2rem;
+    color: #0e0f0f;
+}
+
+.header-light .login-btn-desktop,.login-btn-mobile {
+    display: flex;
+    align-items: center;
+}
+.header-light .login-btn-desktop a ,.header-light .login-btn-mobile a{
+    width: 120px;
+    height: 40px;
+    margin: 0 10px;
+    border: 1px solid #2493df;
+    background-color: transparent;
+    color: #2493df;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-light .login-btn-desktop a:last-child,.header-light .login-btn-mobile a:last-child{
+    background-color: #2493df;
+    border: none;
+    color: #fff;
+}
+
+/* hamburger-menu */
+
+.header-light .toggle-wrap {
+    padding: 10px;
+    position: absolute;
+    cursor: pointer;
+    /* float: left; */
+    right: 20px;
+    display: none;
+    font-size: 1.4rem;
+  
+    /* disable selection
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; */
+  }
+  .header-light .toggle-bar,
+  .header-light .toggle-bar::before,
+  .header-light .toggle-bar::after,
+  .header-light .toggle-wrap.active .toggle-bar,
+  .header-light  .toggle-wrap.active .toggle-bar::before,
+  .header-light .toggle-wrap.active .toggle-bar::after {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  .header-light .toggle-bar {
+    width: 38px;
+    margin: 10px 5px;
+    position: relative;
+    border-top: 6px solid black;
+    display: block;
+  }
+  .header-light .toggle-bar::before,
+  .header-light .toggle-bar::after {
+    content: "";
+    display: block;
+    background: black;
+    height: 6px;
+    width: 38px;
+    position: absolute;
+    top: -16px;
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -ms-transform-origin: 13%;
+    -webkit-transform-origin: 13%;
+    transform-origin: 13%;
+  }
+  .header-light .toggle-bar::after {
+    top: 4px;
+  }
+  .header-light .toggle-wrap.active .toggle-bar {
+    border-top: 6px solid transparent;
+  }
+  .header-light .toggle-wrap.active .toggle-bar::before {
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .header-light .toggle-wrap.active .toggle-bar::after {
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  /* responsive menu */
+  .header-light .nav-menu{
+      position: fixed;
+      width: 100%;
+      top: 100px;
+      left: 0;
+      right: 0;
+      background-color: #ffffff;
+      height: 50vh;
+      display: none;
+      border: .2px solid #2d3846;
+      box-shadow: 0 6px 20px rgb(0 0 0 / 20%);
+      transition: all .2s ease-in-out
+  }
+  .header-light .fixed{
+      display: block;
+  }
+  .header-light .nav-menu ul{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 20px 10px;
+      height: 250px;
+      border-bottom: .2px solid #2d3846;
+
+  }
+  .header-light nav .nav-menu li{
+      margin: 7px;
+  }
+
+
+
+  /* responsive header */
+@media screen and (max-width:1100px){
+    .header-light .toggle-wrap {
+        display: flex;
+    }
+    .header-light{
+        padding: 0 20px;
+        overflow-x: hidden;
+    }
+    .logo-light-header span{
+        display: none;
+    }
+    .header-light .deskop-menu {display: none;}
+    .header-light .login-btn-desktop {
+        display: none
+    }
+    .header-light .login-btn-mobile{
+        height: 70px;
+        justify-content: center;
+    }
+    
+}
+@media screen and (min-width:700px) and (max-width:1100px){
+    .header-light .nav-menu{
+        width: 50%;
+        right: 0;
+        left: auto;
+    }
+}
+
+
+

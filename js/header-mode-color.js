@@ -1,32 +1,32 @@
 let link = document.querySelectorAll("nav ul li a")
 window.addEventListener("scroll", () => {
     if (window.scrollY < 10000) {
-        document.querySelector("header").style.background = "rgb(240, 236, 233)";
-        document.querySelector('.logo-icon').src = '../img/sololearn.png'
-        document.documentElement.style.setProperty('--color', "black")
-        document.querySelector('.logo').style.color = 'black'
-        document.querySelector('.login').style.color = '#2493df'
-        document.querySelector('.login-mobile').style.color = '#2493df'
-        document.querySelector('.nav-menu').style.background = "#fff"
-        document.querySelector('.nav-menu').style.borderColor = "transparent"
-        document.querySelector('.nav-menu ul').style.borderColor = "#bcd0e9"
-        document.querySelector('.nav-menu ul li a').style.color = "#1f1e28"
-        document.querySelector('.toggle-wrap').style.color = 'black'
+        // document.querySelector("header").style.background = "rgb(240, 236, 233)";
+        // document.querySelector(' .logo-icon').src = '../img/sololearn.png'
+        // document.documentElement.style.setProperty('--color', "black")
+        document.querySelector('header-light.logo').style.color = 'black'
+        document.querySelector('header-light .login').style.color = '#2493df'
+        document.querySelector('header-light .login-mobile').style.color = '#2493df'
+        document.querySelector('header-light .nav-menu').style.background = "#fff"
+        document.querySelector('header-light .nav-menu').style.borderColor = "transparent"
+        document.querySelector('header-light.nav-menu ul').style.borderColor = "#bcd0e9"
+        document.querySelector('header-light .nav-menu ul li a').style.color = "#1f1e28"
+        document.querySelector('header-light .toggle-wrap').style.color = 'black'
 
         for (let i = 0; i < link.length; i++) {
             link[i].style.color = 'black'
         }
     } else if (window.scrollY > 10000) {
-        document.querySelector("header").style.background = "#1f1e28";
-        document.documentElement.style.setProperty('--color', "#fff")
-        document.querySelector('.nav-menu').style.background = "#1f1e28"
+        // document.querySelector("header").style.background = "#1f1e28";
+        // document.documentElement.style.setProperty('--color', "#fff")
+        document.querySelector('header-light .nav-menu').style.background = "#1f1e28"
 
-        document.querySelector('.logo-icon').src = '../img/WnyXWTp.png'
-        document.querySelector('.logo').style.color = '#fff'
-        document.querySelector('.login').style.color = '#fff'
-        document.querySelector('.login-mobile').style.color = '#fff'
-        document.querySelector('.toggle-wrap').style.color = '#fff'
-        document.querySelector('.nav-menu').style.borderColor = "#2d3846"
+        // document.querySelector('.logo-icon').src = '../img/WnyXWTp.png'
+        document.querySelector('header-light .logo').style.color = '#fff'
+        document.querySelector('header-light .login').style.color = '#fff'
+        document.querySelector('header-light .login-mobile').style.color = '#fff'
+        document.querySelector('header-light.toggle-wrap').style.color = '#fff'
+        document.querySelector('header-light .nav-menu').style.borderColor = "#2d3846"
 
         for (let i = 0; i < link.length; i++) {
             link[i].style.color = '#c8d2db'

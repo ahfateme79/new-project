@@ -1,5 +1,6 @@
 /* styles of header  */
-@import './header.css';
+@import './header-dark.css';
+@import './header-light.css';
 /* styles of section home-learn class */
 @import "./home-learn.css";
 /* styles of section home-course class */
