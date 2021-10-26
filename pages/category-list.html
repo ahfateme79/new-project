@@ -15,46 +15,7 @@
 </head>
 
 <body>
-
-    <!-- header-light partial -->
-    <header class="header-light">
-        <div class="logo-light-header">
-            <img class="logo-icon" src="../img/sololearn.png" alt="logo" width="50px"><span> TechWich</span>
-        </div>
-        <div class="menu">
-            <nav>
-                <!-- hamburger-button -->
-                <div class="toggle-wrap" onclick="toggleMenu(this)">Menu
-                    <span class="toggle-bar"></span>
-                </div>
-                <!-- mobile-menu -->
-                <div class="nav-menu">
-                    <ul>
-                        <li><a href="">Courses</a></li>
-                        <li><a href="">Code Playground</a></li>
-                        <li><a href="">Discuss</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Get Pro</a></li>
-                    </ul>
-                    <div class="login-btn-mobile">
-                        <a href="" class="login-mobile">Log in</a><a href="">Register</a>
-                    </div>
-                </div>
-                <!-- desctop-menu -->
-                <ul class="deskop-menu">
-                    <li><a href="">Courses</a></li>
-                    <li><a href="">Code Playground</a></li>
-                    <li><a href="">Discuss</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Get Pro</a></li>
-                </ul>
-                <div class="login-btn-desktop">
-                    <a href="" class="login">Log in</a><a href="">Register</a>
-                </div>
-            </nav>
-        </div>
-    </header>
-    
+<div class="header"></div>
     
     <!-- end of headr-light partial -->
 
@@ -128,9 +89,16 @@
         </div>
     </section>
 
-
+<script src="../js/jquery.min.js"></script>
     <script src="../js/script.js"></script>
     <script src="../js/header-mode-color.js"></script>
+    <script>
+        $(document).ready(function() {
+    $('.header').load('../partial/-header-light.html');
+});
+
+    </script>
+
 </body>
 
 </html>

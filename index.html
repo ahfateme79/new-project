@@ -23,44 +23,8 @@
 </head>
 
 <body>
+    <div class="header"></div>
     <!-- header-dark partial -->
-    <header>
-        <div class="logo">
-            <img class="logo-icon" src="./img/WnyXWTp.png" alt="logo" width="50px"><span> TechWich</span>
-        </div>
-        <div class="menu">
-            <nav>
-                <!-- hamburger-button -->
-                <div class="toggle-wrap" onclick="toggleMenu(this)">Menu
-                    <span class="toggle-bar"></span>
-                </div>
-                <!-- mobile-menu -->
-                <div class="nav-menu">
-                    <ul>
-                        <li><a href="">Courses</a></li>
-                        <li><a href="">Code Playground</a></li>
-                        <li><a href="">Discuss</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Get Pro</a></li>
-                    </ul>
-                    <div class="login-btn-mobile">
-                        <a href="" class="login-mobile">Log in</a><a href="">Register</a>
-                    </div>
-                </div>
-                <!-- desctop-menu -->
-                <ul class="deskop-menu">
-                    <li><a href="">Courses</a></li>
-                    <li><a href="">Code Playground</a></li>
-                    <li><a href="">Discuss</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Get Pro</a></li>
-                </ul>
-                <div class="login-btn-desktop">
-                    <a href="" class="login">Log in</a><a href="">Register</a>
-                </div>
-            </nav>
-        </div>
-    </header>
     <!-- end of header-dark partial -->
 
     <!-- home-learn section -->
@@ -1086,74 +1050,21 @@
 
 
     <!-- footer partial-->
-    <footer>
-        <section>
-            <div class="footer-top-section">
-                <div>
-                    <h1>Coding has never been easier</h1>
-                    <a href="">Start learning now</a>
-                </div>
-            </div>
-            <!-- social-media-list  -->
-            <div class="social-media-list">
-                <ul>
-                    <li>
-                        <img src="./img/icons8-linkedin-2.svg" alt="">
-                        <h3>Follow us on Linkedin</h3>
-                    </li>
-                    <li>
-                        <img src="./img/icons8-facebook-f-48.png" alt="">
-                        <h3>Check out our facebook</h3>
-                    </li>
-                    <li>
-                        <img src="./img/icons8-twitter.svg" alt="">
-                        <h3>See what we tweet about</h3>
-                    </li>
-                    <li>
-                        <img src="./img/icons8-instagram.svg" alt="">
-                        <h3>Join our instagram</h3>
-                    </li>
-                    <li>
-                        <img src="./img/icons8-youtube.svg" alt="">
-                        <h3>Watch our Youtube</h3>
-                    </li>
-                </ul>
-                <div class="social-media-icon">
-                    <a href=""><img src="./img/1200px-Google_Play_Store_badge_EN.svg.png" alt=""></a>
-                    <a href=""><img src="./img/1200px-Download_on_the_App_Store_Badge.svg.png" alt=""></a>
-                </div>
-            </div>
-
-            <!-- footer-list-menu  -->
-            <div class="footer-list-menu">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Courses</a></li>
-                    <li><a href="">Code Playground</a></li>
-                    <li><a href="">Top Learners</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Pro</a></li>
-                    <li><a href="">FAQ</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">Careers</a></li>
-                    <li><a href="">Terms of Use</a></li>
-                    <li><a href="">Privacy Policy</a></li>
-                </ul>
-                <div>
-                    <p>Made with <span> &hearts; </span>
-                        by
-                        Sololearn
-                        | ©2021</p>
-                </div>
-            </div>
-        </section>
-    </footer>
+    <div class="footer"></div>
     <!-- end of footer partial -->
 
 
     <!-- scripts -->
+    <script src="./js/jquery.min.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
+    <script>
+        $(document).ready(function() {
+    $('.header').load('./partial/-header-dark.html');
+    $('.footer').load('./partial/-footer.html');
+});
+
+    </script>
     <!-- scripts -->
 
 

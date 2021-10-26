@@ -29,6 +29,8 @@ window.addEventListener("scroll", () => {
         document.querySelector('.nav-menu').style.borderColor = "transparent"
         document.querySelector('.nav-menu ul').style.borderColor = "#bcd0e9"
         document.querySelector('.nav-menu ul li a').style.color = "#1f1e28"
+        document.querySelector('nav ul li a').style.color = "#1f1e28"
+
         document.querySelector('.toggle-wrap').style.color = 'black'
 
         for (let i = 0; i < links.length; i++) {
