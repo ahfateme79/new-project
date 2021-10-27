@@ -1,6 +1,6 @@
 // swiper scripts***
 var swiper = new Swiper('.swiper', {
-    slidesPerView: 3,
+    slidesPerView:3,
     // direction: getDirection(),
     watchSlidesProgress: true,
     navigation: {

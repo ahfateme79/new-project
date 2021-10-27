@@ -6,76 +6,141 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- link -->
+    <link rel="stylesheet" href="../css/swiper-bundle.css">
     <link rel="stylesheet" href="../css/style.css">
+    <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;1,300;1,400;1,600&display=swap"
         rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+
 </head>
 
 <body>
-    <div class="header"></div>
+    <!-- light-header -->
+    <header class="header-light">
+        <div class="logo-light-header">
+            <img class="logo-icon" src="../img/Sololearn.png" alt="logo" width="50px"><span> TechWich</span>
+        </div>
+        <div class="menu">
+            <nav>
+                <!-- hamburger-button -->
+                <div class="toggle-wrap" onclick="toggleMenu(this)">Menu
+                    <span class="toggle-bar"></span>
+                </div>
+                <!-- mobile-menu -->
+                <div class="nav-menu">
+                    <ul>
+                        <li><a href="">Courses</a></li>
+                        <li><a href="">Code Playground</a></li>
+                        <li><a href="">Discuss</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Get Pro</a></li>
+                    </ul>
+                    <div class="header-user-details-mobile">
+                        <div class="user-details-mobile">
+                            <div> <button><i class="fas fa-star"></i>500</button></div>
+                        </div>
+                        <div>
+                            <a href=""><img src="../img/community-user-16.png" alt=""></a>Lori A. Barlow
+                        </div>
+                        <div class="not-border"> <a href="" class="go-pro"><i class="fas fa-star"></i>Go PRO
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- desctop-menu -->
+                <ul class="deskop-menu">
+                    <li><a href="">Courses</a></li>
+                    <li><a href="">Code Playground</a></li>
+                    <li><a href="">Discuss</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+                <div class="header-user-details">
+                    <a href="" class="go-pro"><i class="fas fa-star"></i>Go PRO
+                    </a>
+                    <div class="user-details">
+                        <button><i class="fas fa-star"></i>500</button>
+                        <a href=""><img src="../img/community-user-16.png" alt=""></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
     <!-- header-light prtial -->
 
-    <section class="">
-
+    <section class="profile">
+        <!-- border dark blue section  -->
         <div class="border">
+            <!-- user information -->
             <div class="user-info">
-                <img src="" alt="">
+                <img src="../img/community-user-16.png" alt="">
                 <div>
-                    <h3></h3>
-                    <p></p>
-                    <span></span>
-                    <p></p>
+                    <h3>Lori A. Barlow</h3>
+                    <p><a href="">1 Following</a>&ensp;&ensp;<a href="">1 Follower
+                        </a></p>
+                    <span><i class="fas fa-star"></i> 89 XP</span>
+                    <p><i class="fas fa-star"></i>United States
+
+                        ·
+                        Lvl 2</p>
                 </div>
             </div>
         </div>
-        <div class="solo">
-            <div>
+        <div class="banner">
+            <div class="banner-pro">
                 <div>
-                    <h4>Sololearn</h4>
+                    <h4 class="pro">TechWich</h4>
                     <p>Get 14 days of Free PRO experience. </p>
                 </div>
                 <div>
                     <svgg></svgg>
                 </div>
-                <div><a href="">Start Today</a></div>
+                <div class="btn-pro"><a href="">Start Today</a></div>
             </div>
 
 
-            <div>
+            <div class="ready">
                 <h3>You are ready for the Code Coach</h3>
-                <div>
+                <div class="even">
                     <div>
-                        <img src="" alt="">
+                        <img src="../img/ccIconEasy.png" alt="">
                         <div>
                             <h5>Even numbers</h5>
                             <p>Change the code to output only the required numbers.</p>
                         </div>
                     </div>
-                    <div><a href="">Continue to practice  (+10 XP)</a></div>
+                    <div><a href="">Continue to practice (+10 XP)</a></div>
                 </div>
             </div>
 
 
-            <section>
-                <div>
+            <section class="course-section">
+                <div class="left-section-course">
                     <div>
                         <div>
                             <h3>Courses Progress</h3>
-                            <a href="">Manage</a>
+                            <a href="" class="manage">Manage</a>
                         </div>
-                        <div>
-                            <img src="" alt="">
-                            <progress></progress>
-                            <i></i>
+                        <div class="progress">
+                            <img src="../img/1024.png" alt="">
+                            <div>
+                                <p><span>Javascript</span><span>5%</span></p>
+                                <progress max="100" value="5"></progress>
+                            </div>
+                            <i class="fas fa-check"></i>
+
                         </div>
-                        <div><a href="">Browse Courses</a></div>
+                        <div><a href="" class="course-link">Browse Courses</a></div>
                     </div>
                     <div>
                         <h3>Code Bits</h3>
-                        <p>You don’t have any saved codes yet</p>
-                        <div><a href="">Add New</a></div>
+                        <p class="margin-paragraph">You don’t have any saved codes yet</p>
+                        <div><a href="" class="course-link">Add New</a></div>
                     </div>
                 </div>
 
@@ -84,51 +149,174 @@
                 <div>
                     <div>
                         <h3>Recent Achievements</h3>
-                        <div><a href=""><img src="" alt=""></a><a href=""><img src="" alt=""></a><a href=""><img src="" alt=""></a><a href=""><img src="" alt=""></a></div>
+                        <div class="badge-item"><a href=""><img src="../img/121.png" alt=""></a><a href=""><img
+                                    src="../img/120.png" alt=""></a><a href=""><img src="../img/119.png" alt=""></a><a
+                                href=""><img src="../img/56.png" alt=""></a></div>
                         <div>
                             <h3>Next task</h3>
-                            <div>
-                                <img src="" alt="">
+                            <div class="company">
+                                <img src="../img/125.webp" alt="">
                                 <div>
-                                    <h5></h5><p></p>
+                                    <h5> Good company</h5>
+                                    <p>Completing a module puts you in the great company. If you got this far, finishing
+                                        the course is within your reach!</p>
                                 </div>
                             </div>
+                            <div><a href="" class="course-link">Browse Courses</a></div>
+
                         </div>
                     </div>
-                    <div></div>
+                    <div class="code-coach">
+                        <h3>Code Coach</h3>
+                        <p>Hey! You missed on some challenges</p>
+                        <div class="carousel">
+                            <!-- swiper slider -->
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <!-- start of slides -->
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <div class="flex-img">
+                                                <img src="../img/ccIconEasy.png" alt="">
+                                                <div><span>Your First Program</span>
+                                                    <p>JavaScript is fun! Let everyone know about it!</p>
+                                                </div>
+                                            </div>
+                                            <div class="label">
+                                                <span>JavaScript</span>
+                                                <span>pro</span>
+                                            </div>
+                                            <div><a href="">unblock<i></i>60</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <div class="flex-img">
+                                                <img src="../img/ccIconEasy.png" alt="">
+                                                <div><span>Right Expression
+                                                    </span>
+                                                    <p>Comment one line from the code to output the right expression
+                                                        about
+                                                        JavaScript.
+
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="label">
+                                                <span>JavaScript</span>
+                                                <span>pro</span>
+                                            </div>
+                                            <div><a href="">unblock<i></i>60</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <div class="flex-img">
+                                                <img src="../img/ccIconEasy.png" alt="">
+                                                <div><span>Even numbers</span>
+                                                    <p>Change the code to output only the required numbers.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="label">
+                                                <span>JavaScript</span>
+                                            </div>
+                                            <div><a href="">pracrice 10XP(+)</a></div>
+                                        </div>
+                                    </div>
+
+                                    <!-- end of silder -->
+                                </div>
+                            </div>
+                            <!-- slider next/prev button -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+
+                    </div>
                 </div>
             </section>
         </div>
+
     </section>
 
 
+    <!-- footer -->
+    <footer>
+        <section>
+            <div class="social-media-list">
+                <ul>
+                    <li>
+                        <img src="../img/icons8-linkedin-2.svg" alt="">
+                        <h3>Follow us on Linkedin</h3>
+                    </li>
+                    <li>
+                        <img src="../img/icons8-facebook-f-48.png" alt="">
+                        <h3>Check out our facebook</h3>
+                    </li>
+                    <li>
+                        <img src="../img/icons8-twitter.svg" alt="">
+                        <h3>See what we tweet about</h3>
+                    </li>
+                    <li>
+                        <img src="../img/icons8-instagram.svg" alt="">
+                        <h3>Join our instagram</h3>
+                    </li>
+                    <li>
+                        <img src="../img/icons8-youtube.svg" alt="">
+                        <h3>Watch our Youtube</h3>
+                    </li>
+                </ul>
+                <div class="social-media-icon">
+                    <a href=""><img src="../img/1200px-Google_Play_Store_badge_EN.svg.png" alt=""></a>
+                    <a href=""><img src="../img/1200px-Download_on_the_App_Store_Badge.svg.png" alt=""></a>
+                </div>
+            </div>
+
+            <!-- footer-list-menu  -->
+            <div class="footer-list-menu">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Courses</a></li>
+                    <li><a href="">Code Playground</a></li>
+                    <li><a href="">Top Learners</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Pro</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Terms of Use</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                </ul>
+                <div>
+                    <p>Made with <span> &hearts; </span>
+                        by
+                        Sololearn
+                        | ©2021</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+<!-- footer -->
 
 
 
 
 
-
-
-
-
-
-
-
-
-    <div class="footer"></div>
-    <!-- footer partial -->
-
-    <script src="../js/jquery.min.js"></script>
-    <script src="../js/script.js"></script>
+    <!-- script -->
+    <script src="../js/swiper-bundle.min.js"></script>
     <script src="../js/header-mode-color.js"></script>
     <script>
-        $(document).ready(function () {
-            $('.header').load('../partial/header-light.html');
-            $('.footer').load('../partial/footer.html');
-
+        // set rhis script ro show one slide item when click on next/prev button
+        var swiper = new Swiper('.swiper', {
+            slidesPerView: 1,
+            watchSlidesProgress: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
         });
     </script>
-
 </body>
 
 </html>

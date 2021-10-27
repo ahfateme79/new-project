@@ -1,3 +1,4 @@
+
 let link = document.querySelectorAll("nav ul li a")
 window.addEventListener("scroll", () => {
     if (window.scrollY < 10000) {
@@ -33,3 +34,7 @@ window.addEventListener("scroll", () => {
         }
     }
 });
+function toggleMenu(e) {
+    e.classList.toggle("active");
+    document.querySelector('.nav-menu').classList.toggle('fixed')
+}
