@@ -64,7 +64,7 @@
                                 <li><a href="" class="setting"><i></i>setting</a>
                                     <div class="profile-modal-parent">
                                         <div class="profile-modal">
-                                            <di>
+                                            <di class="profile-links">
                                                 <h3>Edit Profile</h3>
                                                 <ul>
                                                     <span>Information</span>
@@ -81,7 +81,9 @@
                                                     <div>
                                                         <img src="../img/community-user-16.png" alt="" id="output">
                                                         <div>
-                                                            <button>change</button>
+                                                           <label for="">change
+                                                               <input type="file" onchange="loadFile(event)">
+                                                           </label>
                                                             <button><i>del</i></button>
                                                         </div>
                                                     </div>

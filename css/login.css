@@ -111,11 +111,15 @@
     height: 40px;
     border-radius: 5px;
     display: inline-flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     color: #fff;
     font-weight: bold;
     background-color: rgb(214, 79, 79);
+}
+.signin-with-media button i{
+    margin: 0 8px;
+    font-size: 1.2rem;
 }
 .signin-with-media button:last-child{
     background-color: #2d40e7;

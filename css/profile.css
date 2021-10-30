@@ -615,3 +615,6 @@ progress::-webkit-progress-value {
     background-color: #cdd5e9;
     border-radius: 10px;
 }
+.profile-links{
+    border-right: 1px solid black;
+}
