@@ -611,10 +611,27 @@ progress::-webkit-progress-value {
     width:550px;
     height: 450px;
     display: flex;
-    padding: 20px;
     background-color: #cdd5e9;
     border-radius: 10px;
 }
 .profile-links{
     border-right: 1px solid black;
+    padding: 30px 20px;
+    text-align: center;
+}
+.profile-links ul li a{
+    font-size: .9rem;
+    color: rgb(80, 105, 105);
+}
+.profile-setting{
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+}
+.profile-setting label{
+    display: block;
+}
+.info{
+    width: 100%;
+    display: flex;
 }

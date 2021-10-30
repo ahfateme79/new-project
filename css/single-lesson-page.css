@@ -1,0 +1,249 @@
+.single {
+    overflow-x: hidden;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    /* for Internet Explorer, Edge */
+    scrollbar-width: none;
+    min-height: 100vh;
+
+}
+
+.single::-webkit-scrollbar {
+    display: none;
+    /* for Chrome, Safari, and Opera */
+}
+
+.lesson-haeder {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.back-link {
+    display: inline-block;
+    transform: translate(200px, -60px);
+}
+
+.back-link a {
+    color: #fff;
+}
+.back-link i{
+    margin: 0 10px;
+}
+
+.introduce {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.introduce img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.lesson-select-item {
+    width: 50%;
+    position: absolute;
+    top: 320px;
+    left: 50%;
+    transform: translateX(-50%);
+    min-height: 100vh;
+}
+
+.lesson-select-item details {
+    min-height: 100px;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    appearance: blue;
+    padding: 25px;
+    margin: 15px 0;
+}
+
+
+.lesson-select-item details summary img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin: 0 10px;
+    background-color: rgb(92, 159, 247);
+}
+.lesson-select-item details summary div {
+    display: flex;
+    align-items: center;
+}
+
+.lesson-select-item details summary {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    justify-content: space-between;
+}
+.lesson-select-item details summary span {
+    background-image: url(../img/arrow-down-sign-to-navigate.png);
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.lesson-select-item details[open] summary span{
+    background-image: url(../img/navigate-up-arrow.png);
+
+}
+
+.lesson-tree {
+    position: relative;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lesson-tree:before {
+    content: '';
+    width: 2px;
+    height: 92%;
+    position: absolute;
+    background-color: rgb(143, 138, 138);
+    left: 25px;
+}
+
+.lesson-tree>div {
+    width: 80%;
+    position: relative;
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    /* overflow-x: scroll;
+    -ms-overflow-style: none;
+    /* for Internet Explorer, Edge */
+    scrollbar-width: none; 
+}
+
+/* .lesson-tree>div::-webkit-scrollbar {
+    display: none;
+    /* for Chrome, Safari, and Opera 
+} */
+
+.lesson-tree>span {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: rgb(143, 138, 138);
+    transform: translate(50%, 50px);
+    display: inline-block;
+    position: relative;
+    right: 48.5%;
+    top: 65%;
+}
+
+
+.lesson-tree>div a {
+    min-width: 200px;
+    height: 100px;
+    background-color: rgb(203, 211, 214);
+    border-radius: 10px;
+    margin: 0 7px;
+    padding: 20px;
+}
+
+.lesson-tree>div:last-child a {
+    width: 100%;
+}
+.lesson-tree>div:last-child a div {
+    display: flex;
+    align-items: center;
+}
+
+.lesson-tree>div:last-child a img {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
+
+.lesson-tree h5 {
+    color: black;
+    margin: 5px 0;
+}
+
+.lesson-tree p {
+    color: rgb(107, 112, 121);
+    font-size: .7rem;
+}
+
+@media screen and (max-width:600px) {
+    .lesson-tree>div {
+        overflow-x: scroll;
+        -ms-overflow-style: none;
+        /* for Internet Explorer, Edge */
+        scrollbar-width: none;
+    }
+
+    .lesson-tree>div::-webkit-scrollbar {
+        display: none;
+        /* for Chrome, Safari, and Opera */
+    }
+    .lesson-select-item {
+        width: 100%;
+        border-radius: 0;
+    }
+    .lesson-select-item details {
+        border-radius: 0;
+    }
+    
+    .lesson-tree>div a {
+        min-width: 150px;
+    }
+    .lesson-tree>span {
+        right: 48%;
+        top: 65%;
+    }
+    .introduce{
+        width: 80%;
+        flex-wrap: wrap;
+        padding: 20px 0;
+    }
+    .introduce > div{
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .introduce > div p{
+        font-size: .9rem;
+    }
+    .back-link{
+        transform: translate(20px,20px);
+    }
+    .back-link span{
+        display: none;
+    }
+}
+@media screen and (min-width:600px) and (max-width:1000px){
+    .lesson-select-item {
+        width: 90%;
+        border-radius: 0;
+    }
+    .lesson-select-item details {
+        border-radius: 5px;
+    }    
+}
+
+@media screen and (max-width:1200px) {
+
+    .lesson-tree>div {
+        overflow-x: scroll;
+        -ms-overflow-style: none;
+        /* for Internet Explorer, Edge */
+        scrollbar-width: none;
+    }
+
+    .lesson-tree>div::-webkit-scrollbar {
+        display: none;
+        /* for Chrome, Safari, and Opera */
+    }
+
+}
