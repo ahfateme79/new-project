@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+    <header class="header-light">
+        <div class="logo-light-header">
+            <img class="logo-icon" src="../img/Sololearn.png" alt="logo" width="50px"><span> TechWich</span>
+        </div>
+        <div class="menu">
+            <nav>
+                <!-- hamburger-button -->
+                <div class="toggle-wrap" onclick="toggleMenu(this)">Menu
+                    <span class="toggle-bar"></span>
+                </div>
+                <!-- mobile-menu -->
+                <div class="nav-menu">
+                    <ul>
+                        <li><a href="">Courses</a></li>
+                        <li><a href="">Code Playground</a></li>
+                        <li><a href="">Discuss</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Get Pro</a></li>
+                    </ul>
+                    <div class="header-user-details-mobile">
+                        <div class="user-details-mobile">
+                            <div> <button><i class="fas fa-star"></i>500</button></div>
+                        </div>
+                        <div>
+                            <a href=""><img src="../img/community-user-16.png" alt=""></a>Lori A. Barlow
+                        </div>
+                        <div class="not-border"> <a href="" class="go-pro"><i class="fas fa-star"></i>Go PRO
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- desctop-menu -->
+                <ul class="deskop-menu">
+                    <li><a href="">Courses</a></li>
+                    <li><a href="">Code Playground</a></li>
+                    <li><a href="">Discuss</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+                <div class="header-user-details">
+                    <a href="" class="go-pro"><i class="fas fa-star"></i>Go PRO
+                    </a>
+                    <div class="user-details">
+                        <button><i class="fas fa-star"></i>500</button>
+                        <a href="" class="profile-handle"><img src="../img/community-user-16.png" alt=""></a>
+                        <div class="profile-option">
+                            <div>
+                                <h5>username</h5>
+                                <span>go to profile</span>
+                            </div>
+                            <ul>
+                                <li><a href="" class="setting"><i></i>setting</a>
+                                    <div class="profile-modal-parent">
+                                        <div class="profile-modal">
+                                            <di>
+                                                <h3>Edit Profile</h3>
+                                                <ul>
+                                                    <span>Information</span>
+                                                    <li><a href="">password</a></li>
+                                                    <li><a href="">Connected Accounts</a></li>
+                                                    <li><a href="">Sololearn PRO</a></li>
+                                                </ul>
+                                            </di>
+                                            <di>
+                                                <div><button class="close-modal">close</button></div>
+                                                <div>
+                                                    <h4>Information
+                                                    </h4>
+                                                    <div>
+                                                        <img src="../img/community-user-16.png" alt="" id="output">
+                                                        <div>
+                                                            <button>change</button>
+                                                            <button><i>del</i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="profile-form-info">
+                                                    <form action="">
+                                                        <label for="">Username
+                                                        </label>
+                                                        <input type="text">
+                                                        <label for="">Email address
+                                                        </label>
+                                                        <input type="email">
+                                                        <label for="">Bio
+                                                        </label>
+                                                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                                                        <label for="">Country</label>
+                                                        <select name="" id="">
+                                                            <option value="">iran</option>
+                                                            <option value="">us</option>
+                                                        </select>
+                                                    </form>
+                                                </div>
+                                            </di>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href=""><i></i>help</a></li>
+                                <li><a href=""><i></i>log out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <script>
+        let profile = document.querySelector('.profile-handle')
+        let profilebox = document.querySelector('.profile-option')
+        let setting = document.querySelector('.setting')
+        let closemodal = document.querySelector('.close-modal')
+        let profilemodal = document.querySelector('.profile-modal-parent')
+        profile.addEventListener('click', (e) => {
+            e.preventDefault()
+            profilebox.classList.toggle('block-profile-box')
+        })
+
+        setting.addEventListener('click', (e) => {
+            e.preventDefault()
+            profilemodal.style.display = 'flex'
+        })
+        closemodal.addEventListener('click', () => {
+            profilemodal.style.display = 'none'
+        })
+        var loadFile = function (event) {
+            var image = document.getElementById("output");
+            image.src = URL.createObjectURL(event.target.files[0]);
+        };
+    </script>
+</body>
+
+</html>
