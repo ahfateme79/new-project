@@ -3,8 +3,8 @@
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-    background-color: hsl(0, 0%, 91%);
+    align-items: center;
+    background-color: hsl(0, 0%, 91%);padding-top: 50px;
 }
 
 .login {
