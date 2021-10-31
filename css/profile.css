@@ -769,7 +769,13 @@ progress::-webkit-progress-value {
 .mobile-modal{
     display: none;
 }
+.profile-mobile-items,.hide,.back-btn{
+    display: none;
+}
 @media screen and (max-width:500px){
+    .profile-mobile-items,.back-btn,.hide{
+        display: block;
+    }
     .profile-links{
         display: none;
     }

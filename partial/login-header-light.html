@@ -135,7 +135,7 @@
         </div>
         <div class="profile-modal-parent mobile-modal">
             <div class="profile-modal">
-                <di class="profile-links">
+                <div class="profile-links">
                     <h3>Edit Profile</h3>
                     <ul>
                         <span>Information</span>
@@ -143,8 +143,8 @@
                         <li><a href="">Connected Accounts</a></li>
                         <li><a href="">Sololearn PRO</a></li>
                     </ul>
-                </di>
-                <di class="profile-setting">
+                </div>
+                <div class="profile-setting">
                     <div><button class="close-modal-mobile">close</button></div>
                     <div class="change-profile">
                         <h4>Information
@@ -179,10 +179,30 @@
                             <button>save</button>
                         </form>
                     </div>
-                </di>
+                </div>
             </div>
         </div>
+
+
+
+        <div class="pro-resize">;l5tjkh</div>
     </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <script src="../js/header-mode-color.js"></script>
     <script>
         let profile = document.querySelector('.profile-handle')
@@ -198,6 +218,7 @@
         let mobilebox = document.querySelector('.seting-mobile-box')
         let navmenu = document.querySelector('.nav-menu')
         let togglewrap = document.querySelector('.toggle-wrap')
+        let proresize=document.querySelector('.pro-resize')
 
         profile.addEventListener('click', (e) => {
             e.preventDefault()
@@ -234,6 +255,14 @@
             var image = document.getElementById("output");
             image.src = URL.createObjectURL(event.target.files[0]);
         };
+
+        if (window.innerWidth<600) {
+            openmodalmobile.addEventListener('click', ()=>{
+                proresize.style.display = 'block'
+            })
+        }
+
+
         let options = [{
                 countrie: 'Afghanistan'
             }, {
@@ -275,6 +304,7 @@
                 select.innerHTML += `<option>${options[i].countrie}</option>`
             }
         })
+
     </script>
 </body>
 
