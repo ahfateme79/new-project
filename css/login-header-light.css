@@ -43,9 +43,9 @@
     margin: 0 20px;
 }
 
-.header-light nav ul li a {
+.header-light nav > ul li a {
     font-size: 1.2rem;
-    color: #060707;
+    color: #0e0f0f;
 }
 
 .header-light .login-btn-desktop,.login-btn-mobile {
@@ -149,11 +149,14 @@
       left: 0;
       right: 0;
       background-color: #ffffff;
-      min-height: 50vh;
       display: none;
       border: .2px solid #2d3846;
       box-shadow: 0 6px 20px rgb(0 0 0 / 20%);
       transition: all .2s ease-in-out
+  }
+  .header-light .login-menu{
+    min-height: 71.5vh;
+
   }
   .header-light .fixed{
       display: block;
@@ -203,6 +206,4 @@
         left: auto;
     }
 }
-
-
 

@@ -11,7 +11,7 @@ window.addEventListener("scroll", () => {
         document.querySelector('header-light .nav-menu').style.background = "#fff"
         document.querySelector('header-light .nav-menu').style.borderColor = "transparent"
         document.querySelector('header-light.nav-menu ul').style.borderColor = "#bcd0e9"
-        document.querySelector('header-light .nav-menu ul li a').style.color = "#1f1e28"
+        // document.querySelector('header-light .nav-menu ul li a').style.color = "#1f1e28"
         document.querySelector('header-light .toggle-wrap').style.color = 'black'
 
         for (let i = 0; i < link.length; i++) {

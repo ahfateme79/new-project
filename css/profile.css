@@ -572,24 +572,48 @@ progress::-webkit-progress-value {
 }
 
 .profile-option {
-    width: 170px;
+    width: 180px;
     height: 180px;
     position: absolute;
     top: 80px;
     right: 100px;
     background-color: #fff;
-    padding: 10px;
     box-shadow: 1px 1px 4px #cccc;
     display: none;
+    border-radius: 5px;
 }
-
-.profile-option ul {
+.profile-option > div{
+    border-bottom: 1px solid rgb(201, 195, 195);padding: 10px;
+}
+.profile-option > ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    padding: 10px 0;
 }
-
+.profile-option > ul li {
+   width: 100%;
+   padding: 3px;
+   margin: 0;
+}
+.profile-option > ul li:hover {
+    background-color: rgb(226, 238, 238);
+ }
+ 
+.profile-option > ul li a{
+    font-size: 1rem;
+    color: black;
+ }
+ 
+.profile-option h5{
+    font-size: 1rem;
+}
+.profile-option span{
+    font-size: .8rem;
+    margin: 5px 0;
+    color: rgb(94, 99, 100);
+}
 .block-profile-box {
     display: block;
 }
@@ -611,27 +635,154 @@ progress::-webkit-progress-value {
     width:550px;
     height: 450px;
     display: flex;
-    background-color: #cdd5e9;
+    background-color: #e4e7ee;
     border-radius: 10px;
 }
 .profile-links{
-    border-right: 1px solid black;
+    border-right: 1px solid rgb(201, 197, 197);
     padding: 30px 20px;
-    text-align: center;
+    width: 30%;
+}
+.profile-links ul{
+    display: flex;
+    flex-direction: column;align-items: flex-start;
+    margin: 20px 0;
+}
+.profile-links ul li{
+    margin: 5px 0;
 }
 .profile-links ul li a{
     font-size: .9rem;
     color: rgb(80, 105, 105);
 }
 .profile-setting{
-    padding: 30px 20px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
+    position: relative;
+    width: 70%;
+
 }
 .profile-setting label{
     display: block;
+    font-size: .7rem;
+    color: black;
+    font-weight: 500;
 }
-.info{
+.change-profile h4{
+    padding: 5px 0;
+}
+.close-modal{
+    background-color: transparent;
+    color: rgb(128, 123, 123);
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.information input[type="file"]{
+    display: none;
+}
+#output{
+    width: 60px;
+    height: 60px;
+}
+.information {
+    display: flex;
+    padding: 10px 0;
+}
+.information div{
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+.information div label,.information div button{
+    margin: 0 10px;
+    padding: 5px 15px;
+    background-color: #2493df;
+    color: #fff;
+    border-radius: 3px;
+    display: inline-block;
+}
+.profile-setting form{
+    display: flex;
+    flex-direction: column;
+}
+.profile-setting input,.profile-setting textarea,.profile-setting select{
+    border: 1px solid rgb(164, 164, 167);
+    margin: 5px 0;
+    width: 70%;
+    border-radius: 3px;
+    padding: 3px 5px;
+    background-color: #f9fafd;
+}
+.information{
     width: 100%;
     display: flex;
+}
+.profile-setting form button{
+    margin: 5px 0;
+    width: 90px;
+    height: 30px;
+    background-color: #2493df;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.profile-setting textarea::placeholder{
+    font-size: .7rem;
+}
+
+.seting-mobile-box{
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 100px;
+    background-color: rgb(255, 254, 254);
+    width: 350px;
+    height: 300px;
+    color: rgb(26, 24, 24);
+    flex-direction: column;
+    box-shadow: 1px 1px 5px gray;
+    border-radius: 0 0 5px 5px;
+}
+.seting-mobile-box > div ,.seting-mobile-box ul{
+    padding: 20px;
+}
+.seting-mobile-box > div{
+    border-bottom: 1px solid rgb(206, 204, 204);
+    display: flex;
+    align-items: center;
+}
+.seting-mobile-box img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin: 0 10px;
+}
+.seting-mobile-box ul li{
+    margin: 5px 0;
+}
+.seting-mobile-box ul li a{
+    font-size: 1.1rem;
+    color: black;
+}
+.mobile-modal{
+    display: none;
+}
+@media screen and (max-width:500px){
+    .profile-links{
+        display: none;
+    }
+    .profile-modal{
+        width: 100%;
+        border-radius: 0;
+        height: 100%;
+    }
+    .profile-modal input,.profile-modal textarea,.profile-modal select{
+        width: 100%;
+        height: 40px;
+    }
+    .profile-modal .information img{
+        border-radius: 50%;
+    }
 }
