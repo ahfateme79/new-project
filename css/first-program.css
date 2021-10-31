@@ -1,0 +1,212 @@
+.first-code {
+    width: 100%;
+    min-height: 100px;
+}
+.first-code i{
+    margin: 5px;
+}
+.run-code {
+    width: 100%;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 1px 5px rgb(185, 181, 181);
+}
+.run-code-btn{
+    width: 70px;
+    height: 30px;
+    background-color: #2493df;
+    color: #fff;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.run-code-btn i{
+    font-size: .7rem;
+}
+.coding {
+    width: 100%;
+    display: flex;
+    height: 85vh;
+}
+
+.code-result {
+    width: 50%;
+}
+
+.tab {
+    width: 100%;
+    height: 100%;
+}
+
+.tab input[type='radio'] {
+    display: none;
+}
+
+.tab-item {
+    width: 100%;
+    padding: 0 80px;
+    display: flex;
+    border-bottom: 1px solid thistle;
+    height: 50px;
+}
+
+.tab-item label {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: gray;
+}
+
+.tab-content {
+    width: 100%;
+    background-color: rgb(233, 239, 241);
+    padding: 50px 100px;
+    height: 100%;
+}
+
+.write-code {
+    width: 50%;
+    height: 93vh;
+    background-color: black;
+}
+
+.hljs-string {
+    color: #2f6833;
+    font-size: .8rem;
+}
+
+.hljs {
+    color: rgb(173, 177, 167);
+    font-size: .9rem;
+}
+
+.hljs-number {
+    color: #5d615d;
+}
+
+.hljs-function {
+    color: rgb(216, 105, 14) !important;
+}
+
+.hljs-title {
+    color: maroon !important;
+}
+
+.hljs-built_in {
+    color: rgb(238, 205, 61) !important;
+}
+
+.hljs-keyword {
+    color: pink !important;
+}
+
+.hljs-function>.hljs-keyword {
+    color: rgb(141, 3, 26) !important;
+    font-style: italic;
+}
+
+#tab-content-1 p {
+    margin: 20px 0;
+}
+
+#tab-content-2 {
+    flex-direction: column;
+}
+
+#tab-content-2 details {
+    width: 100%;
+    min-height: 40px;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+#tab-content-2 details div>div {
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(202, 209, 211);
+    margin: 10px 0;
+    padding: 5px 10px;
+    font-size: .7rem;
+    color: rgb(80, 78, 78);
+    display: flex;
+    align-items: center;
+}
+
+#tab-content-2 details div label {
+    font-size: .9rem;
+    margin: 5px 0;
+}
+
+#tab-content-2 details div>div:nth-of-type(2) {
+    height: 40px;
+    background-color: rgb(29, 30, 31);
+    font-size: .8rem;
+    color: rgb(248, 248, 248);
+}
+
+#tab-content-2 details summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#tab-content-2 details summary span {
+    background-image: url(../img/arrow-down-sign-to-navigate.png);
+    width: 12px;
+    height: 12px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#tab-content-2 details[open] summary span {
+    background-image: url(../img/navigate-up-arrow.png);
+
+}
+
+.fa-times-circle {
+    color: rgb(201, 78, 62);
+    margin: 5px;
+    font-size: 1.2rem;
+}
+
+.read-comment {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.read-comment p {
+    font-size: .9rem;
+}
+
+.read-comment button {
+    width: 130px;
+    height: 30px;
+    background-color: #2493df;
+    color: #fff;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+#tab-content-1,
+#tab-content-2 {
+    display: none;
+}
+
+#tab-1:checked~.tab-content #tab-content-1,
+#tab-2:checked~.tab-content #tab-content-2 {
+    display: block;
+}
+
+#tab-1:checked~.tab-item #tab-item-1,
+#tab-2:checked~.tab-item #tab-item-2 {
+    border-bottom: 6px solid blue;
+    color: black;
+}

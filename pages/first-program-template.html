@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;1,300;1,400;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <section class="first-code">
+        <div class="run-code">
+            <div><i class="fas fa-times"></i><span>Your First Program</span></div>
+            <div class="run-code-btn">Run<i class="fas fa-play"></i></div>
+        </div>
+        <div class="coding">
+            <div class="code-result">
+                <div class="tab">
+                    <input type="radio" name="group" id="tab-1" checked>
+                    <input type="radio" name="group" id="tab-2">
+                    <div class="tab-item">
+                        <label for="tab-1" id="tab-item-1">Problem</label>
+                        <label for="tab-2" id="tab-item-2">Results</label>
+                    </div>
+                    <div class="tab-content">
+                        <div id="tab-content-1">
+                            <h1>Your First Program</h1>
+                            <p>Write a program to print "Python is fun".
+                                Note that the sentence starts with a capital letter.</p>
+                            <span>Hint<br>
+                                Use print() function.</span>
+                            <div class="err"><i class="fas fa-exclamation-circle"></i>
+                                <p>Remember to enclose the text into single or double quotes.</p>
+                            </div>
+                        </div>
+                        <div id="tab-content-2">
+                            <div>
+                                <details>
+                                    <summary><div><i class="fas fa-times-circle"></i>test case</div><span></span></summary>
+                                    <div>
+                                        <label for="">input</label>
+                                        <div>no input</div>
+                                        <label for="">Your Output
+                                        </label>
+                                        <div>no input</div>
+                                        <label for="">No Output
+                                        </label>
+                                        <div>Python is fun
+                                        </div>
+                                    </div>
+                                </details>
+                                <div class="read-comment"><p>Need help?</p><button>read comments</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="write-code">
+                <div><span>javascript</span></div>
+                <div style="background-color: #dadada;">
+                    <pre style="background-color: rgb(26, 0, 0);"><code class="javascript" style="background-color: rgb(0, 0, 0);">
+                      1      "#output Python is fundsgsezgdseg"
+                      2      $(document).ready(function() {
+                      3      $('pre code').each(function(i, block) {
+                      4      hljs.highlightBlock(block);
+                      5      });
+                      6      });
+                    </code></pre>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+</body>
+
+</html>
