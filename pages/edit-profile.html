@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;1,300;1,400;1,600&display=swap"
+        rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <section class="edit-profile">
+        <div class="edit-profile-details">
+            <h1>edit profile</h1>
+
+            <div class="edit-pic-profile">
+                <img src="../img/community-user-16.png" alt="" id="profile">
+                <label for="image-upload">upload
+                    <input type="file" name="" id="image-upload" onchange="loadFile(event)">
+                </label>
+            </div>
+            <div class="edit-form">
+                <form action="">
+                    <label for="">firstname</label>
+                    <input type="text">
+                    <label for="">lastname</label>
+                    <input type="text">
+                    <label for="">username</label>
+                    <input type="text">
+                    <label for="">Email address</label>
+                    <input type="email">
+                    <label for="">Bio</label>
+                    <textarea name="" id="" cols="30" rows="7" placeholder="describe yourself...."></textarea>
+                    <label for="">country</label>
+                    <select name="" id="">
+                        <option value="">iran</option>
+                        <option value="">us</option>
+                        <option value="">afghanistan</option>
+                        <option value="">germany</option>
+                        <option value="">chines</option>
+                    </select>
+                    <button class="save-edit">save</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script>
+        var loadFile = function (event) {
+            var image = document.getElementById("profile");
+            image.src = URL.createObjectURL(event.target.files[0]);
+        };
+    </script>
+</body>
+
+</html>

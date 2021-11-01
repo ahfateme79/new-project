@@ -1,0 +1,91 @@
+.edit-profile{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f2f5f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 0;
+
+}
+.edit-profile-details{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 1px 1px 5px rgb(168, 165, 165);
+    border-top: 8px solid #1abc9c;
+    min-height: 60vh;
+    padding: 30px 0;
+}
+.edit-pic-profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+.edit-pic-profile img{width: 120px;
+height: 120px;border-radius: 100%;}
+.edit-pic-profile input[type="file"]{
+    display: none;
+}
+.edit-pic-profile label{
+    width: 120px;
+    height: 40px;
+    background-color: #1abc9c;
+    color: #fff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.edit-form{
+    width: 70%;
+}
+.edit-form form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.edit-form form input,.edit-form form textarea,.edit-form form select{
+    border: 1px solid rgb(219, 212, 212);
+    border-radius: 3px;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: rgb(243, 247, 247);
+    display: block;
+    width: 100%;
+}
+.edit-form label{
+    font-size: .9rem;
+    display: block;
+    width: 100%;
+}
+.save-edit{
+    width: 120px;
+    height: 40px;
+    background-color: #1abc9c;
+    color: #fff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    cursor: pointer;
+}
+@media screen and (max-width:600px){
+    .edit-profile{
+        padding: 0;
+    
+    }
+    
+    .edit-profile-details{
+        width: 100%;
+    }
+    
+}
