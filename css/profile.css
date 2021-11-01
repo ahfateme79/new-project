@@ -570,7 +570,10 @@ progress::-webkit-progress-value {
     }
 
 }
-
+.profile-handle-responsive{
+    align-items: center;
+    display: flex;
+}
 .profile-option {
     width: 180px;
     height: 180px;

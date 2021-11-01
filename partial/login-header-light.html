@@ -184,8 +184,6 @@
         </div>
 
 
-
-        <div class="pro-resize">;l5tjkh</div>
     </header>
 
 
@@ -218,7 +216,7 @@
         let mobilebox = document.querySelector('.seting-mobile-box')
         let navmenu = document.querySelector('.nav-menu')
         let togglewrap = document.querySelector('.toggle-wrap')
-        let proresize=document.querySelector('.pro-resize')
+        let proresize = document.querySelector('.pro-resize')
 
         profile.addEventListener('click', (e) => {
             e.preventDefault()
@@ -255,12 +253,6 @@
             var image = document.getElementById("output");
             image.src = URL.createObjectURL(event.target.files[0]);
         };
-
-        if (window.innerWidth<600) {
-            openmodalmobile.addEventListener('click', ()=>{
-                proresize.style.display = 'block'
-            })
-        }
 
 
         let options = [{
@@ -304,7 +296,6 @@
                 select.innerHTML += `<option>${options[i].countrie}</option>`
             }
         })
-
     </script>
 </body>
 
