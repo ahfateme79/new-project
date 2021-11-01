@@ -247,3 +247,30 @@
     }
 
 }
+.tick,.luck{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.tick span{
+    width: 25px;
+    height: 25px;
+    background-color: rgb(1, 190, 127);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 50%;
+}
+.luck span{
+    width: 25px;
+    height: 25px;
+    background-color: rgb(190, 183, 183);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(134, 132, 132);
+    border-radius: 50%;
+
+}
