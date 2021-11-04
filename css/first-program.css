@@ -75,37 +75,37 @@
     background-color: black;
 }
 
-.hljs-string {
+.write-code .hljs-string {
     color: #2f6833;
     font-size: .8rem;
 }
 
-.hljs {
+.write-code .hljs {
     color: rgb(173, 177, 167);
     font-size: .9rem;
 }
 
-.hljs-number {
+.write-code .hljs-number {
     color: #5d615d;
 }
 
-.hljs-function {
+.write-code .hljs-function {
     color: rgb(216, 105, 14) !important;
 }
 
-.hljs-title {
+.write-code .hljs-title {
     color: maroon !important;
 }
 
-.hljs-built_in {
+.write-code .hljs-built_in {
     color: rgb(238, 205, 61) !important;
 }
 
-.hljs-keyword {
+.write-code .hljs-keyword {
     color: pink !important;
 }
 
-.hljs-function>.hljs-keyword {
+.write-code .hljs-function>.write-code .hljs-keyword {
     color: rgb(141, 3, 26) !important;
     font-style: italic;
 }

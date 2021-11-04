@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;1,300;1,400;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <section class="item-content">
+        <div class="welcome">
+            <a href=""><i class="fas fa-times"></i><span class="welcome-head">pick type</span></a>
+            <div>
+                <span class="mobile-welcome">welcome to pick type!</span>
+                <div class="progress-bar"> <span></span><span></span>
+                </div>
+            </div>
+            <div> <button disabled><i class="fas fa-chevron-left"></i><i class="fas fa-comment-alt"></i><span
+                        class="welcome-head">3604 Comments</span></button>
+            </div>
+        </div>
+        <div class="contents">
+            <h2>pick type</h2>
+            <p>Drag and drop the corresponding data types to the given values:</p>
+            <div class="drop-content" id="drop-content" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+            </div>
+            <div class="drag-content" ondrop="drop(event)" ondragover="allowDrop(event)" class="items-word">
+                <span id="word1" draggable="true" ondragstart="drag(event)">to&nbsp;</span>
+                <span id="word2" draggable="true" ondragstart="drag(event)">welcome&nbsp;</span>
+                <span id="word3" draggable="true" ondragstart="drag(event)">type&nbsp;</span>
+                <span id="word4" draggable="true" ondragstart="drag(event)">pick&nbsp;</span>
+            </div>
+        </div>
+        <div class="continue-btn btn-section">
+            <button>back</button>
+            <i class="fas fa-lock-open-alt"></i>
+            <button disabled>check</button>
+        </div>
+    </section>
+
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("Text", ev.target.id);
+            console.log(ev.target.innerText);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("Text");
+            ev.target.appendChild(document.getElementById(data));
+            let c = ev.target.childNodes
+            console.log(c)
+            let x = Array.from(c)
+            console.log(x)
+            if (x.length === 5) {
+                console.log(x.join())
+            }
+        }
+    </script>
+</body>
+
+</html>
