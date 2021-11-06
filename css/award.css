@@ -7,6 +7,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    display: -webkit-flex;
+    display: -webkit-box;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    
 }
 
 .award>div {
@@ -15,6 +26,20 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    display: -webkit-flex;
+    display: -webkit-box;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
 }
 
 .award h1 {
@@ -24,17 +49,27 @@
 
 .award-box {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     min-height: 200px;
     flex-wrap: wrap;
+    display: -webkit-flex;
+    display: -webkit-box;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: space-between;
+    -ms-flex-pack: space-between;
+    -webkit-justify-content: space-between;
+    display: flex;
+
+    justify-content: space-between;
+
 }
 
 .award-box>div {
     text-align: center;
     color: #575572;
     position: relative;
+    -webkit-box-align: center;
 }
 
 .award-box h4 {
@@ -60,6 +95,7 @@
     .award h1 {
         font-size: 2.5rem;
         text-align: center;
+        -webkit-box-align: center;
     }
 }
 

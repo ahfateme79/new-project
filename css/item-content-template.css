@@ -2,8 +2,17 @@
     width: 100%;
     min-height: 100vh;
     background-color: rgb(246, 246, 250);
+    display: -webkit-flex;
+    display: -webkit-box;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
     display: flex;
     flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     align-items: center;
 }
 
@@ -15,14 +24,33 @@
 }
 .welcome {
     padding: 50px;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: space-between;
+    -ms-flex-pack: space-between;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
     align-items: center;
     width: 100%;
 
 }
 .welcome > div:first-child{
+    display: -webkit-flex;
+    display: -webkit-box;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
     display: flex;
     flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -66,6 +94,10 @@
     width: 35%;
     height: 500px;
     flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     /* align-items: center; */
     padding: 10px;
 }
@@ -84,6 +116,11 @@
     height: 90px;
     border-radius: 10px;
     background-color: rgb(241, 221, 182);
+    display: -webkit-flex;
+    display: -webkit-box;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
     display: flex;
     padding: 10px;
     margin: 10px 0;
@@ -96,6 +133,10 @@
 }
 
 .continue-btn {
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
     width: 100%;
     border-top: 1px solid #ccc;
     align-items: center;
@@ -150,12 +191,23 @@
 /* date-sicencs */
 .date-sicencs{
     width: 100%;
+    display: -webkit-flex;
+    display: -webkit-box;
     display: flex;
     flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
 }
 .date-sicencs label{
     width: 100%;
     height: 40px;
+    display: -webkit-flex;
+    display: -webkit-box;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
     display: flex;
     align-items: center;
     padding: 15px;
@@ -200,6 +252,11 @@
     background-color: #d7dfe4;
 }
 .quiz > div{
+    display: -webkit-flex;
+    display: -webkit-box;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
     display: flex;
     margin: 20px 0;
     align-items: center;
@@ -226,6 +283,16 @@
 }
 .drag-content{
     width: 100%;
+    display: -webkit-flex;
+    display: -webkit-box;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -237,6 +304,16 @@
     width: 100px;
     height: 40px;
     box-shadow: 1px 1px 5px rgb(201, 194, 194);
+    display: -webkit-flex;
+    display: -webkit-box;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
     display: flex;
     justify-content: center;
     align-items: center;

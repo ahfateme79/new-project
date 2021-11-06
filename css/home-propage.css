@@ -7,6 +7,16 @@
     justify-content: center;
     align-items: center;
     padding: 50px;
+    display: -webkit-flex;
+    display: -webkit-box;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
 }
 
 .home-propage>div {
@@ -15,6 +25,20 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    display: -webkit-flex;
+    display: -webkit-box;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
 }
 
 .home-propage-head {
@@ -23,6 +47,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    display: -webkit-flex;
+    display: -webkit-box;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
 }
 
 .home-propage-head h1 {
@@ -47,6 +81,14 @@
     align-items: center;
     flex-wrap: wrap;
     min-height: auto;
+    -webkit-flex-wrap: wrap;
+    display: -webkit-flex;
+    display: -webkit-box;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+
 }
 
 .home-propage-flexbox div {
@@ -89,6 +131,18 @@
     flex-wrap: wrap;
     justify-content: center;
     padding: 40px 0;
+    display: -webkit-flex;
+    display: -webkit-box;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    display: flex;
 }
 
 .items div {
@@ -98,14 +152,26 @@
     display: inline-flex;
     align-items: center;
 }
-.items i{
+
+.items i {
     margin: 0 3px;
 }
+
 .btn-pro {
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    display: -webkit-flex;
+    display: -webkit-box;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
 }
 
 .btn-pro a {
@@ -113,12 +179,20 @@
     height: 60px;
     background-color: #fbb461;
     color: rgb(102, 43, 4);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 1.2rem;
     font-weight: bold;
     border-radius: 5px;
+    display: inline-block;
+    /* display: -webkit-flex;
+    display: -webkit-box;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    display: flex; */
 }
 
 @media screen and (max-width:768px) {
@@ -136,11 +210,23 @@
 
     .items {
         justify-content: flex-start;
+        -ms-flex-pack: flex-start;
+        -webkit-justify-content: flex-start;
     }
 
     .items div {
         margin: 15px 0;
         display: inline-flex;
+        justify-content: center;
+        display: -webkit-inline-flex;
+        display: -webkit-inline-box;
+        justify-content: center;
+        align-items: center;
+        -webkit-box-align: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-justify-content: center;
         justify-content: center;
     }
 
@@ -149,17 +235,23 @@
     }
 
 }
-@media screen and (min-width:768px) and (max-width:1200px){
+
+@media screen and (min-width:768px) and (max-width:1200px) {
 
     .home-propage-flexbox div {
         width: 90%;
     }
-    .home-propage-flexbox{
+
+    .home-propage-flexbox {
         justify-content: center;
         padding: 40px 0;
+        display: -webkit-flex;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
     }
+
     .items {
         width: 90%;
     }
-    
+
 }

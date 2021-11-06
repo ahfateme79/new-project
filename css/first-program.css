@@ -8,6 +8,14 @@
 .run-code {
     width: 100%;
     padding: 20px 30px;
+    display: -webkit-flex;
+    display: -webkit-box;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: space-between;
+    -ms-flex-pack: space-between;
+    -webkit-justify-content: space-between;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,6 +27,16 @@
     background-color: #2493df;
     color: #fff;
     border-radius: 3px;
+    display: -webkit-flex;
+    display: -webkit-box;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,6 +46,8 @@
 }
 .coding {
     width: 100%;
+    display: -webkit-flex;
+    display: -webkit-box;
     display: flex;
     height: 85vh;
 }
@@ -48,6 +68,8 @@
 .tab-item {
     width: 100%;
     padding: 0 80px;
+    display: -webkit-flex;
+    display: -webkit-box;
     display: flex;
     border-bottom: 1px solid thistle;
     height: 50px;
@@ -55,6 +77,16 @@
 
 .tab-item label {
     width: 100px;
+    display: -webkit-flex;
+    display: -webkit-box;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -135,6 +167,11 @@
     padding: 5px 10px;
     font-size: .7rem;
     color: rgb(80, 78, 78);
+    display: -webkit-flex;
+    display: -webkit-box;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
     display: flex;
     align-items: center;
 }
@@ -152,6 +189,14 @@
 }
 
 #tab-content-2 details summary {
+    display: -webkit-flex;
+    display: -webkit-box;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: space-between;
+    -ms-flex-pack: space-between;
+    -webkit-justify-content: space-between;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -178,6 +223,11 @@
 
 .read-comment {
     margin: 20px 0;
+    display: -webkit-flex;
+    display: -webkit-box;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
     display: flex;
     align-items: center;
 }

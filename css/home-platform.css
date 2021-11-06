@@ -6,9 +6,21 @@
     min-height: 90vh;
     display: flex;
     flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 5% 0;
+    display: -webkit-flex;
+    display: -webkit-box;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    
 }
 
 .home-platform>div {
@@ -25,17 +37,39 @@
 
 .platforms {
     width: 100%;
-    display: flex;
     flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    display: -webkit-flex;
+    display: -webkit-box;
+    -webkit-box-pack: space-between;
+    -ms-flex-pack: space-between;
+    -webkit-justify-content: space-between;
+    display: flex;
     justify-content: space-between;
+
 }
 
 .platforms>div {
     width: 40%;
     display: flex;
     flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     justify-content: center;
     align-items: center;
+    display: -webkit-flex;
+    display: -webkit-box;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    display: flex;
 }
 
 .platforms h2 {

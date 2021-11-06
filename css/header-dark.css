@@ -11,6 +11,11 @@ header {
     /* justify-content: space-evenly; */
     align-items: center;
     z-index: 5;
+    display: -webkit-flex;
+    display: -webkit-box;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
 }
 
 /* header */
@@ -20,6 +25,11 @@ header {
     display: flex;
     align-items: center;
     font-size: 3rem;
+    display: -webkit-flex;
+    display: -webkit-box;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
 }
 
 .menu {
@@ -32,11 +42,24 @@ header nav {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    display: -webkit-flex;
+    display: -webkit-box;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: flex-end;
+    -ms-flex-pack: flex-end;
+    -webkit-justify-content: flex-end;
 }
 /* nav style */
 nav ul {
     display: flex;
     align-items: center;
+    display: -webkit-flex;
+    display: -webkit-box;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
 }
 
 nav ul li {
@@ -51,6 +74,11 @@ nav > ul li a {
 .login-btn-desktop,.login-btn-mobile {
     display: flex;
     align-items: center;
+    display: -webkit-flex;
+    display: -webkit-box;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
 }
 .login-btn-desktop a ,.login-btn-mobile a{
     width: 120px;
@@ -63,6 +91,16 @@ nav > ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
+    display: -webkit-flex;
+    display: -webkit-box;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
 }
 
 .login-btn-desktop a:last-child, .login-btn-mobile a:last-child{
@@ -161,12 +199,21 @@ nav > ul li a {
   .nav-menu ul{
       display: flex;
       flex-direction: column;
+      -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
       justify-content: center;
       align-items: flex-start;
       padding: 20px 10px;
       height: 250px;
       border-bottom: .2px solid #2d3846;
-
+      display: -webkit-flex;
+      display: -webkit-box;
+      -webkit-box-align: flex-start;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
   }
   nav .nav-menu li{
       margin: 7px;
@@ -178,6 +225,8 @@ nav > ul li a {
 @media screen and (max-width:1100px){
     .toggle-wrap {
         display: flex;
+        display: -webkit-flex;
+        display: -webkit-box;
     }
     header{
         padding: 0 20px;
@@ -193,6 +242,9 @@ nav > ul li a {
     .login-btn-mobile{
         height: 70px;
         justify-content: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
     }
     
 }

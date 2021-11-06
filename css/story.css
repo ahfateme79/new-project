@@ -6,14 +6,38 @@
     justify-content: center;
     align-items: center;
     padding: 50px;
+    display: -webkit-flex;
+    display: -webkit-box;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
 }
 
 .story>div {
     width: 50%;
     display: flex;
     flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     justify-content: center;
     align-items: center;
+    display: -webkit-flex;
+    display: -webkit-box;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
 }
 
 .success-story {
@@ -32,10 +56,24 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid rgb(196, 189, 189);
     padding: 30px 0;
+    display: -webkit-flex;
+    display: -webkit-box;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
 }
 
 .absolute {
@@ -48,6 +86,16 @@
     padding: 0 10px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    display: -webkit-flex;
+    display: -webkit-box;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-justify-content: center;
     justify-content: center;
 }
 
@@ -104,6 +152,8 @@
     color: red;
     display: flex;
     font-size: 1.2rem;
+    display: -webkit-flex;
+    display: -webkit-box;
 }
 
 .thanks p {
@@ -119,6 +169,7 @@
     .story>div {
         width: 95%;
         align-items: flex-start;
+        -webkit-box-align: flex-start;
     }
 
     .story-title h1 {
@@ -139,6 +190,7 @@
 
     .success-story-wrapper {
         align-items: flex-start;
+        -webkit-box-align: flex-start;
     }
 
 }
@@ -146,6 +198,7 @@
     .story>div {
         width: 80%;
         align-items: flex-start;
+        -webkit-box-align: flex-start;
     }
 
 }

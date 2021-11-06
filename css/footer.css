@@ -13,11 +13,19 @@ footer section {
 
 .footer-top-section {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     min-height: 80vh;
     border-bottom: 1px solid #575e61;
+    display: flex;
+    display: -webkit-flex;
+    display: -webkit-box;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
 }
 
 .footer-top-section h1 {
@@ -29,7 +37,22 @@ footer section {
     display: flex;
     justify-content: center;
     align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
+    display: -webkit-flex;
+    display: -webkit-box;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+
 }
 
 .footer-top-section a {
@@ -39,10 +62,17 @@ footer section {
     border-radius: 5px;
     background-color: #2493df;
     color: #fff;
-    display: flex;
+    margin: 30px 0;
+    display: -webkit-flex;
+    display: -webkit-box;
     justify-content: center;
     align-items: center;
-    margin: 30px 0;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
 }
 
 .social-media-list {
@@ -52,6 +82,14 @@ footer section {
     align-items: center;
     min-height: 120px;
     justify-content: space-between;
+    display: -webkit-flex;
+    display: -webkit-box;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: space-between;
+    -ms-flex-pack: space-between;
+    -webkit-justify-content: space-between;
 }
 
 .social-media-list ul {
@@ -59,6 +97,11 @@ footer section {
     align-items: center;
     color: #fff;
     height: 100%;
+    display: -webkit-flex;
+    display: -webkit-box;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
 }
 
 .social-media-list li {
@@ -67,6 +110,16 @@ footer section {
     display: flex;
     justify-content: center;
     align-items: center;
+    display: -webkit-flex;
+    display: -webkit-box;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
 }
 
 .footer-list-menu {
@@ -77,13 +130,29 @@ footer section {
     padding: 0 50px;
     align-items: center;
     justify-content: space-between;
+    display: -webkit-flex;
+    display: -webkit-box;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: space-between;
+    -ms-flex-pack: space-between;
+    -webkit-justify-content: space-between;
 }
 
 .footer-list-menu ul {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
     min-height: 100px;
+    justify-content: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: -webkit-box;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-align: center;
 
 }
 
@@ -113,27 +182,36 @@ footer section {
 .footer-list-menu span {
     color: red;
 }
-.social-media-icon{
+
+.social-media-icon {
     display: flex;
+    display: -webkit-flex;
+    display: -webkit-box;
 
 }
-.social-media-icon a{
+
+.social-media-icon a {
     margin: 0 5px;
 }
-.social-media-icon a img{
+
+.social-media-icon a img {
     width: 100px;
 }
-.social-media-list img{
+
+.social-media-list img {
     width: 40px;
     height: 40px;
-    margin:0 10px;
+    margin: 0 10px;
 }
+
 @media screen and (max-width:600px) {
     .footer-top-section h1 {
         font-size: 3rem;
         text-align: center;
         padding: 0 20px;
         line-height: 1;
+        align-items: center;
+        -webkit-box-align: center;
     }
 
     .social-media-list,
@@ -141,6 +219,8 @@ footer section {
         padding: 20px 0;
         flex-wrap: wrap;
         align-items: center;
+        -webkit-box-align: center;
+        -webkit-flex-wrap: wrap;
     }
 
     .footer-list-menu ul,
@@ -150,6 +230,8 @@ footer section {
         align-items: center;
         border-bottom: 1px solid rgb(128, 123, 123);
         padding: 20px;
+        -webkit-flex-wrap: wrap;
+        -webkit-box-align: center;
 
     }
 
@@ -165,38 +247,63 @@ footer section {
         display: flex;
         justify-content: center;
         align-items: center;
+        display: -webkit-flex;
+        display: -webkit-box;
+        justify-content: center;
+        align-items: center;
+        -webkit-box-align: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-justify-content: center;
+        justify-content: center;
     }
-    .social-media-icon{
+
+    .social-media-icon {
         display: flex;
         width: 100%;
         padding: 20px;
         align-items: center;
+        display: -webkit-flex;
+        display: -webkit-box;
+        align-items: center;
+        -webkit-box-align: center;
     }
 
 
 }
-.social-media-icon{
+
+.social-media-icon {
     display: flex;
+    display: -webkit-flex;
+    display: -webkit-box;
+
 
 }
-.social-media-icon a img{
+
+.social-media-icon a img {
     width: 100px;
 }
-@media screen and (min-width:600px) and (max-width:1200px){
+
+@media screen and (min-width:600px) and (max-width:1200px) {
     .social-media-list li {
         margin: 10px;
     }
-    .social-media-list ul{
+
+    .social-media-list ul {
         /* width: 80%; */
         min-height: 50px;
         flex-wrap: wrap;
-
+        -webkit-flex-wrap: wrap;
     }
-    .footer-list-menu ,
-    .social-media-list  {
+
+    .footer-list-menu,
+    .social-media-list {
         flex-wrap: wrap;
         padding: 20px 0;
+        -webkit-flex-wrap: wrap;
     }
+
     .footer-list-menu ul,
     .social-media-list ul {
         width: 100%;
@@ -204,15 +311,22 @@ footer section {
         align-items: center;
         border-bottom: 1px solid rgb(128, 123, 123);
         padding: 20px;
+        -webkit-flex-wrap: wrap;
+        -webkit-box-align: center;
 
     }
-    .social-media-icon{
+
+    .social-media-icon {
         display: flex;
         width: 100%;
         padding: 20px;
         align-items: center;
+        display: -webkit-flex;
+        display: -webkit-box;
+        -webkit-box-align: center;
     }
-    .footer-list-menu div{
+
+    .footer-list-menu div {
         padding: 10px 20px;
     }
 
