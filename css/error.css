@@ -9,17 +9,17 @@
     display: -webkit-flex;
     display: -webkit-box;
     justify-content: center;
-    align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
     -webkit-box-align: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-justify-content: center;
     justify-content: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
     -ms-flex-direction: column;
+    display: -ms-flexbox;
     display: flex;
 
 }

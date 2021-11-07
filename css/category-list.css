@@ -3,17 +3,11 @@
     min-height: 100vh;
     display: -webkit-flex;
     display: -webkit-box;
-    justify-content: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-justify-content: center;
-    justify-content: center;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;    -ms-flex-pack: center;    justify-content: center;
     background-color: rgb(238, 245, 245);
     padding: 40px 0;
-    transform: translateY(100px);
+    -webkit-transform: translateY(100px);    -ms-transform: translateY(100px);    transform: translateY(100px);
 
 }
 
@@ -49,11 +43,8 @@
     justify-content: center;
     align-items: center;
     -webkit-box-align: center;
-    -webkit-box-pack: space-between;
-    -ms-flex-pack: space-between;
-    -webkit-justify-content: space-between;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;    -ms-flex-pack: justify;    justify-content: space-between;
     align-items: center;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;

@@ -2,9 +2,11 @@
 .story {
     width: 100%;
     min-height: 90vh;
+    display: -ms-flexbox;
     display: flex;
     justify-content: center;
-    align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
     padding: 50px;
     display: -webkit-flex;
     display: -webkit-box;
@@ -14,20 +16,20 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-justify-content: center;
     justify-content: center;
 }
 
 .story>div {
     width: 50%;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: column;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
     -ms-flex-direction: column;
     justify-content: center;
-    align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
     display: -webkit-flex;
     display: -webkit-box;
     justify-content: center;
@@ -36,7 +38,6 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-justify-content: center;
     justify-content: center;
 }
 
@@ -49,19 +50,21 @@
     height: 300px;
     width: 100%;
     border-radius: 10px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .success-story-wrapper {
     width: 100%;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: column;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
     -ms-flex-direction: column;
     justify-content: center;
-    align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
     border-bottom: 1px solid rgb(196, 189, 189);
     padding: 30px 0;
     display: -webkit-flex;
@@ -72,20 +75,22 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-justify-content: center;
     justify-content: center;
 }
 
 .absolute {
     position: absolute;
     background-color: #fff;
-    box-shadow: 0px 0px 5px 0px rgb(233, 228, 228);
+    -webkit-box-shadow: 0px 0px 5px 0px rgb(233, 228, 228);
+            box-shadow: 0px 0px 5px 0px rgb(233, 228, 228);
     border-radius: 10px;
     height: 60px;
     min-width: 50px;
     padding: 0 10px;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
     justify-content: center;
     display: -webkit-flex;
     display: -webkit-box;
@@ -95,7 +100,6 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-justify-content: center;
     justify-content: center;
 }
 
@@ -150,6 +154,7 @@
 .thanks {
     padding: 20px 0;
     color: red;
+    display: -ms-flexbox;
     display: flex;
     font-size: 1.2rem;
     display: -webkit-flex;
@@ -168,7 +173,8 @@
 
     .story>div {
         width: 95%;
-        align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
         -webkit-box-align: flex-start;
     }
 
@@ -189,7 +195,8 @@
     }
 
     .success-story-wrapper {
-        align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
         -webkit-box-align: flex-start;
     }
 
@@ -197,7 +204,8 @@
 @media screen and (min-width:768px) and (max-width:1200px){
     .story>div {
         width: 80%;
-        align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
         -webkit-box-align: flex-start;
     }
 

@@ -1,11 +1,10 @@
 .header-user-details {
-    display: flex;
-    justify-content: space-between;
-    display: -webkit-flex;
     display: -webkit-box;
-    -webkit-box-pack: space-between;
-    -ms-flex-pack: space-between;
-    -webkit-justify-content: space-between;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .go-pro {
@@ -20,10 +19,7 @@
     justify-content: center;
     align-items: center;
     -webkit-box-align: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-justify-content: center;
     justify-content: center;
     display: flex;
     justify-content: center;
@@ -44,15 +40,10 @@
     margin: 0 20px;
     display: -webkit-flex;
     display: -webkit-box;
-    justify-content: center;
     align-items: center;
     -webkit-box-align: center;
-    -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    -webkit-justify-content: space-evenly;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    -webkit-box-pack: space-evenly;    -ms-flex-pack: space-evenly;    justify-content: space-evenly;
 
 }
 
@@ -90,10 +81,7 @@ header i {
     justify-content: center;
     align-items: center;
     -webkit-box-align: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-justify-content: center;
     justify-content: center;
     display: flex;
     justify-content: center;
@@ -114,35 +102,31 @@ header i {
     border-bottom-left-radius: 40%;
     border-bottom-right-radius: 40%;
     color: #fff;
-    display: -webkit-flex;
     display: -webkit-box;
-    justify-content: center;
-    align-items: center;
-    -webkit-box-align: center;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+            align-items: center;
 }
 
 .user-info {
     width: 45%;
     display: -webkit-flex;
     display: -webkit-box;
-    align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
     -webkit-box-align: center;
-    -webkit-box-pack: flex-start;
-    -ms-flex-pack: flex-start;
-    -webkit-justify-content: flex-start;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
+    -webkit-box-pack: start;    -ms-flex-pack: start;    justify-content: flex-start;
     height: 100%;
     align-items: center;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .user-info img {
@@ -166,17 +150,24 @@ header i {
     position: absolute;
     left: 50%;
     top: 330px;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%);
     display: -webkit-flex;
     display: -webkit-box;
-    align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
     -webkit-box-align: center;
     -webkit-box-pack: space-between;
     -ms-flex-pack: space-between;
     -webkit-justify-content: space-between;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+            justify-content: space-between;
     align-items: center;
     min-width: 70vh;
 }
@@ -191,13 +182,15 @@ header i {
     color: #fff;
     display: -webkit-flex;
     display: -webkit-box;
-    align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
     -webkit-box-align: center;
     -webkit-box-pack: space-between;
     -ms-flex-pack: space-between;
     -webkit-justify-content: space-between;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;
     align-items: center;
 }
 
@@ -226,7 +219,6 @@ header i {
     margin: 30px 0;
     border-radius: 5px;
     padding: 20px 30px;
-
 }
 
 .even {
@@ -235,25 +227,22 @@ header i {
     background-color: rgb(223, 236, 236);
     display: -webkit-flex;
     display: -webkit-box;
-    align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
     -webkit-box-align: center;
-    -webkit-box-pack: space-between;
-    -ms-flex-pack: space-between;
-    -webkit-justify-content: space-between;
+    display: -ms-flexbox;
     display: flex;
     border-radius: 5px;
     padding: 15px 20px;
     align-items: center;
     font-size: .7rem;
-    justify-content: space-between;
+    -webkit-box-pack: justify;    -ms-flex-pack: justify;    justify-content: space-between;
     min-height: 1px;
 
 }
 
 .even>div {
-    display: -webkit-flex;
-    display: -webkit-box;
-    display: flex;
+    display: -webkit-box;    display: -ms-flexbox;    display: flex;
 }
 
 .even img {
@@ -272,14 +261,15 @@ header i {
     display: inline-block;
     display: -webkit-flex;
     display: -webkit-box;
-    justify-content: center;
-    align-items: center;
-    -webkit-box-align: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    -webkit-box-align: center;
     justify-content: center;
-    -webkit-justify-content: center;
     justify-content: center;
+    display: -ms-flexbox;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -288,13 +278,13 @@ header i {
 
 .course-section {
     width: 100%;
-    display: -webkit-flex;
     display: -webkit-box;
-    -webkit-justify-content: space-between;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;    -ms-flex-pack: justify;    justify-content: space-between;
     min-height: 50vh;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap
 }
 
 .course-link {
@@ -302,14 +292,15 @@ header i {
     height: 30px;
     display: -webkit-flex;
     display: -webkit-box;
-    justify-content: center;
-    align-items: center;
-    -webkit-box-align: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    -webkit-box-align: center;
     justify-content: center;
-    -webkit-justify-content: center;
     justify-content: center;
+    display: -ms-flexbox;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -329,12 +320,18 @@ header i {
     width: 48%;
     display: -webkit-flex;
     display: -webkit-box;
-    align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
     -webkit-box-align: center;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+            flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .course-section>div>div {
@@ -349,11 +346,12 @@ header i {
     display: -webkit-flex;
     display: -webkit-box;
     -webkit-box-align: center;
-    -webkit-justify-content: space-between;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;    -ms-flex-pack: justify;    justify-content: space-between;
     margin: 25px 0;
-    align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
 }
 
 .manage {
@@ -368,11 +366,10 @@ header i {
 
 .left-section-course p,
 .code-coach p {
-    display: -webkit-flex;
     display: -webkit-box;
-    -webkit-justify-content: space-between;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;    -ms-flex-pack: justify;    justify-content: space-between;
     color: rgb(97, 99, 97);
 }
 
@@ -418,12 +415,13 @@ progress::-webkit-progress-value {
     width: 100%;
     display: -webkit-flex;
     display: -webkit-box;
-    align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
     -webkit-box-align: center;
-    -webkit-justify-content: space-between;
+    display: -ms-flexbox;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    -webkit-box-pack: justify;    -ms-flex-pack: justify;    justify-content: space-between;
     margin-bottom: 10px;
 }
 
@@ -433,14 +431,15 @@ progress::-webkit-progress-value {
     border-radius: 10px;
     display: -webkit-flex;
     display: -webkit-box;
-    justify-content: center;
-    align-items: center;
-    -webkit-box-align: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    -webkit-box-align: center;
     justify-content: center;
-    -webkit-justify-content: center;
     justify-content: center;
+    display: -ms-flexbox;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -458,8 +457,8 @@ progress::-webkit-progress-value {
 
 .company {
     width: 100%;
-    display: -webkit-flex;
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-size: .7rem;
     margin: 15px 0;
@@ -506,14 +505,15 @@ progress::-webkit-progress-value {
     color: #fff;
     display: -webkit-flex;
     display: -webkit-box;
-    justify-content: center;
-    align-items: center;
-    -webkit-box-align: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    -webkit-box-align: center;
     justify-content: center;
-    -webkit-justify-content: center;
     justify-content: center;
+    display: -ms-flexbox;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -527,20 +527,22 @@ progress::-webkit-progress-value {
 
 .carousel .swiper-button-next,
 .carousel .swiper-button-prev {
-    transform: scale(.4);
+    -webkit-transform: scale(.4);    -ms-transform: scale(.4);    transform: scale(.4);
     top: 30px;
 }
 
 
 .carousel .swiper-button-prev {
-    transform: translateX(300px) scale(.4);
+    -webkit-transform: translateX(300px) scale(.4);    -ms-transform: translateX(300px) scale(.4);    transform: translateX(300px) scale(.4);
 }
 
 .flex-img {
     display: -webkit-flex;
     display: -webkit-box;
-    align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
     -webkit-box-align: center;
+    display: -ms-flexbox;
     display: flex;
     align-items: center;
 }
@@ -558,14 +560,15 @@ progress::-webkit-progress-value {
     padding: 10px 0;
     display: -webkit-flex;
     display: -webkit-box;
-    justify-content: center;
-    align-items: center;
-    -webkit-box-align: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    -webkit-box-align: center;
     justify-content: center;
-    -webkit-justify-content: center;
     justify-content: center;
+    display: -ms-flexbox;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -599,9 +602,6 @@ progress::-webkit-progress-value {
 
 @media screen and (max-width:1100px) {
     .user-info {
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
         justify-content: center;
         width: 100%;
     }
@@ -610,12 +610,18 @@ progress::-webkit-progress-value {
         width: 100%;
         display: -webkit-flex;
         display: -webkit-box;
-        align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
         -webkit-box-align: center;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+                flex-direction: column;
         align-items: center;
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
 
     .profile {
@@ -636,8 +642,6 @@ progress::-webkit-progress-value {
     }
 
     .header-user-details-mobile {
-        display: -webkit-flex;
-        display: -webkit-box;
         display: flex;
         flex-direction: column;
     }
@@ -654,10 +658,7 @@ progress::-webkit-progress-value {
     }
 
     .user-info {
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
+        -webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;
     }
 
     .user-info div {
@@ -677,10 +678,7 @@ progress::-webkit-progress-value {
     }
 
     .course-section {
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
+        -webkit-box-pack: center;  -ms-flex-pack: center;  justify-content: center;
         width: 60%;
     }
 
@@ -699,17 +697,14 @@ progress::-webkit-progress-value {
     }
 
     .carousel .swiper-button-prev {
-        transform: translateX(200px) scale(.4);
+        -webkit-transform: translateX(200px) scale(.4);        -ms-transform: translateX(200px) scale(.4);        transform: translateX(200px) scale(.4);
     }
 
 }
 
 @media screen and (min-width:401px) and (max-width:1100px) {
     .course-section {
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
+        -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center;
         width: 60%;
     }
 
@@ -732,15 +727,18 @@ progress::-webkit-progress-value {
 
 @media screen and (min-width:1200px) {
     .carousel .swiper-button-prev {
-        transform: translateX(200px) scale(.4);
+        -webkit-transform: translateX(200px) scale(.4);        -ms-transform: translateX(200px) scale(.4);        transform: translateX(200px) scale(.4);
     }
 
 }
 .profile-handle-responsive{
     display: -webkit-flex;
     display: -webkit-box;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+            align-items: center;
     align-items: center;
-    align-items: center;
+    display: -ms-flexbox;
     display: flex;
 }
 .profile-option {
@@ -760,17 +758,22 @@ progress::-webkit-progress-value {
 .profile-option > ul {
     display: -webkit-flex;
     display: -webkit-box;
-    justify-content: center;
-    -webkit-box-align: flex-start;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: flex-start;
     justify-content: center;
-    -webkit-justify-content: center;
     justify-content: center;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+            flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+            align-items: flex-start;
     padding: 10px 0;
 }
 .profile-option > ul li {
@@ -809,14 +812,15 @@ progress::-webkit-progress-value {
     background-color: rgba(43, 40, 40, 0.5);
     display: -webkit-flex;
     display: -webkit-box;
-    justify-content: center;
-    align-items: center;
-    -webkit-box-align: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    -webkit-box-align: center;
     justify-content: center;
-    -webkit-justify-content: center;
     justify-content: center;
+    display: -ms-flexbox;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -825,8 +829,6 @@ progress::-webkit-progress-value {
 .profile-modal{
     width:550px;
     height: 450px;
-    display: -webkit-flex;
-    display: -webkit-box;
     display: flex;
     background-color: #e4e7ee;
     border-radius: 10px;
@@ -840,9 +842,15 @@ progress::-webkit-progress-value {
     display: -webkit-flex;
     display: -webkit-box;
     -webkit-box-align: flex-start;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+            align-items: flex-start;
     margin: 20px 0;
 }
 .profile-links ul li{
@@ -856,8 +864,12 @@ progress::-webkit-progress-value {
     display: -webkit-flex;
     display: -webkit-box;
     padding: 20px;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+            flex-direction: column;
     position: relative;
     width: 70%;
 
@@ -886,15 +898,19 @@ progress::-webkit-progress-value {
     height: 60px;
 }
 .information {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    padding: 10px 0;
+    padding: 10px 0
 }
 .information div{
     display: -webkit-flex;
     display: -webkit-box;
     -webkit-box-align: center;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
     padding: 0 20px;
 }
 .information div label,.information div button{
@@ -906,10 +922,13 @@ progress::-webkit-progress-value {
     display: inline-block;
 }
 .profile-setting form{
-    display: -webkit-flex;
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+            flex-direction: column;
 }
 .profile-setting input,.profile-setting textarea,.profile-setting select{
     border: 1px solid rgb(164, 164, 167);
@@ -921,7 +940,7 @@ progress::-webkit-progress-value {
 }
 .information{
     width: 100%;
-    display: flex;
+    display: -webkit-box;    display: -ms-flexbox;    display: flex;
 }
 .profile-setting form button{
     margin: 5px 0;
@@ -931,6 +950,18 @@ progress::-webkit-progress-value {
     color: #fff;
     border-radius: 5px;
     font-size: 1rem;
+}
+.profile-setting textarea::-webkit-input-placeholder{
+    font-size: .7rem;
+}
+.profile-setting textarea::-moz-placeholder{
+    font-size: .7rem;
+}
+.profile-setting textarea:-ms-input-placeholder{
+    font-size: .7rem;
+}
+.profile-setting textarea::-ms-input-placeholder{
+    font-size: .7rem;
 }
 .profile-setting textarea::placeholder{
     font-size: .7rem;
@@ -946,8 +977,12 @@ progress::-webkit-progress-value {
     width: 350px;
     height: 300px;
     color: rgb(26, 24, 24);
-    flex-direction: column;
-    box-shadow: 1px 1px 5px gray;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-shadow: 1px 1px 5px gray;
+            box-shadow: 1px 1px 5px gray;
     border-radius: 0 0 5px 5px;
 }
 .seting-mobile-box > div ,.seting-mobile-box ul{
@@ -956,9 +991,11 @@ progress::-webkit-progress-value {
 .seting-mobile-box > div{
     display: -webkit-flex;
     display: -webkit-box;
-    align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
     -webkit-box-align: center;
     border-bottom: 1px solid rgb(206, 204, 204);
+    display: -ms-flexbox;
     display: flex;
     align-items: center;
 }

@@ -78,18 +78,12 @@ footer section {
 .social-media-list {
     width: 100%;
     padding: 30px 50px;
-    display: flex;
+    display: -webkit-box;    display: -ms-flexbox;    display: flex;
     align-items: center;
     min-height: 120px;
-    justify-content: space-between;
-    display: -webkit-flex;
-    display: -webkit-box;
-    justify-content: center;
+    -webkit-box-pack: justify;    -ms-flex-pack: justify;    justify-content: space-between;
     align-items: center;
     -webkit-box-align: center;
-    -webkit-box-pack: space-between;
-    -ms-flex-pack: space-between;
-    -webkit-justify-content: space-between;
 }
 
 .social-media-list ul {
@@ -123,21 +117,15 @@ footer section {
 }
 
 .footer-list-menu {
-    display: flex;
+    display: -webkit-box;    display: -ms-flexbox;    display: flex;
     background-color: #100f14;
     width: 100%;
     min-height: 100px;
     padding: 0 50px;
     align-items: center;
-    justify-content: space-between;
-    display: -webkit-flex;
-    display: -webkit-box;
-    justify-content: center;
+    -webkit-box-pack: justify;    -ms-flex-pack: justify;    justify-content: space-between;
     align-items: center;
     -webkit-box-align: center;
-    -webkit-box-pack: space-between;
-    -ms-flex-pack: space-between;
-    -webkit-justify-content: space-between;
 }
 
 .footer-list-menu ul {

@@ -72,7 +72,7 @@
     font-size: 1.7rem;
     padding: 3px 20px;
     display: inline-block;
-    transform: translateY(-8px);
+    -webkit-transform: translateY(-8px);    -ms-transform: translateY(-8px);    transform: translateY(-8px);
 }
 
 .home-propage-flexbox {
@@ -125,10 +125,13 @@
 
 .items {
     width: 80%;
+    display: -ms-flexbox;
     display: flex;
     min-height: 200px;
-    align-items: center;
-    flex-wrap: wrap;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     justify-content: center;
     padding: 40px 0;
     display: -webkit-flex;
@@ -139,7 +142,6 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-justify-content: center;
     justify-content: center;
     -webkit-flex-wrap: wrap;
     display: flex;
@@ -149,8 +151,12 @@
     margin: 0 25px;
     color: #fbb461;
     font-size: 1.5rem;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
-    align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+            align-items: center;
 }
 
 .items i {
@@ -209,9 +215,8 @@
     }
 
     .items {
-        justify-content: flex-start;
-        -ms-flex-pack: flex-start;
-        -webkit-justify-content: flex-start;
+        -webkit-box-pack: start;        -ms-flex-pack: start;        justify-content: flex-start;
+        
     }
 
     .items div {

@@ -17,7 +17,7 @@ var swiper = new Swiper('.swiper', {
 
 // change style of elemnts when scroll
 let links = document.querySelectorAll("nav ul li a")
-window.addEventListener("scroll", () => {
+window.addEventListener("scroll", function() {
     if (window.scrollY > 500) {
         document.querySelector("header").style.background = "rgb(240, 236, 233)";
         // document.querySelector('.logo-icon').src = '../img/sololearn.png'

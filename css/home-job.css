@@ -2,9 +2,15 @@
 .home-job {
     width: 100%;
     min-height: 250px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .home-job h1 {
@@ -19,10 +25,15 @@
 }
 
 .change {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
     width: 420px;
-    animation: opacity 2s ease infinite;
-    justify-content: center;
+    -webkit-animation: opacity 2s ease infinite;
+            animation: opacity 2s ease infinite;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 @media screen and (max-width:768px) {

@@ -129,11 +129,11 @@
 }
 
 .answer div img {
-    transform: translateY(-150px);
+    -webkit-transform: translateY(-150px);    -ms-transform: translateY(-150px);    transform: translateY(-150px);
 }
 
 .answer>div div {
-    transform: translateY(-120px);
+    -webkit-transform: translateY(-120px);    -ms-transform: translateY(-120px);    transform: translateY(-120px);
     text-align: center;
     padding: 0 30px;
 }
@@ -179,7 +179,8 @@
     background-color: #2493df;
     color: #fff;
     display: grid;
-    align-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     margin: 20px 0;
 }
 
@@ -206,7 +207,7 @@
 
     .answer div img {
         width: 300px;
-        transform: translateY(-200px);
+        -webkit-transform: translateY(-200px);        -ms-transform: translateY(-200px);        transform: translateY(-200px);
 
     }
 
@@ -235,7 +236,7 @@
     }
 
     .answer>div div {
-        transform: translateY(-85px);
+        -webkit-transform: translateY(-85px);        -ms-transform: translateY(-85px);        transform: translateY(-85px);
         text-align: center;
         padding: 0 30px;
     }

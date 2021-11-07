@@ -4,13 +4,14 @@
     display: -webkit-flex;
     display: -webkit-box;
     justify-content: center;
+    -ms-flex-align: center;
     align-items: center;
     -webkit-box-align: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-justify-content: center;
     justify-content: center;
+    display: -ms-flexbox;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,18 +24,18 @@
     display: -webkit-flex;
     display: -webkit-box;
     justify-content: center;
+    -ms-flex-align: center;
     align-items: center;
     -webkit-box-align: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-justify-content: center;
     justify-content: center;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: column;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
     -ms-flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -68,14 +69,16 @@
     border-radius: 5px;
     height: 40px;
     margin: 10px 0;
-    display: flex;
     padding: 0 10px;
+    -ms-flex-align: center;
     align-items: center;
     display: -webkit-flex;
     display: -webkit-box;
-    justify-content: center;
     align-items: center;
     -webkit-box-align: center;
+    display: -ms-flexbox;
+    display: flex;
+
 }
 
 .login form>div>div span {
@@ -104,8 +107,14 @@
     height: 40px;
     background-color: #2493df;
     color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     border-radius: 5px;
     font-size: .9rem;
@@ -125,6 +134,8 @@
     height: .5px;
     background-color: rgba(153, 144, 144, 0.8);
     position: absolute;
+    -webkit-transform: translate(5px, 12px);
+    -ms-transform: translate(5px, 12px);
     transform: translate(5px, 12px)
 }
 
@@ -134,24 +145,27 @@
     height: .5px;
     background-color: rgba(153, 144, 144, 0.8);
     position: absolute;
+    -webkit-transform: translate(-105%, 12px);
+    -ms-transform: translate(-105%, 12px);
     transform: translate(-105%, 12px)
 }
 
 .signin-with-media {
     width: 100%;
-    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
-    align-items: center;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
     display: -webkit-flex;
     display: -webkit-box;
-    justify-content: center;
+    -ms-flex-align: center;
     align-items: center;
     -webkit-box-align: center;
-    -webkit-box-pack: space-between;
-    -ms-flex-pack: space-between;
-    -webkit-justify-content: space-between;
+    display: -ms-flexbox;
+    display: flex;
+
 }
 
 .signin-with-media button {
@@ -161,13 +175,14 @@
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
     justify-content: center;
+    -ms-flex-align: center;
     align-items: center;
     -webkit-box-align: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-justify-content: center;
     justify-content: center;
+    display: -ms-inline-flexbox;
     display: inline-flex;
     justify-content: center;
     align-items: center;

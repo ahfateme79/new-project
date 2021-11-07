@@ -41,11 +41,8 @@
     -webkit-flex-wrap: wrap;
     display: -webkit-flex;
     display: -webkit-box;
-    -webkit-box-pack: space-between;
-    -ms-flex-pack: space-between;
-    -webkit-justify-content: space-between;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;    -ms-flex-pack: justify;    justify-content: space-between;
 
 }
 
@@ -84,7 +81,7 @@
 }
 
 .platforms>div img {
-    transform: scale(.8);
+    -webkit-transform: scale(.8);    -ms-transform: scale(.8);    transform: scale(.8);
 }
 
 @media screen and (max-width:900px) {

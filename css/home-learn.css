@@ -1,7 +1,7 @@
 /* home-learn */
 .home-learn {
     width: 100%;
-    transform: translateY(100px);
+    -webkit-transform: translateY(100px);    -ms-transform: translateY(100px);    transform: translateY(100px);
     min-height: 90vh;
     background-color: #1f1e28;
     display: flex;
