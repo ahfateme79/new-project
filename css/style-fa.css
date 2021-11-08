@@ -1,0 +1,63 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p,
+a,
+footer,
+.story-description,
+.home-propage-flexbox,
+.nav-menu {
+    direction: rtl;
+}
+
+.home-propage-head h1::after {
+    content: 'حرفه ای';
+}
+
+.social-media-list h3 {
+    font-size: .9rem;
+}
+@media screen and (max-width:600px) {
+    .social-media-list {
+        padding: 20px;
+        flex-wrap: wrap;
+        align-items: center;
+        -webkit-box-align: center;
+        -webkit-flex-wrap: wrap;
+    }
+
+    .footer-list-menu ul {
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+        border-bottom: 1px solid rgb(128, 123, 123);
+        padding: 20px;
+        -webkit-flex-wrap: wrap;
+        -webkit-box-align: center;
+
+    }
+
+    .social-media-list li{
+        width: 150px;
+        margin: 10px 12px;
+    }
+
+   
+
+    .social-media-icon {
+        display: flex;
+        width: 100%;
+        padding: 20px;
+        align-items: center;
+        display: -webkit-flex;
+        display: -webkit-box;
+        align-items: center;
+        -webkit-box-align: center;
+    }
+
+
+}

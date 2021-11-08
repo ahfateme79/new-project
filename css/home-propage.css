@@ -181,7 +181,7 @@
 }
 
 .btn-pro a {
-    width: 90%;
+    width: 95%;
     height: 60px;
     background-color: #fbb461;
     color: rgb(102, 43, 4);
@@ -189,6 +189,7 @@
     font-weight: bold;
     border-radius: 5px;
     display: inline-block;
+    text-align: center;
     /* display: -webkit-flex;
     display: -webkit-box;
     justify-content: center;

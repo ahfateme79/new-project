@@ -1,0 +1,153 @@
+.question {
+    width: 100%;
+    min-height: 180vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(246, 246, 250);
+}
+
+.question>div {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.question h1 {
+    font-size: 2.2rem;
+}
+.write-quiz{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 500px;
+}
+.detail-question{
+    padding: 20px 30px; 
+    display: flex;
+    flex-direction: column;
+}
+.detail-question > div{
+    width: 350px;
+    min-height: 230px;
+    border-radius: 5px;
+    border: 2px solid rgb(201, 211, 221);
+    margin: 20px 0;
+
+}
+.explain-detail
+.question form {
+    width: 70%;
+    height: 100%;
+    margin: 40px 0;
+}
+
+.question form>div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    box-shadow: 1px 1px 5px rgb(127, 136, 148);
+    padding: 30px;
+    height: 90%;
+    border-radius: 5px;
+}
+
+.question form label {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.question form label span {
+    font-size: .9rem;
+    color: rgb(94, 91, 91);
+    font-weight: normal;
+}
+
+.question form input,
+.question form textarea {
+    width: 90%;
+    padding: 20px;
+    border: 1px solid rgb(207, 200, 200);
+    margin: 5px 0;
+    border-radius: 5px;
+
+}
+
+.question form button {
+    width: 150px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2493df;
+    color: #fff;
+    margin: 30px 0;
+    border-radius: 5px;
+
+}
+
+.quiz-link {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.quiz-link>details {
+    margin: 10px;
+    width: 47%;
+    height: 70px;
+    border-radius: 5px;
+    display: inline-block;
+    border: 2px solid rgb(217, 226, 235);
+}
+.quiz-link>details[open] {
+    height: 130px;
+}
+.quiz-link details summary {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    color: rgb(4, 46, 80);
+}
+
+.quiz-link details summary span {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(195, 195, 216);
+    padding: 3px;
+    background-image: url(../img/arrow-down-sign-to-navigate.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+}
+.quiz-link details[open] summary span {
+    background-image: url(../img/navigate-up-arrow.png);
+}
+
+.quiz-link div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: .9rem;
+}
+
+.quiz-link a {
+    color: #1878b8;
+}
+
+.quiz-link p {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 60%;
+    margin: 5px 0;
+    color: rgb(94, 90, 90);
+}
