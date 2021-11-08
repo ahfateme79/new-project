@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style-fa.css">
+    <!-- font family -->
+    <link href="http://fonts.cdnfonts.com/css/iranian-sans" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <section class="item-content">
+        <div class="welcome">
+            <a href=""><i class="fas fa-times"></i><span class="welcome-head">انتخاب نوع</span></a>
+            <div>
+                <span class="mobile-welcome">به انتخاب نوع خوش آمدید!
+                </span>
+                <div class="progress-bar"> <span></span><span></span>
+                </div>
+            </div>
+            <div> <button disabled><i class="fas fa-chevron-left"></i><i class="fas fa-comment-alt"></i><span
+                        class="welcome-head">3604 نظر</span></button>
+            </div>
+        </div>
+        <div class="contents">
+            <h2>انتخاب نوع</h2>
+            <p>انواع داده های مربوطه را به مقادیر داده شده بکشید و رها کنید:
+            </p>
+            <div class="drop-content" id="drop-content" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+            </div>
+            <div class="drag-content" ondrop="drop(event)" ondragover="allowDrop(event)" class="items-word">
+                <span id="word1" draggable="true" ondragstart="drag(event)">به&nbsp;</span>
+                <span id="word2" draggable="true" ondragstart="drag(event)">خوش آمد &nbsp;</span>
+                <span id="word3" draggable="true" ondragstart="drag(event)">نوع&nbsp;</span>
+                <span id="word4" draggable="true" ondragstart="drag(event)">انتخاب&nbsp;</span>
+            </div>
+        </div>
+        <div class="continue-btn btn-section">
+            <button>بازگشت
+            </button>
+            <i class="fas fa-lock-open-alt"></i>
+            <button disabled>بررسی</button>
+        </div>
+    </section>
+
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("Text", ev.target.id);
+            console.log(ev.target.innerText);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("Text");
+            ev.target.appendChild(document.getElementById(data));
+            let c = ev.target.childNodes
+            console.log(c)
+            let x = Array.from(c)
+            console.log(x)
+            if (x.length === 5) {
+                console.log(x.join())
+            }
+        }
+    </script>
+</body>
+
+</html>

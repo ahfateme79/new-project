@@ -1,3 +1,6 @@
+*{
+    font-family: 'Iranian Sans', sans-serif;
+}
 h1,
 h2,
 h3,
@@ -10,16 +13,80 @@ a,
 footer,
 .story-description,
 .home-propage-flexbox,
-.nav-menu {
+.nav-menu,.welcome,.err {
     direction: rtl;
 }
 
+.home-learn h1 {
+    font-size: 3.5rem;
+}
+.cards>div h2 {
+    font-size: 1.5rem;
+}
+.cards>div>p,.cards >div>strong {
+    font-size: .9rem;
+    line-height: 2;
+}
+.home-platform h1 {
+    font-size: 3rem;
+}
+.platforms h2 {
+    font-size: 1.5rem;
+}
+.platforms p {
+    font-size: 1rem;
+}
+.Supportive-child span {
+    font-size: 3.5rem;
+}
+.home-job h1 {
+    font-size: 2rem;
+}
+.answer div h3 {
+    font-size: 1.5rem;
+}
+
+.why-code p {
+    font-size: 1rem;
+}
+.home-propage-head h1 {
+    font-size: 3rem;
+}
+.home-propage-flexbox div span {
+    font-size: 3rem;
+}
+
+.home-propage-flexbox div p {
+    font-size: 1rem;
+}
+.btn-pro a {
+    font-size: .8rem;
+}
+.story-title h1 {
+    font-size: 3rem;
+}
+.story-description p,
+.story-description span {
+    font-size: 1.1rem;
+}
 .home-propage-head h1::after {
     content: 'حرفه ای';
 }
+.award h1 {
+    font-size: 3rem;
+}
+.footer-top-section h1 {
+    font-size: 3rem;
+}
+.footer-list-menu a {
+    font-size: .8rem;
+}
+.footer-list-menu div p {
+    font-size: .9rem;
+}
 
 .social-media-list h3 {
-    font-size: .9rem;
+    font-size: .8rem;
 }
 @media screen and (max-width:600px) {
     .social-media-list {
