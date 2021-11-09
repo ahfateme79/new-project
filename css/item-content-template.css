@@ -212,9 +212,25 @@
     padding: 15px;
     box-shadow: 1px 1px 5px rgb(204, 201, 201);
     margin: 10px 0;
+    position: relative;
 }
-.date-sicencs input{
+.date-sicencs input[type="checkbox"]{
     margin: 0 5px;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 1px solid rgb(161, 14, 167);
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+.date-sicencs input[type="checkbox"]:checked{
+  background-color: rgb(236, 132, 236);
+  background-image: url(https://img.icons8.com/material-outlined/24/000000/checkmark--v2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .btn-section i{
     -webkit-transform: translateX(50px);    -ms-transform: translateX(50px);    transform: translateX(50px);
