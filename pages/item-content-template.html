@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;1,300;1,400;1,600&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
 
 
@@ -26,7 +26,47 @@
                 <div class="progress-bar"> <span></span><span></span><span></span><span></span>
                 </div>
             </div>
-            <div> <button><i class="fas fa-chevron-left"></i><i class="fas fa-comment-alt"></i><span class="welcome-head">3604 Comments</span></button>
+            <div> <button class="open-comment"><i class="fas fa-chevron-left"></i><i
+                        class="fas fa-comment-alt"></i><span class="welcome-head">3604 Comments</span></button>
+                    <aside>
+                        <div class="aside-header">
+                            <button class="hide-comment"><i class="fas fa-chevron-left"></i><i
+                                    class="fas fa-comment-alt"></i><span class="welcome-head">hide</span></button>
+
+                            <button>3604 Comments</span></button>
+                        </div>
+                        <div class="aside-search-input">
+                            <form action="">
+                                <input type="text" placeholder="write a comment...">
+                            </form>
+                        </div>
+                        <div class="comment-wrapper">
+                            <input type="radio" name="comment-tab" id="popular" checked><input type="radio"
+                                name="comment-tab" id="resent">
+                            <div class="comment-tab">
+                                <label for="popular" id="first-tab">Popular</label><label for="resent"
+                                    id="second-tab">Resent</label>
+                            </div>
+                            <div class="comment-content">
+                                <div class="popular-comment" id="popular-comment">
+                                </div>
+                                <div id="resent-comment">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur</p>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur</p>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur</p>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur</p>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur</p>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur</p>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur</p>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur</p>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur</p>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur</p>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
             </div>
         </div>
         <div class="contents">
@@ -45,6 +85,48 @@
             <button>Continue</button>
         </div>
     </section>
+
+
+    <script>
+        let popularcomment = document.querySelector('.popular-comment')
+        let opencomment = document.querySelector('.open-comment')
+        let aside = document.querySelector('aside')
+        let hidecomment = document.querySelector('.hide-comment')
+
+        opencomment.addEventListener('click', (e) => {
+            aside.style.right = '0'
+            aside.style.transition = "all 1s ease"
+        })
+        hidecomment.addEventListener('click', (e) => {
+            aside.style.right = '-100%'
+            aside.style.transition = "all 1s ease"
+
+        })
+        var myHeaders = new Headers();
+        myHeaders.append("Content-Type", "application/json");
+
+        var raw = JSON.stringify({
+            "lectureKey": "9Ikj6mqY04Ov"
+        });
+
+        var requestOptions = {
+            method: 'POST',
+            headers: myHeaders,
+            body: raw,
+            redirect: 'follow',
+            mode: 'cors',
+        };
+
+        fetch("https://techwich.net/twapp/lecture/comment_list", requestOptions)
+            .then(response => response.json())
+            .then(result => {
+                for (let i = 0; i < result.length; i++) {
+                    popularcomment.innerHTML += `<p>${result[i].message}</p>`
+
+                }
+            })
+            .catch(error => console.log('error', error));
+    </script>
 </body>
 
 </html>

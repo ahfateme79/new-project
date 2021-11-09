@@ -36,7 +36,16 @@
     margin: 20px 0;
 
 }
-
+.explain-detail p,.explain-detail a{
+    font-size: .9em;
+}
+.explain-detail div:first-child{
+    border-bottom: 2 px solid rgb(201, 211, 221);
+    padding: 10px;
+}
+.explain-detail div:last-child{
+    padding: 10px;
+}
 .question form {
     width: 70%;
     height: 100%;
