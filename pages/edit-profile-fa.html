@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style-fa.css">
+    <!-- font family -->
+    <link href="http://fonts.cdnfonts.com/css/iranian-sans" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <section class="edit-profile">
+        <div class="edit-profile-details">
+            <h1>ویرایش نمایه</h1>
+
+            <div class="edit-pic-profile">
+                <img src="../img/community-user-16.png" alt="" id="profile">
+                <label for="image-upload">بارگذاری
+                    <input type="file" name="" id="image-upload" onchange="loadFile(event)">
+                </label>
+            </div>
+            <div class="edit-form">
+                <form action="">
+                    <label for="">نام 
+                    </label>
+                    <input type="text">
+                    <label for="">نام خانوادگی
+                    </label>
+                    <input type="text">
+                    <label for="">نام کاربری
+                    </label>
+                    <input type="text">
+                    <label for="">آدرس ایمیل</label>
+                    <input type="email">
+                    <label for="">بیوگرافی</label>
+                    <textarea name="" id="" cols="30" rows="7" placeholder="describe yourself...."></textarea>
+                    <label for="">کشور</label>
+                    <select name="" id="">
+                        <option value="">ایران</option>
+                        <option value="">ایالات متحده آمریکا
+                        </option>
+                        <option value="">افغانستان</option>
+                        <option value="">آلمان</option>
+                        <option value="">چین</option>
+                    </select>
+                    <button class="save-edit">ذخیره</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script>
+        var loadFile = function (event) {
+            var image = document.getElementById("profile");
+            image.src = URL.createObjectURL(event.target.files[0]);
+        };
+    </script>
+</body>
+
+</html>

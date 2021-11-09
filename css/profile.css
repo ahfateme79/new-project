@@ -210,6 +210,11 @@ header i {
     color: rgb(102, 43, 4);
     border-radius: 5px;
     font-size: .9rem;
+    display: -webkit-box;    display: -ms-flexbox;    display: flex;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;    -ms-flex-pack: center;    justify-content: center;
+
 }
 
 .ready {
@@ -693,9 +698,7 @@ progress::-webkit-progress-value {
     .even {
         padding: 10px;
         flex-wrap: wrap;
-
     }
-
     .carousel .swiper-button-prev {
         -webkit-transform: translateX(200px) scale(.4);        -ms-transform: translateX(200px) scale(.4);        transform: translateX(200px) scale(.4);
     }

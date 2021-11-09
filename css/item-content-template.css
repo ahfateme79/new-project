@@ -205,7 +205,6 @@
     height: 40px;
     display: -webkit-flex;
     display: -webkit-box;
-    justify-content: center;
     align-items: center;
     -webkit-box-align: center;
     display: flex;
@@ -254,7 +253,6 @@
 .quiz > div{
     display: -webkit-flex;
     display: -webkit-box;
-    justify-content: center;
     align-items: center;
     -webkit-box-align: center;
     display: flex;

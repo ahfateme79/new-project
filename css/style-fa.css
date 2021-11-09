@@ -1,6 +1,7 @@
-*{
+* {
     font-family: 'Iranian Sans', sans-serif;
 }
+
 h1,
 h2,
 h3,
@@ -13,35 +14,92 @@ a,
 footer,
 .story-description,
 .home-propage-flexbox,
-.nav-menu,.welcome,.err {
+.nav-menu,
+.welcome,
+.err,
+.edit-profile,
+.login-parentو.forgot-passwordو.password,
+.password form,
+.profile,
+.code-coach .swiper-slide,
+.lesson-select-item,.coming-soon,.date-sicencs,.first-code {
     direction: rtl;
+}
+
+.coming-soon h1{
+    text-align: right;
+}
+.code-coach,.write-code {
+    direction: ltr;
+}
+.lesson-tree:before {
+    right: 25px;
+}
+.lesson-tree>span {
+    right: 0;
+    transform: translate(330px,50px);
+    -webkit-transform: translate(330px,50px);
+    -moz-transform: translate(330px,50px);
+    -ms-transform: translate(330px,50px);
+    -o-transform: translate(330px,50px);
+}
+
+
+
+.carousel .swiper-button-prev {
+    -webkit-transform: translateX(0) scale(.4);
+    -ms-transform: translateX(0) scale(.4);
+    transform: translateX(0) scale(.4);
+}
+
+.carousel .swiper-button-next {
+    -webkit-transform: translateX(-200px) scale(.4);
+    -ms-transform: translateX(-200px) scale(.4);
+    transform: translateX(-200px) scale(.4);
+}
+
+.password {
+    order: 2;
+}
+
+.app-column {
+    order: 1;
 }
 
 .home-learn h1 {
     font-size: 3.5rem;
 }
+
 .cards>div h2 {
     font-size: 1.5rem;
 }
-.cards>div>p,.cards >div>strong {
+
+.cards>div>p,
+.cards>div>strong {
     font-size: .9rem;
     line-height: 2;
 }
+
 .home-platform h1 {
     font-size: 3rem;
 }
+
 .platforms h2 {
     font-size: 1.5rem;
 }
+
 .platforms p {
     font-size: 1rem;
 }
+
 .Supportive-child span {
     font-size: 3.5rem;
 }
+
 .home-job h1 {
     font-size: 2rem;
 }
+
 .answer div h3 {
     font-size: 1.5rem;
 }
@@ -49,9 +107,11 @@ footer,
 .why-code p {
     font-size: 1rem;
 }
+
 .home-propage-head h1 {
     font-size: 3rem;
 }
+
 .home-propage-flexbox div span {
     font-size: 3rem;
 }
@@ -59,28 +119,36 @@ footer,
 .home-propage-flexbox div p {
     font-size: 1rem;
 }
+
 .btn-pro a {
     font-size: .8rem;
 }
+
 .story-title h1 {
     font-size: 3rem;
 }
+
 .story-description p,
 .story-description span {
     font-size: 1.1rem;
 }
+
 .home-propage-head h1::after {
     content: 'حرفه ای';
 }
+
 .award h1 {
     font-size: 3rem;
 }
+
 .footer-top-section h1 {
     font-size: 3rem;
 }
+
 .footer-list-menu a {
     font-size: .8rem;
 }
+
 .footer-list-menu div p {
     font-size: .9rem;
 }
@@ -88,6 +156,29 @@ footer,
 .social-media-list h3 {
     font-size: .8rem;
 }
+
+.or-line::after {
+    content: '';
+    width: 150px;
+    height: .5px;
+    background-color: rgba(153, 144, 144, 0.8);
+    position: absolute;
+    -webkit-transform: translate(-5px, 12px);
+    -ms-transform: translate(-5px, 12px);
+    transform: translate(-5px, 12px)
+}
+
+.or-line::before {
+    content: '';
+    width: 150px;
+    height: .5px;
+    background-color: rgba(153, 144, 144, 0.8);
+    position: absolute;
+    -webkit-transform: translate(105%, 12px);
+    -ms-transform: translate(105%, 12px);
+    transform: translate(105%, 12px)
+}
+
 @media screen and (max-width:600px) {
     .social-media-list {
         padding: 20px;
@@ -108,12 +199,12 @@ footer,
 
     }
 
-    .social-media-list li{
+    .social-media-list li {
         width: 150px;
         margin: 10px 12px;
     }
 
-   
+
 
     .social-media-icon {
         display: flex;
