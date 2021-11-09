@@ -22,7 +22,7 @@
     margin: 0 5px;
 }
 .welcome {
-    padding: 50px;
+    padding: 50px 130px;
     align-items: center;
     -webkit-box-align: center;
     -webkit-box-pack: space-between;
@@ -32,6 +32,11 @@
     align-items: center;
     width: 100%;
 
+}
+@media screen and (max-width:768px){
+    .welcome {
+        padding: 50px;}
+    
 }
 .welcome > div:first-child{
     display: -webkit-flex;
