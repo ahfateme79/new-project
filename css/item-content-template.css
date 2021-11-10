@@ -262,9 +262,11 @@
     padding: 15px;
     width: 150px;
     border-radius: 5px;
-    -webkit-transform: translateX(190px);
-    -ms-transform: translateX(190px);
-    transform: translateX(190px);
+    transform: translateX(100px);
+    -moz-transform: translateX(100px);
+    -o-transform: translateX(100px);
+    -webkit-transform: translateX(100px);
+    -ms-transform: translateX(100px);
 }
 
 .fa-comment-alt {
@@ -362,20 +364,23 @@
 }
 
 .btn-section i {
-    -webkit-transform: translateX(50px);
-    -ms-transform: translateX(50px);
-    transform: translateX(50px);
+    transform: translateX(10px);
     color: #2493df;
-
+    -moz-transform: translateX(10px);
+    -o-transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+    -ms-transform: translateX(10px);
 }
 
 .btn-section > button:first-of-type {
     background-color: transparent;
     border: 1px solid #2493df;
     color: #2493df;
-    -webkit-transform: translateX(-50px);
-    -ms-transform: translateX(-50px);
-    transform: translateX(-50px);
+    transform: translateX(-90px);
+    -webkit-transform: translateX(-90px);
+    -moz-transform: translateX(-90px);
+    -ms-transform: translateX(-90px);
+    -o-transform: translateX(-90px);
 }
 
 /* .btn-section button:last-of-type {
@@ -503,6 +508,8 @@
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
+    display: flex;
+    flex-direction: column;
 }
 .lotti-animation{
     width: 100%;
@@ -518,7 +525,8 @@
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 10px 20px;
+    justify-content: center;
+    height: 80px;
 }
 .close-btn button{
     width: 100px;
@@ -533,5 +541,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
 }
