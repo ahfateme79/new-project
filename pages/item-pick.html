@@ -20,14 +20,14 @@
 <body>
     <section class="item-content">
         <div class="welcome">
-            <a href=""><i class="fas fa-times"></i><span class="welcome-head">welcome to python!</span></a>
+            <a href=""><i class="fas fa-times"></i><span class="welcome-head">pick type</span></a>
             <div>
-                <span class="mobile-welcome">welcome to python!</span>
-                <div class="progress-bar"> <span></span><span></span><span></span><span></span>
+                <span class="mobile-welcome">welcome to pick type!</span>
+                <div class="progress-bar"> <span></span><span></span>
                 </div>
             </div>
-            <div> <button class="open-comment"><i class="fas fa-chevron-left"></i><i
-                        class="fas fa-comment-alt"></i><span class="welcome-head">3604 Comments</span></button>
+            <div> <button class="open-comment"><i class="fas fa-chevron-left"></i><i class="fas fa-comment-alt"></i><span
+                        class="welcome-head">3604 Comments</span></button>
                 <aside>
                     <div class="aside-header">
                         <button class="hide-comment"><i class="fas fa-chevron-left"></i><i
@@ -76,22 +76,41 @@
             </div>
         </div>
         <div class="contents">
-            <h2>Welcome to Python</h2>
-            <p><strong>Python</strong> is a high-level programming language, with applications in numerous areas,
-                including web
-                programming, scripting, scientific computing, and artificial intelligence!</p>
-            <p>It is very popular and used by organizations such as Google, NASA, the CIA, and Disney.</p>
-            <div class="err">
-                <i class="fas fa-exclamation-circle"></i>
-                <p>In this course we will be learning Python <strong>version 3</strong>, which is the most recent major
-                    version of Python.</p>
+            <h2>pick type</h2>
+            <p>Drag and drop the corresponding data types to the given values:</p>
+            <div class="drop-content" id="drop-content" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+            </div>
+            <div class="drag-content" ondrop="drop(event)" ondragover="allowDrop(event)" class="items-word">
+                <span id="word1" draggable="true" ondragstart="drag(event)">to&nbsp;</span>
+                <span id="word2" draggable="true" ondragstart="drag(event)">welcome&nbsp;</span>
+                <span id="word3" draggable="true" ondragstart="drag(event)">type&nbsp;</span>
+                <span id="word4" draggable="true" ondragstart="drag(event)">pick&nbsp;</span>
             </div>
         </div>
-        <div class="continue-btn">
-            <button>Continue</button>
+        <div class="continue-btn btn-section">
+            <button>back</button>
+            <i class="fas fa-lock-open-alt"></i>
+            <button class="check-answer">check</button>
+            <div class="pup-up-parent">
+                <div class="pup-up">
+                    <div class="lotti-animation">
+                        <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_jbrw3hcz.json"
+                            background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay>
+                        </lottie-player>
+                    </div>
+                    <div class="close-btn">
+                        <button class="close-pup-up">close</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
+
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js">
+    </script>
 
     <script>
         let popularcomment = document.querySelector('.popular-comment')
@@ -108,30 +127,39 @@
             aside.style.transition = "all 1s ease"
 
         })
-        // var myHeaders = new Headers();
-        // myHeaders.append("Content-Type", "application/json");
 
-        // var raw = JSON.stringify({
-        //     "lectureKey": "9Ikj6mqY04Ov"
-        // });
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
 
-        // var requestOptions = {
-        //     method: 'POST',
-        //     headers: myHeaders,
-        //     body: raw,
-        //     redirect: 'follow',
-        //     mode: 'cors',
-        // };
+        function drag(ev) {
+            ev.dataTransfer.setData("Text", ev.target.id);
+            console.log(ev.target.innerText);
+        }
 
-        // fetch("https://techwich.net/twapp/lecture/comment_list", requestOptions)
-        //     .then(response => response.json())
-        //     .then(result => {
-        //         for (let i = 0; i < result.length; i++) {
-        //             popularcomment.innerHTML += `<p>${result[i].message}</p>`
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("Text");
+            ev.target.appendChild(document.getElementById(data));
+            let c = ev.target.childNodes
+            console.log(c)
+            let x = Array.from(c)
+            console.log(x)
+            if (x.length === 5) {
+                console.log(x.join())
+            }
+        }
+        // pup-up
+        let open_pupup = document.querySelector('.check-answer')
+            let pupup = document.querySelector('.pup-up-parent')
+            let close_pupup = document.querySelector('.close-pup-up')
 
-        //         }
-        //     })
-        //     .catch(error => console.log('error', error));
+            open_pupup.addEventListener('click', () => {
+                pupup.style.display = 'flex'
+            })
+            close_pupup.addEventListener('click', () => {
+                pupup.style.display = 'none'
+            })
     </script>
 </body>
 
