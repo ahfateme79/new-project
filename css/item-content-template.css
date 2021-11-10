@@ -566,3 +566,26 @@
     -ms-transform: translateX(0);
     -o-transform: translateX(0);
 }
+@media screen and (max-width:500px){
+    .pup-up{
+      transform: scale(.8);
+      -webkit-transform: scale(.8);
+      -moz-transform: scale(.8);
+      -ms-transform: scale(.8);
+      -o-transform: scale(.8);
+}
+.btn-section > button:first-of-type{
+    transform: translateX(-40px);
+    -webkit-transform: translateX(-40px);
+    -moz-transform: translateX(-40px);
+    -ms-transform: translateX(-40px);
+    -o-transform: translateX(-40px);
+}
+.btn-section > button:last-of-type{
+    transform: translateX(40px);
+    -webkit-transform: translateX(40px);
+    -moz-transform: translateX(40px);
+    -ms-transform: translateX(40px);
+    -o-transform: translateX(40px);
+}
+}
