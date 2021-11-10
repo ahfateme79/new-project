@@ -264,7 +264,7 @@
 
 .continue-btn button {
     display: inline-block;
-    background-color: #2493df;
+    background-color: black;
     color: #fff;
     padding: 15px;
     width: 150px;
@@ -372,7 +372,7 @@
 
 .btn-section i {
     transform: translateX(10px);
-    color: #2493df;
+    color: black;
     -moz-transform: translateX(10px);
     -o-transform: translateX(10px);
     -webkit-transform: translateX(10px);
@@ -381,8 +381,8 @@
 
 .btn-section > button:first-of-type {
     background-color: transparent;
-    border: 1px solid #2493df;
-    color: #2493df;
+    border: 1px solid black;
+    color: black;
     transform: translateX(-95px);
     -webkit-transform: translateX(-95px);
     -moz-transform: translateX(-95px);
@@ -550,7 +550,7 @@
 .close-btn button{
     width: 100px;
     height: 40px;
-    background-color: #2493df;
+    background-color: black;
     color: #fff;
     border-radius: 5px;
     -webkit-border-radius: 5px;
