@@ -26,8 +26,55 @@
                 <div class="progress-bar"> <span></span><span></span><span></span><span></span>
                 </div>
             </div>
-            <div> <button><i class="fas fa-chevron-left"></i><i class="fas fa-comment-alt"></i><span class="welcome-head">54 نظر
+            <div> <button class="open-comment"><i class="fas fa-chevron-left"></i><i class="fas fa-comment-alt"></i><span class="welcome-head">54 نظر
             </span></button>
+            <aside>
+                <div class="aside-header">
+                    <button class="hide-comment"><i class="fas fa-chevron-left"></i><i
+                            class="fas fa-comment-alt"></i><span class="welcome-head">پنهان</span></button>
+
+                    <button>3604 نظر</span></button>
+                </div>
+                <div class="aside-search-input">
+                    <form action="">
+                        <input type="text" placeholder="یک نظر بنویسید...">
+                    </form>
+                </div>
+                <div class="comment-wrapper">
+                    <input type="radio" name="comment-tab" id="popular" checked><input type="radio"
+                        name="comment-tab" id="resent">
+                    <div class="comment-tab">
+                        <label for="popular" id="first-tab">محبوب</label><label for="resent"
+                            id="second-tab">اخیر</label>
+                    </div>
+                    <div class="comment-content">
+                        <div class="popular-comment" id="popular-comment">
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با است</p>
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با است</p>
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با است</p>
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با است</p>
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با است</p>
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با است</p>
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با است</p>
+
+                        </div>
+                        <div id="resent-comment">
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با است</p>
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با است</p>
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با است</p>
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با است</p>
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با است</p>
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با است</p>
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با است</p>
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با است</p>
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با است</p>
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با است</p>
+
+
+                        </div>
+                    </div>
+                </div>
+            </aside>
             </div>
         </div>
         <div class="contents">
@@ -48,19 +95,62 @@
             </div>
         </div>
         <div class="continue-btn">
-            <button>ادامه هید
+            <button class="check-answer">ادامه هید
             </button>
+            <div class="pup-up-parent">
+                <div class="pup-up">
+                    <div class="lotti-animation">
+                        <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_jbrw3hcz.json"
+                            background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+                    </div>
+                    <div class="close-btn">
+                        <button class="close-pup-up">بستن</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
 
 
 
 
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js">
+        </script>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
 
         <script>
             hljs.initHighlightingOnLoad();
+
+
+            
+            // aside
+            let popularcomment = document.querySelector('.popular-comment')
+            let opencomment = document.querySelector('.open-comment')
+            let aside = document.querySelector('aside')
+            let hidecomment = document.querySelector('.hide-comment')
+
+            opencomment.addEventListener('click', (e) => {
+                aside.style.left = '0'
+                aside.style.transition = "all 1s ease"
+            })
+            hidecomment.addEventListener('click', (e) => {
+                aside.style.left = '-100%'
+                aside.style.transition = "all 1s ease"
+
+            })
+
+            // pup-up
+            let open_pupup = document.querySelector('.check-answer')
+            let pupup = document.querySelector('.pup-up-parent')
+            let close_pupup = document.querySelector('.close-pup-up')
+
+            open_pupup.addEventListener('click', () => {
+                pupup.style.display = 'flex'
+            })
+            close_pupup.addEventListener('click', () => {
+                pupup.style.display = 'none'
+            })
         </script>
         </body>
 

@@ -22,10 +22,12 @@ footer,
 .password form,
 .profile,
 .code-coach .swiper-slide,
-.lesson-select-item,.coming-soon,.date-sicencs,.first-code {
+.lesson-select-item,.coming-soon,.date-sicencs,.first-code,.item-content aside {
     direction: rtl;
 }
-
+.item-content aside{
+    left: -100%;
+}
 .coming-soon h1{
     text-align: right;
 }

@@ -53,9 +53,40 @@
         <div class="continue-btn btn-section">
             <button>بازگشت</button>
             <i class="fas fa-lock-open-alt"></i>
-            <button disabled>بررسی</button>
+            <button class="check-answer">بررسی</button>
+            <div class="pup-up-parent">
+                <div class="pup-up">
+                    <div class="lotti-animation">
+                        <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_jbrw3hcz.json"
+                            background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+                    </div>
+                    <div class="close-btn">
+                        <button class="close-pup-up">بستن</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
+
+
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js">
+    </script>
+
+    <script>
+            // pup-up
+            let open_pupup = document.querySelector('.check-answer')
+            let pupup = document.querySelector('.pup-up-parent')
+            let close_pupup = document.querySelector('.close-pup-up')
+
+            open_pupup.addEventListener('click', () => {
+                pupup.style.display = 'flex'
+            })
+            close_pupup.addEventListener('click', () => {
+                pupup.style.display = 'none'
+            })
+    </script>
 </body>
 
 </html>
