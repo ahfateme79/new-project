@@ -415,6 +415,8 @@ progress::-webkit-progress-value {
     inline-size: 80px;
     overflow-wrap: break-word;
     word-break: break-all; 
+    align-items: center;
+    height: 100%;
 }
 .progress section span:last-child{
     justify-content: flex-end;
