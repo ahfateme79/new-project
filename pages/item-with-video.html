@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;1,300;1,400;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <section class="item-content">
+        <div class="welcome">
+            <a href=""><i class="fas fa-times"></i><span class="welcome-head">welcome to python!</span></a>
+            <div>
+                <span class="mobile-welcome">welcome to python!</span>
+                <div class="progress-bar"> <span></span><span></span><span></span><span></span>
+                </div>
+            </div>
+            <div> <button class="open-comment"><i class="fas fa-chevron-left"></i><i
+                        class="fas fa-comment-alt"></i><span class="welcome-head">3604 Comments</span></button>
+                <aside>
+                    <div class="aside-header">
+                        <button class="hide-comment"><i class="fas fa-chevron-left"></i><i
+                                class="fas fa-comment-alt"></i><span class="welcome-head">hide</span></button>
+
+                        <button>3604 Comments</span></button>
+                    </div>
+                    <div class="aside-search-input">
+                        <form action="">
+                            <input type="text" placeholder="write a comment...">
+                        </form>
+                    </div>
+                    <div class="comment-wrapper">
+                        <input type="radio" name="comment-tab" id="popular" checked><input type="radio"
+                            name="comment-tab" id="resent">
+                        <div class="comment-tab">
+                            <label for="popular" id="first-tab">Popular</label><label for="resent"
+                                id="second-tab">Resent</label>
+                        </div>
+                        <div class="comment-content">
+                            <div class="popular-comment" id="popular-comment">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur</p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur</p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur</p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur</p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur</p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur</p>
+                            </div>
+                            <div id="resent-comment">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur</p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur</p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur</p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur</p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur</p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur</p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur</p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur</p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur</p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur</p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+        <div class="contents">
+            <h2>Welcome to Python</h2>
+            <p><strong>Python</strong> is a high-level programming language, with applications in numerous areas,
+                including web and artificial intelligence!</p>
+
+                <video src="../video/WhatsApp Video 2021-09-20 at 15.06.13 (1).mp4" controls width="100%" height="230px"></video>
+            <p>It is very popular and used by organizations such as Google, NASA, the CIA, and Disney.</p>
+        </div>
+        <div class="continue-btn">
+            <button class="check-answer">Continue</button>
+            <div class="pup-up-parent">
+                <div class="pup-up">
+                    <div class="lotti-animation">
+                        <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_jbrw3hcz.json"
+                            background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay>
+                        </lottie-player>
+                    </div>
+                    <div class="close-btn">
+                        <button class="close-pup-up">close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js">
+    </script>
+    <script>
+        let popularcomment = document.querySelector('.popular-comment')
+        let opencomment = document.querySelector('.open-comment')
+        let aside = document.querySelector('aside')
+        let hidecomment = document.querySelector('.hide-comment')
+
+        opencomment.addEventListener('click', (e) => {
+            aside.style.right = '0'
+            aside.style.transition = "all 1s ease"
+        })
+        hidecomment.addEventListener('click', (e) => {
+            aside.style.right = '-100%'
+            aside.style.transition = "all 1s ease"
+
+        })
+
+          // pup-up
+          let open_pupup = document.querySelector('.check-answer')
+            let pupup = document.querySelector('.pup-up-parent')
+            let close_pupup = document.querySelector('.close-pup-up')
+
+            open_pupup.addEventListener('click', () => {
+                pupup.style.display = 'flex'
+            })
+            close_pupup.addEventListener('click', () => {
+                pupup.style.display = 'none'
+            })
+        // var myHeaders = new Headers();
+        // myHeaders.append("Content-Type", "application/json");
+
+        // var raw = JSON.stringify({
+        //     "lectureKey": "9Ikj6mqY04Ov"
+        // });
+
+        // var requestOptions = {
+        //     method: 'POST',
+        //     headers: myHeaders,
+        //     body: raw,
+        //     redirect: 'follow',
+        //     mode: 'cors',
+        // };
+
+        // fetch("https://techwich.net/twapp/lecture/comment_list", requestOptions)
+        //     .then(response => response.json())
+        //     .then(result => {
+        //         for (let i = 0; i < result.length; i++) {
+        //             popularcomment.innerHTML += `<p>${result[i].message}</p>`
+
+        //         }
+        //     })
+        //     .catch(error => console.log('error', error));
+    </script>
+</body>
+
+</html>

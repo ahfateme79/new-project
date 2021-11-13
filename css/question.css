@@ -17,18 +17,21 @@
 .question h1 {
     font-size: 2.2rem;
 }
-.write-quiz{
+
+.write-quiz {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
     min-height: 500px;
 }
-.detail-question{
-    padding: 20px 30px; 
+
+
+.detail-question {
+    padding: 20px 30px;
     display: flex;
     flex-direction: column;
 }
-.detail-question > div{
+
+.detail-question>div {
     width: 350px;
     min-height: 230px;
     border-radius: 5px;
@@ -36,16 +39,21 @@
     margin: 20px 0;
 
 }
-.explain-detail p,.explain-detail a{
+
+.explain-detail p,
+.explain-detail a {
     font-size: .9em;
 }
-.explain-detail div:first-child{
+
+.explain-detail div:first-child {
     border-bottom: 2 px solid rgb(201, 211, 221);
     padding: 10px;
 }
-.explain-detail div:last-child{
+
+.explain-detail div:last-child {
     padding: 10px;
 }
+
 .question form {
     width: 70%;
     height: 100%;
@@ -98,8 +106,26 @@
 
 }
 
+.explain-detail div:first-child {
+    border-bottom: 2px solid rgb(195, 195, 216);
+    padding: 10px 20px;
+}
+
+.explain-detail div:last-child {
+    padding: 10px 20px;
+}
+
+.explain-detail div p {
+    font-size: .8rem;
+    line-height: 2;
+}
+
+.explain-detail div a {
+    color: rgb(15, 111, 190);
+}
+
 .quiz-link {
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -113,9 +139,11 @@
     display: inline-block;
     border: 2px solid rgb(217, 226, 235);
 }
+
 .quiz-link>details[open] {
     height: 130px;
 }
+
 .quiz-link details summary {
     display: flex;
     width: 100%;
@@ -136,6 +164,7 @@
     background-size: auto;
     background-position: center;
 }
+
 .quiz-link details[open] summary span {
     background-image: url(../img/navigate-up-arrow.png);
 }
@@ -159,4 +188,47 @@
     width: 60%;
     margin: 5px 0;
     color: rgb(94, 90, 90);
+}
+
+.help-box summary {
+    border-bottom: 2px solid rgb(195, 195, 216);
+    padding: 10px 20px;
+}
+
+.help-box p {
+    font-size: .8rem;
+    margin: 10px 0;
+    line-height: 2;
+}
+
+.help-box details div {
+    padding: 10px 20px;
+}
+
+.help-box a {
+    color: rgb(15, 111, 190);
+}
+@media screen and (max-width:768px) {
+    .question {
+        min-height: 280vh;
+    }
+    .write-quiz {
+        flex-wrap: wrap;
+    }
+    .question form,.question form > div{
+        width: 100%;
+    }
+    .detail-question{
+        width: 100%;
+        padding: 20px 0;
+    }
+    .detail-question > div{
+        width: 100%;
+    }
+    .quiz-link{
+        width: 100%;
+    }
+    .quiz-link details{
+        width: 100%;
+    }
 }

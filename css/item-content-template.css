@@ -589,3 +589,7 @@
     -o-transform: translateX(40px);
 }
 }
+video{
+    margin: 20px 0;
+    box-shadow: 1px 1px 3px rgb(124, 119, 119);
+}

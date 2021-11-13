@@ -22,8 +22,11 @@ footer,
 .password form,
 .profile,
 .code-coach .swiper-slide,
-.lesson-select-item,.coming-soon,.date-sicencs,.first-code,.item-content aside {
+.lesson-select-item,.coming-soon,.date-sicencs,.first-code,.item-content aside ,.question{
     direction: rtl;
+}
+.question summary{
+    font-size: .8rem;
 }
 .item-content aside{
     left: -100%;
@@ -181,7 +184,7 @@ footer,
     transform: translate(105%, 12px)
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:1100px) {
     .social-media-list {
         padding: 20px;
         flex-wrap: wrap;
@@ -220,4 +223,14 @@ footer,
     }
 
 
+}
+@media screen and (max-width:768px){
+    .question{
+       min-height: 350vh;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1024px){
+    .question{
+       min-height: 200vh;
+    }
 }
