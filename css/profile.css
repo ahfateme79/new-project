@@ -408,8 +408,17 @@ progress::-webkit-progress-value {
 .margin-paragraph {
     margin: 10px 0;
 }
-
-
+.progress section span{
+    display: inline-flex;
+    justify-content: flex-start;
+    margin: 0 1px;
+    inline-size: 80px;
+    overflow-wrap: break-word;
+    word-break: break-all; 
+}
+.progress section span:last-child{
+    justify-content: flex-end;
+}
 
 
 
