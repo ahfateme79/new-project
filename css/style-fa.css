@@ -22,7 +22,7 @@ footer,
 .password form,
 .profile,
 .code-coach .swiper-slide,
-.lesson-select-item,.coming-soon,.date-sicencs,.first-code,.item-content aside ,.question{
+.lesson-select-item,.coming-soon,.date-sicencs,.first-code,.item-content aside ,.question,.descuss,.post-user-info div{
     direction: rtl;
 }
 .question summary{

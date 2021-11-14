@@ -458,9 +458,17 @@
     padding: 0 15px;
     text-align: center;
 }
-
+.btn-control button{
+    background-color: transparent;
+}
+.btn-control button i{
+    color: rgb(236, 230, 230);
+    font-size: 20px;
+}
 .btn-control span {
     color: rgb(9, 170, 116);
+    font-size: .6rem;
+    margin: 5px 0;
 }
 
 .btn-control div {
