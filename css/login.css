@@ -168,7 +168,7 @@
 
 }
 
-.signin-with-media button {
+.signin-with-media a {
     width: 150px;
     height: 40px;
     border-radius: 5px;
@@ -192,12 +192,12 @@
 
 }
 
-.signin-with-media button i {
+.signin-with-media a i {
     margin: 0 8px;
     font-size: 1.2rem;
 }
 
-.signin-with-media button:last-child {
+.signin-with-media a:last-child {
     background-color: #2d40e7;
 }
 
