@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;1,300;1,400;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header class="header-light">
+        <div class="logo-light-header">
+            <img class="logo-icon" src="../img/Sololearn.png" alt="logo" width="50px"><span> TechWich</span>
+        </div>
+        <div class="menu">
+            <nav>
+                <!-- hamburger-button -->
+                <div class="toggle-wrap" onclick="toggleMenu(this)">Menu
+                    <span class="toggle-bar"></span>
+                </div>
+                <!-- mobile-menu -->
+                <div class="nav-menu">
+                    <ul>
+                        <li><a href="">Courses</a></li>
+                        <li><a href="">Code Playground</a></li>
+                        <li><a href="">Discuss</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Get Pro</a></li>
+                    </ul>
+                    <div class="login-btn-mobile">
+                        <a href="" class="login-mobile">Log in</a><a href="">Register</a>
+                    </div>
+                </div>
+                <!-- desctop-menu -->
+                <ul class="deskop-menu">
+                    <li><a href="">Courses</a></li>
+                    <li><a href="">Code Playground</a></li>
+                    <li><a href="">Discuss</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Get Pro</a></li>
+                </ul>
+                <div class="login-btn-desktop">
+                    <a href="" class="login">Log in</a><a href="">Register</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- header -->
+
+    <section class="descuss">
+        <div class="Discussions">
+            <div class="descussion-head">
+                <h2>Q&A Discussions
+                </h2>
+            </div>
+            <div class="question-section">
+                <a href="">NEW QUESTION
+                </a>
+                <form action="">
+                    <div>
+                        <input type="text" placeholder="Search...">
+                        <button><i class="far fa-search"></i></button>
+                    </div>
+                </form>
+            </div>
+            <div class="options">
+                <a href="">NEW QUESTION
+                </a>
+
+                <select name="" id="select-item">
+                    <option value="1">trending
+                    </option>
+                    <option value="2">most resent
+                    </option>
+                    <option value="3">unanswred
+                    </option>
+                    <option value="4">my question
+                    </option>
+                    <option value="5">my answer
+                    </option>
+                </select>
+
+            </div>
+            <div class="people-question">
+                <input type="radio" name="question" id="trending" checked>
+                <input type="radio" name="question" id="most-resent">
+                <input type="radio" name="question" id="unanswred">
+                <input type="radio" name="question" id="my-question">
+                <input type="radio" name="question" id="my-answer">
+                <div class="question-labels">
+                    <label for="trending" id="label-1">trending</label>
+                    <label for="most-resent" id="label-2">most resent</label>
+                    <label for="unanswred" id="label-3">unanswred</label>
+                    <label for="my-question" id="label-4">my question</label>
+                    <label for="my-answer" id="label-5">my answer</label>
+                </div>
+
+                <div class="peopel-question-content">
+                    <div id="question-content-1" class="tab-content-question">
+                        <ul>
+                            <li>
+                                <div class="post-details">
+                                    <div>
+                                        <a>1110<br>
+
+                                            Votes
+
+                                        </a><a> 607<br>
+
+                                            Answers</a>
+                                    </div>
+                                    <div class="post-topic">
+                                        <h6>Let's stay safe together, people! 👮 </h6>
+                                        <div class="tags">
+                                            <span>abuse</span>
+                                            <span>challenges</span>
+                                            <span>fake</span>
+                                            <span>let's</span>
+                                            <span>moderatoes</span>
+                                            <span>report</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post-user-info">
+                                    <div>
+                                        <div>
+                                            <a href="">Kuba Siekierzyński
+                                            </a>
+                                            <span>9th July 2017, 9:37 AM
+                                            </span>
+                                        </div>
+                                        <a href=""><img src="../img/community-user-17.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="post-details">
+                                    <div>
+                                        <a>1110<br>
+
+                                            Votes
+
+                                        </a><a> 607<br>
+
+                                            Answers</a>
+                                    </div>
+                                    <div class="post-topic">
+                                        <h6>Let's stay safe together, people! 👮 </h6>
+                                        <div class="tags">
+                                            <span>abuse</span>
+                                            <span>challenges</span>
+                                            <span>fake</span>
+                                            <span>let's</span>
+                                            <span>moderatoes</span>
+                                            <span>report</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post-user-info">
+                                    <div>
+                                        <div>
+                                            <a href="">Kuba Siekierzyński
+                                            </a>
+                                            <span>9th July 2017, 9:37 AM
+                                            </span>
+                                        </div>
+                                        <a href=""><img src="../img/community-user-17.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="post-details">
+                                    <div>
+                                        <a>1110<br>
+
+                                            Votes
+
+                                        </a><a> 607<br>
+
+                                            Answers</a>
+                                    </div>
+                                    <div class="post-topic">
+                                        <h6>Let's stay safe together, people! 👮 </h6>
+                                        <div class="tags">
+                                            <span>abuse</span>
+                                            <span>challenges</span>
+                                            <span>fake</span>
+                                            <span>let's</span>
+                                            <span>moderatoes</span>
+                                            <span>report</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post-user-info">
+                                    <div>
+                                        <div>
+                                            <a href="">Kuba Siekierzyński
+                                            </a>
+                                            <span>9th July 2017, 9:37 AM
+                                            </span>
+                                        </div>
+                                        <a href=""><img src="../img/community-user-17.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="post-details">
+                                    <div>
+                                        <a>1110<br>
+
+                                            Votes
+
+                                        </a><a> 607<br>
+
+                                            Answers</a>
+                                    </div>
+                                    <div class="post-topic">
+                                        <h6>Let's stay safe together, people! 👮 </h6>
+                                        <div class="tags">
+                                            <span>abuse</span>
+                                            <span>challenges</span>
+                                            <span>fake</span>
+                                            <span>let's</span>
+                                            <span>moderatoes</span>
+                                            <span>report</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post-user-info">
+                                    <div>
+                                        <div>
+                                            <a href="">Kuba Siekierzyński
+                                            </a>
+                                            <span>9th July 2017, 9:37 AM
+                                            </span>
+                                        </div>
+                                        <a href=""><img src="../img/community-user-17.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="post-details">
+                                    <div>
+                                        <a>1110<br>
+
+                                            Votes
+
+                                        </a><a> 607<br>
+
+                                            Answers</a>
+                                    </div>
+                                    <div class="post-topic">
+                                        <h6>Let's stay safe together, people! 👮 </h6>
+                                        <div class="tags">
+                                            <span>abuse</span>
+                                            <span>challenges</span>
+                                            <span>fake</span>
+                                            <span>let's</span>
+                                            <span>moderatoes</span>
+                                            <span>report</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post-user-info">
+                                    <div>
+                                        <div>
+                                            <a href="">Kuba Siekierzyński
+                                            </a>
+                                            <span>9th July 2017, 9:37 AM
+                                            </span>
+                                        </div>
+                                        <a href=""><img src="../img/community-user-17.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="post-details">
+                                    <div>
+                                        <a>1110<br>
+
+                                            Votes
+
+                                        </a><a> 607<br>
+
+                                            Answers</a>
+                                    </div>
+                                    <div class="post-topic">
+                                        <h6>Let's stay safe together, people! 👮 </h6>
+                                        <div class="tags">
+                                            <span>abuse</span>
+                                            <span>challenges</span>
+                                            <span>fake</span>
+                                            <span>let's</span>
+                                            <span>moderatoes</span>
+                                            <span>report</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post-user-info">
+                                    <div>
+                                        <div>
+                                            <a href="">Kuba Siekierzyński
+                                            </a>
+                                            <span>9th July 2017, 9:37 AM
+                                            </span>
+                                        </div>
+                                        <a href=""><img src="../img/community-user-17.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="post-details">
+                                    <div>
+                                        <a>1110<br>
+
+                                            Votes
+
+                                        </a><a> 607<br>
+
+                                            Answers</a>
+                                    </div>
+                                    <div class="post-topic">
+                                        <h6>Let's stay safe together, people! 👮 </h6>
+                                        <div class="tags">
+                                            <span>abuse</span>
+                                            <span>challenges</span>
+                                            <span>fake</span>
+                                            <span>let's</span>
+                                            <span>moderatoes</span>
+                                            <span>report</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post-user-info">
+                                    <div>
+                                        <div>
+                                            <a href="">Kuba Siekierzyński
+                                            </a>
+                                            <span>9th July 2017, 9:37 AM
+                                            </span>
+                                        </div>
+                                        <a href=""><img src="../img/community-user-17.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="post-details">
+                                    <div>
+                                        <a>1110<br>
+
+                                            Votes
+
+                                        </a><a> 607<br>
+
+                                            Answers</a>
+                                    </div>
+                                    <div class="post-topic">
+                                        <h6>Let's stay safe together, people! 👮 </h6>
+                                        <div class="tags">
+                                            <span>abuse</span>
+                                            <span>challenges</span>
+                                            <span>fake</span>
+                                            <span>let's</span>
+                                            <span>moderatoes</span>
+                                            <span>report</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post-user-info">
+                                    <div>
+                                        <div>
+                                            <a href="">Kuba Siekierzyński
+                                            </a>
+                                            <span>9th July 2017, 9:37 AM
+                                            </span>
+                                        </div>
+                                        <a href=""><img src="../img/community-user-17.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="post-details">
+                                    <div>
+                                        <a>1110<br>
+
+                                            Votes
+
+                                        </a><a> 607<br>
+
+                                            Answers</a>
+                                    </div>
+                                    <div class="post-topic">
+                                        <h6>Let's stay safe together, people! 👮 </h6>
+                                        <div class="tags">
+                                            <span>abuse</span>
+                                            <span>challenges</span>
+                                            <span>fake</span>
+                                            <span>let's</span>
+                                            <span>moderatoes</span>
+                                            <span>report</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post-user-info">
+                                    <div>
+                                        <div>
+                                            <a href="">Kuba Siekierzyński
+                                            </a>
+                                            <span>9th July 2017, 9:37 AM
+                                            </span>
+                                        </div>
+                                        <a href=""><img src="../img/community-user-17.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div id="question-content-2" class="tab-content-question">
+                        <ul>
+                            <li>
+                                <div class="post-details">
+                                    <div>
+                                        <a>1<br>
+
+                                            Votes
+
+                                        </a><a> 1<br>
+
+                                            Answers</a>
+                                    </div>
+                                    <div class="post-topic">
+                                        <h6>Is Java program is save with only class name
+                                        </h6>
+                                        <div class="tags">
+                                            <span>abuse</span>
+                                            <span>abuse</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post-user-info">
+                                    <div>
+                                        <div>
+                                            <a href="">Kuba Siekierzyński
+                                            </a>
+                                            <span>9th July 2017, 9:37 AM
+                                            </span>
+                                        </div>
+                                        <a href=""><img src="../img/community-user-17.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="post-details">
+                                    <div>
+                                        <a>1<br>
+
+                                            Votes
+
+                                        </a><a> 1<br>
+
+                                            Answers</a>
+                                    </div>
+                                    <div class="post-topic">
+                                        <h6>Is Java program is save with only class name
+                                        </h6>
+                                        <div class="tags">
+                                            <span>abuse</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post-user-info">
+                                    <div>
+                                        <div>
+                                            <a href="">Kuba Siekierzyński
+                                            </a>
+                                            <span>9th July 2017, 9:37 AM
+                                            </span>
+                                        </div>
+                                        <a href=""><img src="../img/community-user-17.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="post-details">
+                                    <div>
+                                        <a>1<br>
+
+                                            Votes
+
+                                        </a><a> 1<br>
+
+                                            Answers</a>
+                                    </div>
+                                    <div class="post-topic">
+                                        <h6>Is Java program is save with only class name
+                                        </h6>
+                                        <div class="tags">
+                                            <span>abuse</span>
+                                            <span>abuse</span>
+                                            <span>abuse</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post-user-info">
+                                    <div>
+                                        <div>
+                                            <a href="">Kuba Siekierzyński
+                                            </a>
+                                            <span>9th July 2017, 9:37 AM
+                                            </span>
+                                        </div>
+                                        <a href=""><img src="../img/community-user-17.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="post-details">
+                                    <div>
+                                        <a>1<br>
+
+                                            Votes
+
+                                        </a><a> 1<br>
+
+                                            Answers</a>
+                                    </div>
+                                    <div class="post-topic">
+                                        <h6>Is Java program is save with only class name
+                                        </h6>
+                                        <div class="tags">
+                                            <span>abuse</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post-user-info">
+                                    <div>
+                                        <div>
+                                            <a href="">Kuba Siekierzyński
+                                            </a>
+                                            <span>9th July 2017, 9:37 AM
+                                            </span>
+                                        </div>
+                                        <a href=""><img src="../img/community-user-17.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="post-details">
+                                    <div>
+                                        <a>1<br>
+
+                                            Votes
+
+                                        </a><a> 1<br>
+
+                                            Answers</a>
+                                    </div>
+                                    <div class="post-topic">
+                                        <h6>Is Java program is save with only class name
+                                        </h6>
+                                        <div class="tags">
+                                            <span>abuse</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post-user-info">
+                                    <div>
+                                        <div>
+                                            <a href="">Kuba Siekierzyński
+                                            </a>
+                                            <span>9th July 2017, 9:37 AM
+                                            </span>
+                                        </div>
+                                        <a href=""><img src="../img/community-user-17.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="post-details">
+                                    <div>
+                                        <a>1<br>
+
+                                            Votes
+
+                                        </a><a> 1<br>
+
+                                            Answers</a>
+                                    </div>
+                                    <div class="post-topic">
+                                        <h6>Is Java program is save with only class name
+                                        </h6>
+                                        <div class="tags">
+                                            <span>abuse</span>
+                                            <span>abuse</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post-user-info">
+                                    <div>
+                                        <div>
+                                            <a href="">Kuba Siekierzyński
+                                            </a>
+                                            <span>9th July 2017, 9:37 AM
+                                            </span>
+                                        </div>
+                                        <a href=""><img src="../img/community-user-17.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="post-details">
+                                    <div>
+                                        <a>1<br>
+
+                                            Votes
+
+                                        </a><a> 1<br>
+
+                                            Answers</a>
+                                    </div>
+                                    <div class="post-topic">
+                                        <h6>Is Java program is save with only class name
+                                        </h6>
+                                        <div class="tags">
+                                            <span>abuse</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post-user-info">
+                                    <div>
+                                        <div>
+                                            <a href="">Kuba Siekierzyński
+                                            </a>
+                                            <span>9th July 2017, 9:37 AM
+                                            </span>
+                                        </div>
+                                        <a href=""><img src="../img/community-user-17.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="post-details">
+                                    <div>
+                                        <a>1<br>
+
+                                            Votes
+
+                                        </a><a> 1<br>
+
+                                            Answers</a>
+                                    </div>
+                                    <div class="post-topic">
+                                        <h6>Is Java program is save with only class name
+                                        </h6>
+                                        <div class="tags">
+                                            <span>abuse</span>
+                                            <span>abuse</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post-user-info">
+                                    <div>
+                                        <div>
+                                            <a href="">Kuba Siekierzyński
+                                            </a>
+                                            <span>9th July 2017, 9:37 AM
+                                            </span>
+                                        </div>
+                                        <a href=""><img src="../img/community-user-17.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div id="question-content-3" class="tab-content-question">
+                        <ul>
+                            <li>
+                                <div class="post-details">
+                                    <div>
+                                        <a>10<br>
+
+                                            Votes
+
+                                        </a><a> 67<br>
+
+                                            Answers</a>
+                                    </div>
+                                    <div class="post-topic">
+                                        <h6>when I want to convert kivy python to apk, I get this error, do you know
+                                            why?
+                                        </h6>
+                                        <div class="tags">
+                                            <span>moderatoes</span>
+                                            <span>report</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post-user-info">
+                                    <div>
+                                        <div>
+                                            <a href="">Kuba Siekierzyński
+                                            </a>
+                                            <span>9th July 2017, 9:37 AM
+                                            </span>
+                                        </div>
+                                        <a href=""><img src="../img/community-user-17.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="post-details">
+                                    <div>
+                                        <a>11<br>
+
+                                            Votes
+
+                                        </a><a> 6<br>
+
+                                            Answers</a>
+                                    </div>
+                                    <div class="post-topic">
+                                        <h6>when I want to convert kivy python to apk, I get this error, do you know
+                                            why?
+                                        </h6>
+                                        <div class="tags">
+                                            <span>moderatoes</span>
+                                            <span>report</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post-user-info">
+                                    <div>
+                                        <div>
+                                            <a href="">Kuba Siekierzyński
+                                            </a>
+                                            <span>9th July 2017, 9:37 AM
+                                            </span>
+                                        </div>
+                                        <a href=""><img src="../img/community-user-17.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="post-details">
+                                    <div>
+                                        <a>11<br>
+
+                                            Votes
+
+                                        </a><a> 6<br>
+
+                                            Answers</a>
+                                    </div>
+                                    <div class="post-topic">
+                                        <h6>when I want to convert kivy python to apk, I get this error, do you know
+                                            why?
+                                        </h6>
+                                        <div class="tags">
+                                            <span>moderatoes</span>
+                                            <span>report</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post-user-info">
+                                    <div>
+                                        <div>
+                                            <a href="">Kuba Siekierzyński
+                                            </a>
+                                            <span>9th July 2017, 9:37 AM
+                                            </span>
+                                        </div>
+                                        <a href=""><img src="../img/community-user-17.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="post-details">
+                                    <div>
+                                        <a>1<br>
+
+                                            Votes
+
+                                        </a><a> 7<br>
+
+                                            Answers</a>
+                                    </div>
+                                    <div class="post-topic">
+                                        <h6>when I want to convert kivy python to apk, I get this error, do you know
+                                            why?
+                                        </h6>
+                                        <div class="tags">
+                                            <span>moderatoes</span>
+                                            <span>report</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post-user-info">
+                                    <div>
+                                        <div>
+                                            <a href="">Kuba Siekierzyński
+                                            </a>
+                                            <span>9th July 2017, 9:37 AM
+                                            </span>
+                                        </div>
+                                        <a href=""><img src="../img/community-user-17.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="post-details">
+                                    <div>
+                                        <a>1<br>
+
+                                            Votes
+
+                                        </a><a> 6<br>
+
+                                            Answers</a>
+                                    </div>
+                                    <div class="post-topic">
+                                        <h6>when I want to convert kivy python to apk, I get this error, do you know
+                                            why?
+                                        </h6>
+                                        <div class="tags">
+                                            <span>moderatoes</span>
+                                            <span>report</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post-user-info">
+                                    <div>
+                                        <div>
+                                            <a href="">Kuba Siekierzyński
+                                            </a>
+                                            <span>9th July 2017, 9:37 AM
+                                            </span>
+                                        </div>
+                                        <a href=""><img src="../img/community-user-17.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="post-details">
+                                    <div>
+                                        <a>1<br>
+
+                                            Votes
+
+                                        </a><a> 6<br>
+
+                                            Answers</a>
+                                    </div>
+                                    <div class="post-topic">
+                                        <h6>when I want to convert kivy python to apk, I get this error, do you know
+                                            why?
+                                        </h6>
+                                        <div class="tags">
+                                            <span>moderatoes</span>
+                                            <span>report</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post-user-info">
+                                    <div>
+                                        <div>
+                                            <a href="">Kuba Siekierzyński
+                                            </a>
+                                            <span>9th July 2017, 9:37 AM
+                                            </span>
+                                        </div>
+                                        <a href=""><img src="../img/community-user-17.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="post-details">
+                                    <div>
+                                        <a>1<br>
+
+                                            Votes
+
+                                        </a><a> 0<br>
+
+                                            Answers</a>
+                                    </div>
+                                    <div class="post-topic">
+                                        <h6>when I want to convert kivy python to apk, I get this error, do you know
+                                            why?
+                                        </h6>
+                                        <div class="tags">
+                                            <span>moderatoes</span>
+                                            <span>report</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post-user-info">
+                                    <div>
+                                        <div>
+                                            <a href="">Kuba Siekierzyński
+                                            </a>
+                                            <span>9th July 2017, 9:37 AM
+                                            </span>
+                                        </div>
+                                        <a href=""><img src="../img/community-user-17.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="post-details">
+                                    <div>
+                                        <a>1<br>
+
+                                            Votes
+
+                                        </a><a> 6<br>
+
+                                            Answers</a>
+                                    </div>
+                                    <div class="post-topic">
+                                        <h6>when I want to convert kivy python to apk, I get this error, do you know
+                                            why?
+                                        </h6>
+                                        <div class="tags">
+                                            <span>moderatoes</span>
+                                            <span>report</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post-user-info">
+                                    <div>
+                                        <div>
+                                            <a href="">Kuba Siekierzyński
+                                            </a>
+                                            <span>9th July 2017, 9:37 AM
+                                            </span>
+                                        </div>
+                                        <a href=""><img src="../img/community-user-17.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="post-details">
+                                    <div>
+                                        <a>1<br>
+
+                                            Votes
+
+                                        </a><a> 2<br>
+
+                                            Answers</a>
+                                    </div>
+                                    <div class="post-topic">
+                                        <h6>when I want to convert kivy python to apk, I get this error, do you know
+                                            why?
+                                        </h6>
+                                        <div class="tags">
+                                            <span>https://code.sololearn.com/c3n7bxe7roqe/?ref=app</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post-user-info">
+                                    <div>
+                                        <div>
+                                            <a href="">Kuba Siekierzyński
+                                            </a>
+                                            <span>9th July 2017, 9:37 AM
+                                            </span>
+                                        </div>
+                                        <a href=""><img src="../img/community-user-17.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="post-details">
+                                    <div>
+                                        <a>1110<br>
+
+                                            Votes
+
+                                        </a><a> 607<br>
+
+                                            Answers</a>
+                                    </div>
+                                    <div class="post-topic">
+                                        <h6>when I want to convert kivy python to apk, I get this error, do you know
+                                            why?
+                                        </h6>
+                                        <div class="tags">
+                                            <span>moderatoes</span>
+                                            <span>report</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post-user-info">
+                                    <div>
+                                        <div>
+                                            <a href="">Kuba Siekierzyński
+                                            </a>
+                                            <span>9th July 2017, 9:37 AM
+                                            </span>
+                                        </div>
+                                        <a href=""><img src="../img/community-user-17.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="post-details">
+                                    <div>
+                                        <a>1110<br>
+
+                                            Votes
+
+                                        </a><a> 607<br>
+
+                                            Answers</a>
+                                    </div>
+                                    <div class="post-topic">
+                                        <h6>when I want to convert kivy python to apk, I get this error, do you know
+                                            why?
+                                        </h6>
+                                        <div class="tags">
+                                            <span>moderatoes</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post-user-info">
+                                    <div>
+                                        <div>
+                                            <a href="">Kuba Siekierzyński
+                                            </a>
+                                            <span>9th July 2017, 9:37 AM
+                                            </span>
+                                        </div>
+                                        <a href=""><img src="../img/community-user-17.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="question-content-4" class="tab-content-question">
+                        <div class="signin-content">
+                            <h3>Sign In Required
+                            </h3>
+                            <p>Please sign in to view your posts
+                            </p>
+                            <a href="">SIGN IN
+                            </a>
+                        </div>
+                    </div>
+                    <div id="question-content-5" class="tab-content-question">
+                        <div class="signin-content">
+                            <h3>Sign In Required
+                            </h3>
+                            <p>Please sign in to view your posts
+                            </p>
+                            <a href="">SIGN IN
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <a href="">
+                <h5>Hot Today</h5>
+            </a>
+            <ul>
+                <li>
+                    <a href="">
+                        <i class="fas fa-folders"></i>
+                        <p>
+                            How can I be good at css measurement. How will I know what 200px or 2cm is. Is there a
+                            ruler
+                            I can download to measure a webpage</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fas fa-folders"></i>
+                        <p>Number of zeros at the end</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fas fa-folders"></i>
+                        <p>
+                            Please I keep getting some error message from this code which I don't know how to fix it
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fas fa-folders"></i>
+                        <p>Question
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fas fa-folders"></i>
+                        <p>Learning Java
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fas fa-folders"></i>
+                        <p>Data structure project!!!
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fas fa-folders"></i>
+                        <p>Given a list of numbers, calculate their sum using a for loop. Output the sum after the
+                            loop
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fas fa-folders"></i>
+                        <p>Boleean Question
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fas fa-folders"></i>
+                        <p>What's the mistake?
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fas fa-folders"></i>
+                        <p>Can the click command be changed to hover in JavaScript? btn.addEventListener("click",
+                            myFunction);
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer>
+        <section>
+            <!-- social-media-list  -->
+            <div class="social-media-list">
+                <ul>
+                    <li>
+                        <img src="../img/icons8-linkedin-2.svg" alt="">
+                        <h3>Follow us on Linkedin</h3>
+                    </li>
+                    <li>
+                        <img src="../img/icons8-facebook-f-48.png" alt="">
+                        <h3>Check out our facebook</h3>
+                    </li>
+                    <li>
+                        <img src="../img/icons8-twitter.svg" alt="">
+                        <h3>See what we tweet about</h3>
+                    </li>
+                    <li>
+                        <img src="../img/icons8-instagram.svg" alt="">
+                        <h3>Join our instagram</h3>
+                    </li>
+                    <li>
+                        <img src="../img/icons8-youtube.svg" alt="">
+                        <h3>Watch our Youtube</h3>
+                    </li>
+                </ul>
+                <div class="social-media-icon">
+                    <a href=""><img src="../img/1200px-Google_Play_Store_badge_EN.svg.png" alt=""></a>
+                    <a href=""><img src="../img/1200px-Download_on_the_App_Store_Badge.svg.png" alt=""></a>
+                </div>
+            </div>
+
+            <!-- footer-list-menu  -->
+            <div class="footer-list-menu">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Courses</a></li>
+                    <li><a href="">Code Playground</a></li>
+                    <li><a href="">Top Learners</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Pro</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Terms of Use</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                </ul>
+                <div>
+                    <p>Made with <span> &hearts; </span>
+                        by
+                        Sololearn
+                        | ©2021</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <!-- script -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/header-mode-color.js"></script>
+    <script>
+        // $('.tab-content-question').hide();
+        //show the first tab content
+        $('#question-content-1').show();
+
+        $('#select-item').change(function () {
+            var dropdown = $('#select-item').val();
+            //first hide all tabs again when a new option is selected
+            $('.tab-content-question').hide();
+            //then show the tab content of whatever option value was selected
+            $('#' + "question-content-" + dropdown).show();
+        });
+        $('#question-content-4').click(function () {
+            $('.Discussions').css("height", "400px")
+        })
+        $('#question-content-5').click(function () {
+            $('.Discussions').css("height", "400px")
+        })
+    </script>
+</body>
+
+</html>
