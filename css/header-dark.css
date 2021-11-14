@@ -77,7 +77,26 @@ nav > ul li a {
     font-size: 1.2rem;
     color: #c8d2db;
 }
-
+.user-information img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+.user-information{
+    background-color: transparent !important;
+    border: none;
+    align-items: center;
+    display: flex;
+}
+.user-information span{
+    color: white;
+}
 .login-btn-desktop,.login-btn-mobile {
     display: -ms-flexbox;
     display: flex;
@@ -198,7 +217,7 @@ nav > ul li a {
       left: 0;
       right: 0;
       background-color: #ffffff;
-      height: 50vh;
+      height: 55vh;
       display: none;
       border: .2px solid #2d3846;
       -webkit-box-shadow: 0 6px 20px rgb(0 0 0 / 20%);
@@ -222,7 +241,7 @@ nav > ul li a {
           -ms-flex-align: start;
               align-items: flex-start;
       padding: 20px 10px;
-      height: 250px;
+      height: 270px;
       border-bottom: .2px solid #2d3846;
       display: -webkit-flex;
       display: -webkit-box;
@@ -273,5 +292,20 @@ nav > ul li a {
     }
 }
 
+.user-information img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.login-btn-desktop .user-information{
+    border-color: transparent;
+    border: none;
+    color: black;
+    align-items: center;
+    display: flex;
 
-
+}

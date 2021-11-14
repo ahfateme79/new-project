@@ -249,6 +249,7 @@
     .lesson-select-item {
         width: 100%;
         border-radius: 0;
+        top: 350px;
     }
     .lesson-select-item details {
         border-radius: 0;
@@ -265,7 +266,7 @@
         width: 80%;
         flex-wrap: wrap;
         -webkit-flex-wrap: wrap;
-        padding: 20px 0;
+        padding: 30px 0;
     }
     .introduce > div{
         width: 100%;
@@ -274,6 +275,7 @@
     }
     .introduce > div p{
         font-size: .9rem;
+        padding-bottom: 30px;
     }
     .back-link{
         -webkit-transform: translate(20px,20px);        -ms-transform: translate(20px,20px);        transform: translate(20px,20px);
