@@ -22,31 +22,48 @@ footer,
 .password form,
 .profile,
 .code-coach .swiper-slide,
-.lesson-select-item,.coming-soon,.date-sicencs,.first-code,.item-content aside ,.question,.descuss,.post-user-info div{
+.lesson-select-item,
+.coming-soon,
+.date-sicencs,
+.first-code,
+.item-content aside,
+.question,
+.descuss,
+.post-user-info div,
+.blog-container,.leaderbaord {
     direction: rtl;
 }
-.question summary{
+
+.question summary {
     font-size: .8rem;
 }
-.item-content aside{
+
+.item-content aside {
     left: -100%;
 }
-.coming-soon h1{
+
+.coming-soon h1,
+.blog-content p,
+.card-content p {
     text-align: right;
 }
-.code-coach,.write-code {
+
+.code-coach,
+.write-code {
     direction: ltr;
 }
+
 .lesson-tree:before {
     right: 25px;
 }
+
 .lesson-tree>span {
     right: 0;
-    transform: translate(330px,50px);
-    -webkit-transform: translate(330px,50px);
-    -moz-transform: translate(330px,50px);
-    -ms-transform: translate(330px,50px);
-    -o-transform: translate(330px,50px);
+    transform: translate(330px, 50px);
+    -webkit-transform: translate(330px, 50px);
+    -moz-transform: translate(330px, 50px);
+    -ms-transform: translate(330px, 50px);
+    -o-transform: translate(330px, 50px);
 }
 
 
@@ -224,13 +241,27 @@ footer,
 
 
 }
-@media screen and (max-width:768px){
-    .question{
-       min-height: 350vh;
+
+@media screen and (max-width:768px) {
+    .question {
+        min-height: 350vh;
     }
 }
-@media screen and (min-width:768px) and (max-width:1024px){
-    .question{
-       min-height: 200vh;
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .question {
+        min-height: 200vh;
     }
+}
+
+
+@media screen and (max-width:600px){
+    .ledaerbaord-list-items ul li::before{
+      left: 0;
+    }
+    .ledaerbaord-list-items ul li p{
+        left: -70px;
+        top: 65%;
+}
+    
 }

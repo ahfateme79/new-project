@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;1,300;1,400;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header class="header-light">
+        <div class="logo-light-header">
+            <img class="logo-icon" src="../img/Sololearn.png" alt="logo" width="50px"><span> TechWich</span>
+        </div>
+        <div class="menu">
+            <nav>
+                <!-- hamburger-button -->
+                <div class="toggle-wrap" onclick="toggleMenu(this)">Menu
+                    <span class="toggle-bar"></span>
+                </div>
+                <!-- mobile-menu -->
+                <div class="nav-menu">
+                    <ul>
+                        <li><a href="">Courses</a></li>
+                        <li><a href="">Code Playground</a></li>
+                        <li><a href="">Discuss</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Get Pro</a></li>
+                    </ul>
+                    <div class="header-user-details-mobile">
+                        <div class="user-details-mobile">
+                            <div> <button><i class="fas fa-star"></i>500</button></div>
+                        </div>
+                        <div>
+                            <a href=""><img src="../img/community-user-16.png" alt=""></a>Lori A. Barlow
+                        </div>
+                        <div class="not-border"> <a href="" class="go-pro"><i class="fas fa-star"></i>Go PRO
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- desctop-menu -->
+                <ul class="deskop-menu">
+                    <li><a href="">Courses</a></li>
+                    <li><a href="">Code Playground</a></li>
+                    <li><a href="">Discuss</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+                <div class="header-user-details">
+                    <a href="" class="go-pro"><i class="fas fa-star"></i>Go PRO
+                    </a>
+                    <div class="user-details">
+                        <button><i class="fas fa-star"></i>500</button>
+                        <a href=""><img src="../img/community-user-16.png" alt=""></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- header-light prtial -->
+
+    <section class="descuss bg-white">
+        <div class="blog-container">
+            <div class="blog-hero">
+                <div class="blog-hero-head">
+                    <div><i class="fal fa-clock"></i><span> 2 MINUTES READ</span></div>
+                    <div class="blog-media-button">
+                        <a href=""><img src="../img/1200px-Google_Play_Store_badge_EN.svg.png" alt=""></a>
+                        <a href=""><img src="../img/1200px-Download_on_the_App_Store_Badge.svg.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="blog-hero-img">
+                    <img src="https://api.sololearn.com/Uploads/gamification_blog.png" alt="">
+                    <div class="blog-hero-img-details">
+                        <span>NOVEMBER 01, 2021</span>
+                        <p>Introducing Bits — A new virtual<br>currency at Sololearn!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-content">
+                <div>
+                    <p>Earn, unlock, practice, repeat!</p>
+                    <p>Practice plays an immense role in your coding journey and we couldn’t help but make more practice
+                        opportunities available for you. So...we are introducing Bits, a way to expand your practice
+                        with Sololearn! </p>
+                    <p>Earn more bits to unlock more and more practice opportunities, so your learning experience on
+                        Sololearn is complete. </p>
+                    <p>Our team has worked hard to create Bits that will make your learning experience more fun and
+                        motivating! You can earn them easily on the Sololearn app every day and use them to unlock many
+                        practice opportunities. Tap on the Bits Icon to see how to earn more Bits, and go check your
+                        account right now to see how many you’ve got!
+                    </p>
+                </div>
+                <div class="blog-content-img">
+                    <img src="https://api.sololearn.com/Uploads/bits_gif.gif" alt="">
+                </div>
+                <div>
+                    <p>We know that practicing strengthens your skills. With Bits, your practice opportunities are
+                        endless. Keep up the great work and you’ll be one step closer to your goals of becoming a coding
+                        professional.
+                    </p>
+                </div>
+                <div class="shared-media">
+                    <span>Share</span>
+                    <a href=""><i class="fab fa-facebook-square"></i></a><a href=""><i
+                            class="fab fa-linkedin"></i></a><a href=""><i class="fab fa-twitter-square"></i></a>
+                </div>
+            </div>
+            <div class="post-blog">
+                <div class="post-blog-head">
+                    <h4>Related posts</h4>
+                    <a href="">All posts<i class="far fa-arrow-right"></i></a>
+                </div>
+                <div class="card-content">
+                    <a href="" class="blog-post-card">
+                        <img src="../img/Coding_For_Finance_Blogpost_blog.webp" alt="">
+                        <span class="card-label">
+                            COMPANY NEWS
+                        </span>
+                        <div class="post-explain">
+                            <span>
+                                OCTOBER 21, 2021
+                            </span>
+                            <span><i class="fal fa-clock"></i>2 MINUTES READ
+                            </span>
+                        </div>
+                        <p>Python for Finance - a NEW course live on Sololearn!</p>
+                    </a>
+                    <a href="" class="blog-post-card">
+                        <img src="../img/r_blog_blogpost.webp" alt="">
+                        <span class="card-label">
+                            COMPANY NEWS
+                        </span>
+                        <div class="post-explain">
+                            <span>
+                                OCTOBER 21, 2021
+                            </span>
+                            <span><i class="fal fa-clock"></i>2 MINUTES READ
+                            </span>
+                        </div>
+                        <p>R - the lingua franca of statistics, is live now!
+                        </p>
+                    </a>
+                    <a href="" class="blog-post-card">
+                        <img src="../img/BTS_blog_blogpost.webp" alt="">
+                        <span class="card-label">
+                            COMPANY NEWS
+                        </span>
+                        <div class="post-explain">
+                            <span>
+                                OCTOBER 21, 2021
+                            </span>
+                            <span><i class="fal fa-clock"></i>2 MINUTES READ
+                            </span>
+                        </div>
+                        <p>Back to School is here! Get in a dream coding shape with Sololearn.
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <section>
+            <!-- social-media-list  -->
+            <div class="social-media-list">
+                <ul>
+                    <li>
+                        <img src="../img/icons8-linkedin-2.svg" alt="">
+                        <h3>Follow us on Linkedin</h3>
+                    </li>
+                    <li>
+                        <img src="../img/icons8-facebook-f-48.png" alt="">
+                        <h3>Check out our facebook</h3>
+                    </li>
+                    <li>
+                        <img src="../img/icons8-twitter.svg" alt="">
+                        <h3>See what we tweet about</h3>
+                    </li>
+                    <li>
+                        <img src="../img/icons8-instagram.svg" alt="">
+                        <h3>Join our instagram</h3>
+                    </li>
+                    <li>
+                        <img src="../img/icons8-youtube.svg" alt="">
+                        <h3>Watch our Youtube</h3>
+                    </li>
+                </ul>
+                <div class="social-media-icon">
+                    <a href=""><img src="../img/1200px-Google_Play_Store_badge_EN.svg.png" alt=""></a>
+                    <a href=""><img src="../img/1200px-Download_on_the_App_Store_Badge.svg.png" alt=""></a>
+                </div>
+            </div>
+
+            <!-- footer-list-menu  -->
+            <div class="footer-list-menu">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Courses</a></li>
+                    <li><a href="">Code Playground</a></li>
+                    <li><a href="">Top Learners</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Pro</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Terms of Use</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                </ul>
+                <div>
+                    <p>Made with <span> &hearts; </span>
+                        by
+                        Sololearn
+                        | ©2021</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="../js/header-mode-color.js"></script>
+
+
+</body>
+
+</html>

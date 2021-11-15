@@ -99,8 +99,8 @@ footer section {
 }
 
 .social-media-list li {
-    margin: 0 20px;
-    width: 150px;
+    margin: 0 30px;
+    width: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -115,7 +115,9 @@ footer section {
     -webkit-justify-content: center;
     justify-content: center;
 }
-
+.social-media-list h3{
+    font-size: .9rem;
+}
 .footer-list-menu {
     display: -webkit-box;    display: -ms-flexbox;    display: flex;
     background-color: #100f14;

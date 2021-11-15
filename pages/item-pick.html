@@ -26,8 +26,8 @@
                 <div class="progress-bar"> <span></span><span></span>
                 </div>
             </div>
-            <div> <button class="open-comment"><i class="fas fa-chevron-left"></i><i class="fas fa-comment-alt"></i><span
-                        class="welcome-head">3604 Comments</span></button>
+            <div> <button class="open-comment"><i class="fas fa-chevron-left"></i><i
+                        class="fas fa-comment-alt"></i><span class="welcome-head">3604 Comments</span></button>
                 <aside>
                     <div class="aside-header">
                         <button class="hide-comment"><i class="fas fa-chevron-left"></i><i
@@ -82,10 +82,13 @@
 
             </div>
             <div class="drag-content" ondrop="drop(event)" ondragover="allowDrop(event)" class="items-word">
-                <span id="word1" draggable="true" ondragstart="drag(event)">to&nbsp;</span>
-                <span id="word2" draggable="true" ondragstart="drag(event)">welcome&nbsp;</span>
-                <span id="word3" draggable="true" ondragstart="drag(event)">type&nbsp;</span>
-                <span id="word4" draggable="true" ondragstart="drag(event)">pick&nbsp;</span>
+                <span id="word1" draggable="true" ondragstart="drag(event)" onclick="handleClick(event)">to&nbsp;</span>
+                <span id="word2" draggable="true" ondragstart="drag(event)"
+                    onclick="handleClick(event)">welcome&nbsp;</span>
+                <span id="word3" draggable="true" ondragstart="drag(event)"
+                    onclick="handleClick(event)">type&nbsp;</span>
+                <span id="word4" draggable="true" ondragstart="drag(event)"
+                    onclick="handleClick(event)">pick&nbsp;</span>
             </div>
         </div>
         <div class="continue-btn btn-section">
@@ -141,25 +144,43 @@
             ev.preventDefault();
             var data = ev.dataTransfer.getData("Text");
             ev.target.appendChild(document.getElementById(data));
-            let c = ev.target.childNodes
-            console.log(c)
-            let x = Array.from(c)
-            console.log(x)
-            if (x.length === 5) {
-                console.log(x.join())
-            }
         }
+
+
+        // click
+        function handleClick(event) {
+            // if the click target is not a button, just return
+            // so nothing below runs
+            if (event.target.tagName !== "SPAN") {
+                return;
+            }
+
+            // get the button text
+            let buttonValue = event.target.innerText;
+
+            // display the value in #result
+            document
+                .querySelector("#drop-content")
+                .innerText = buttonValue;
+        }
+
+        // add event listener to the group of buttons
+        // and not every single button
+        document.querySelector(".drag-content").addEventListener("click", handleClick);
+
+
+
         // pup-up
         let open_pupup = document.querySelector('.check-answer')
-            let pupup = document.querySelector('.pup-up-parent')
-            let close_pupup = document.querySelector('.close-pup-up')
+        let pupup = document.querySelector('.pup-up-parent')
+        let close_pupup = document.querySelector('.close-pup-up')
 
-            open_pupup.addEventListener('click', () => {
-                pupup.style.display = 'flex'
-            })
-            close_pupup.addEventListener('click', () => {
-                pupup.style.display = 'none'
-            })
+        open_pupup.addEventListener('click', () => {
+            pupup.style.display = 'flex'
+        })
+        close_pupup.addEventListener('click', () => {
+            pupup.style.display = 'none'
+        })
     </script>
 </body>
 

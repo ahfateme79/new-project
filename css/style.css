@@ -50,7 +50,10 @@
 @import './question.css';
 /* descuss */
 @import './descuss.css';
-
+/* ledaerbaord */
+@import './leaderbaord.css';
+/* blog */
+@import './blog.css';
 
 :root {
     --color: #fff;

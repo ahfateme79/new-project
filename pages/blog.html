@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;1,300;1,400;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header class="header-light">
+        <div class="logo-light-header">
+            <img class="logo-icon" src="../img/Sololearn.png" alt="logo" width="50px"><span> TechWich</span>
+        </div>
+        <div class="menu">
+            <nav>
+                <!-- hamburger-button -->
+                <div class="toggle-wrap" onclick="toggleMenu(this)">Menu
+                    <span class="toggle-bar"></span>
+                </div>
+                <!-- mobile-menu -->
+                <div class="nav-menu">
+                    <ul>
+                        <li><a href="">Courses</a></li>
+                        <li><a href="">Code Playground</a></li>
+                        <li><a href="">Discuss</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Get Pro</a></li>
+                    </ul>
+                    <div class="header-user-details-mobile">
+                        <div class="user-details-mobile">
+                            <div> <button><i class="fas fa-star"></i>500</button></div>
+                        </div>
+                        <div>
+                            <a href=""><img src="../img/community-user-16.png" alt=""></a>Lori A. Barlow
+                        </div>
+                        <div class="not-border"> <a href="" class="go-pro"><i class="fas fa-star"></i>Go PRO
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- desctop-menu -->
+                <ul class="deskop-menu">
+                    <li><a href="">Courses</a></li>
+                    <li><a href="">Code Playground</a></li>
+                    <li><a href="">Discuss</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+                <div class="header-user-details">
+                    <a href="" class="go-pro"><i class="fas fa-star"></i>Go PRO
+                    </a>
+                    <div class="user-details">
+                        <button><i class="fas fa-star"></i>500</button>
+                        <a href=""><img src="../img/community-user-16.png" alt=""></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- header-light prtial -->
+
+    <section class="descuss bg-white">
+        <div class="blog-container center">
+            <div class="blog-bold-heading">
+                <h1>Blog</h1>
+            </div>
+            <div class="blog-tab">
+                <input type="radio" name="blog" id="blog-tab-1" checked>
+                <input type="radio" name="blog" id="blog-tab-2">
+                <input type="radio" name="blog" id="blog-tab-3">
+                <input type="radio" name="blog" id="blog-tab-4">
+                <input type="radio" name="blog" id="blog-tab-5">
+                <div class="blog-tab-label">
+                    <label for="blog-tab-1" id="blog-label-1">ALL</label>
+                    <label for="blog-tab-2" id="blog-label-2">LEARN TO CODE</label>
+                    <label for="blog-tab-3" id="blog-label-3">CAREER DEVELOPMENT</label>
+                    <label for="blog-tab-4" id="blog-label-4">INSIGHTS</label>
+                    <label for="blog-tab-5" id="blog-label-5">COMPANY NEWS</label>
+                </div>
+                <div class="blog-tab-content">
+                    <!-- blog-tab-content-1-->
+                    <div id="blog-tab-content-1">
+                        <div class="card-content">
+                            <a href="" class="blog-post-card">
+                                <img src="../img/Coding_For_Finance_Blogpost_blog.webp" alt="">
+                                <span class="card-label">
+                                    COMPANY NEWS
+                                </span>
+                                <div class="post-explain">
+                                    <span>
+                                        OCTOBER 21, 2021
+                                    </span>
+                                    <span><i class="fal fa-clock"></i>2 MINUTES READ
+                                    </span>
+                                </div>
+                                <p>Python for Finance - a NEW course live on Sololearn!</p>
+                            </a>
+                            <a href="" class="blog-post-card">
+                                <img src="../img/r_blog_blogpost.webp" alt="">
+                                <span class="card-label">
+                                    COMPANY NEWS
+                                </span>
+                                <div class="post-explain">
+                                    <span>
+                                        OCTOBER 21, 2021
+                                    </span>
+                                    <span><i class="fal fa-clock"></i>2 MINUTES READ
+                                    </span>
+                                </div>
+                                <p>R - the lingua franca of statistics, is live now!
+                                </p>
+                            </a>
+                            <a href="" class="blog-post-card">
+                                <img src="../img/BTS_blog_blogpost.webp" alt="">
+                                <span class="card-label">
+                                    COMPANY NEWS
+                                </span>
+                                <div class="post-explain">
+                                    <span>
+                                        OCTOBER 21, 2021
+                                    </span>
+                                    <span><i class="fal fa-clock"></i>2 MINUTES READ
+                                    </span>
+                                </div>
+                                <p>Back to School is here! Get in a dream coding shape with Sololearn.
+                                </p>
+                            </a>
+                            <a href="" class="blog-post-card">
+                                <img src="../img/Building_Web_Applications_Using_C__And_Blazor.webp" alt="">
+                                <span class="card-label bg-match-label-greenblue">
+                                    LEARN TO CODE
+                                </span>
+                                <div class="post-explain">
+                                    <span>
+                                        OCTOBER 21, 2021
+                                    </span>
+                                    <span><i class="fal fa-clock"></i>2 MINUTES READ
+                                    </span>
+                                </div>
+                                <p>Python for Finance - a NEW course live on Sololearn!</p>
+                            </a>
+                            <a href="" class="blog-post-card">
+                                <img src="../img/Explaining_Binary_blog.webp" alt="">
+                                <span class="card-label bg-match-label-greenblue">
+                                    LEARN TO CODE
+                                </span>
+                                <div class="post-explain">
+                                    <span>
+                                        OCTOBER 21, 2021
+                                    </span>
+                                    <span><i class="fal fa-clock"></i>2 MINUTES READ
+                                    </span>
+                                </div>
+                                <p>Python for Finance - a NEW course live on Sololearn!</p>
+                            </a>
+                            <a href="" class="blog-post-card">
+                                <img src="../img/Transitioning_From_Front_End_To_Back_End_Coding_blog.webp" alt="">
+                                <span class="card-label bg-match-label-greenblue">
+                                    LEARN TO CODE
+                                </span>
+                                <div class="post-explain">
+                                    <span>
+                                        OCTOBER 21, 2021
+                                    </span>
+                                    <span><i class="fal fa-clock"></i>2 MINUTES READ
+                                    </span>
+                                </div>
+                                <p>Python for Finance - a NEW course live on Sololearn!</p>
+                            </a>
+                            <a href="" class="blog-post-card">
+                                <img src="../img/The_Coding_Skills_You_Need_For_A_Career_In_IT_blog.webp" alt="">
+                                <span class="card-label bg-match-label-blue">
+                                    INSIGHTS
+                                </span>
+                                <div class="post-explain">
+                                    <span>
+                                        OCTOBER 21, 2021
+                                    </span>
+                                    <span><i class="fal fa-clock"></i>2 MINUTES READ
+                                    </span>
+                                </div>
+                                <p>Python for Finance - a NEW course live on Sololearn!</p>
+                            </a>
+                            <a href="" class="blog-post-card">
+                                <img src="../img/Impostor_Syndrome_in_Software_Engineers__What_It_Is_and_How_to_Overcome_It_blog.webp"
+                                    alt="">
+                                <span class="card-label bg-match-label-blue">
+                                    INSIGHTS
+                                </span>
+                                <div class="post-explain">
+                                    <span>
+                                        OCTOBER 21, 2021
+                                    </span>
+                                    <span><i class="fal fa-clock"></i>2 MINUTES READ
+                                    </span>
+                                </div>
+                                <p>Python for Finance - a NEW course live on Sololearn!</p>
+                            </a>
+                            <a href="" class="blog-post-card">
+                                <img src="../img/How_Marketers_Use_HTML___CSS_blog_01.webp" alt="">
+                                <span class="card-label bg-match-label-blue">
+                                    INSIGHTS
+                                </span>
+                                <div class="post-explain">
+                                    <span>
+                                        OCTOBER 21, 2021
+                                    </span>
+                                    <span><i class="fal fa-clock"></i>2 MINUTES READ
+                                    </span>
+                                </div>
+                                <p>Python for Finance - a NEW course live on Sololearn!</p>
+                            </a>
+
+                        </div>
+                        <div class="load-more"><button>LOAD MORE</button></div>
+                    </div>
+                    <!-- blog-tab-content-2 -->
+                    <div id="blog-tab-content-2">
+                        <div class="card-content">
+                            <a href="" class="blog-post-card">
+                                <img src="../img/Building_Web_Applications_Using_C__And_Blazor.webp" alt="">
+                                <span class="card-label bg-match-label-greenblue">
+                                    LEARN TO CODE
+                                </span>
+                                <div class="post-explain">
+                                    <span>
+                                        OCTOBER 21, 2021
+                                    </span>
+                                    <span><i class="fal fa-clock"></i>2 MINUTES READ
+                                    </span>
+                                </div>
+                                <p>Python for Finance - a NEW course live on Sololearn!</p>
+                            </a>
+                            <a href="" class="blog-post-card">
+                                <img src="../img/Explaining_Binary_blog.webp" alt="">
+                                <span class="card-label bg-match-label-greenblue">
+                                    LEARN TO CODE
+                                </span>
+                                <div class="post-explain">
+                                    <span>
+                                        OCTOBER 21, 2021
+                                    </span>
+                                    <span><i class="fal fa-clock"></i>2 MINUTES READ
+                                    </span>
+                                </div>
+                                <p>Python for Finance - a NEW course live on Sololearn!</p>
+                            </a>
+                            <a href="" class="blog-post-card">
+                                <img src="../img/Transitioning_From_Front_End_To_Back_End_Coding_blog.webp" alt="">
+                                <span class="card-label bg-match-label-greenblue">
+                                    LEARN TO CODE
+                                </span>
+                                <div class="post-explain">
+                                    <span>
+                                        OCTOBER 21, 2021
+                                    </span>
+                                    <span><i class="fal fa-clock"></i>2 MINUTES READ
+                                    </span>
+                                </div>
+                                <p>Python for Finance - a NEW course live on Sololearn!</p>
+                            </a>
+                            <a href="" class="blog-post-card">
+                                <img src="../img/What_Is_Elixir__blogpost.webp" alt="">
+                                <span class="card-label bg-match-label-greenblue">
+                                    LEARN TO CODE
+                                </span>
+                                <div class="post-explain">
+                                    <span>
+                                        OCTOBER 21, 2021
+                                    </span>
+                                    <span><i class="fal fa-clock"></i>2 MINUTES READ
+                                    </span>
+                                </div>
+                                <p>Python for Finance - a NEW course live on Sololearn!</p>
+                            </a>
+                            <a href="" class="blog-post-card">
+                                <img src="../img/What_Is_Racket__blog.webp" alt="">
+                                <span class="card-label bg-match-label-greenblue">
+                                    LEARN TO CODE
+                                </span>
+                                <div class="post-explain">
+                                    <span>
+                                        OCTOBER 21, 2021
+                                    </span>
+                                    <span><i class="fal fa-clock"></i>2 MINUTES READ
+                                    </span>
+                                </div>
+                                <p>Python for Finance - a NEW course live on Sololearn!</p>
+                            </a>
+                            <a href="" class="blog-post-card">
+                                <img src="../img/Web_Course_Redesign_blog_01.webp" alt="">
+                                <span class="card-label bg-match-label-greenblue">
+                                    LEARN TO CODE
+                                </span>
+                                <div class="post-explain">
+                                    <span>
+                                        OCTOBER 21, 2021
+                                    </span>
+                                    <span><i class="fal fa-clock"></i>2 MINUTES READ
+                                    </span>
+                                </div>
+                                <p>Python for Finance - a NEW course live on Sololearn!</p>
+                            </a>
+                            <a href="" class="blog-post-card">
+                                <img src="../img/Building_Web_Applications_Using_C__And_Blazor.webp" alt="">
+                                <span class="card-label bg-match-label-greenblue">
+                                    LEARN TO CODE
+                                </span>
+                                <div class="post-explain">
+                                    <span>
+                                        OCTOBER 21, 2021
+                                    </span>
+                                    <span><i class="fal fa-clock"></i>2 MINUTES READ
+                                    </span>
+                                </div>
+                                <p>Python for Finance - a NEW course live on Sololearn!</p>
+                            </a>
+                            <a href="" class="blog-post-card">
+                                <img src="../img/Explaining_Binary_blog.webp" alt="">
+                                <span class="card-label bg-match-label-greenblue">
+                                    LEARN TO CODE
+                                </span>
+                                <div class="post-explain">
+                                    <span>
+                                        OCTOBER 21, 2021
+                                    </span>
+                                    <span><i class="fal fa-clock"></i>2 MINUTES READ
+                                    </span>
+                                </div>
+                                <p>Python for Finance - a NEW course live on Sololearn!</p>
+                            </a>
+                            <a href="" class="blog-post-card">
+                                <img src="../img/Transitioning_From_Front_End_To_Back_End_Coding_blog.webp" alt="">
+                                <span class="card-label bg-match-label-greenblue">
+                                    LEARN TO CODE
+                                </span>
+                                <div class="post-explain">
+                                    <span>
+                                        OCTOBER 21, 2021
+                                    </span>
+                                    <span><i class="fal fa-clock"></i>2 MINUTES READ
+                                    </span>
+                                </div>
+                                <p>Python for Finance - a NEW course live on Sololearn!</p>
+                            </a>
+                        </div>
+                        <div class="load-more"><button>LOAD MORE</button></div>
+
+                    </div>
+
+
+                    <!-- blog-tab-content-3 -->
+                    <div id="blog-tab-content-3">
+                        <div class="card-content">
+                            <a href="" class="blog-post-card">
+                                <img src="../img/10_Jobs_Where_You_Stand_Out_From_The_Crowd_If_You_Know_How_To_Code_blog_01.webp"
+                                    alt="">
+                                <span class="card-label bg-match-label-darkorange">
+                                    CAREER DEVELOPMENT
+                                </span>
+                                <div class="post-explain">
+                                    <span>
+                                        OCTOBER 21, 2021
+                                    </span>
+                                    <span><i class="fal fa-clock"></i>2 MINUTES READ
+                                    </span>
+                                </div>
+                                <p>Python for Finance - a NEW course live on Sololearn!</p>
+                            </a>
+                            <a href="" class="blog-post-card">
+                                <img src="../img/Your_Job_Search__Crushing_the_Technical_Interview_blog_01.webp" alt="">
+                                <span class="card-label bg-match-label-darkorange">
+                                    CAREER DEVELOPMENT
+                                </span>
+                                <div class="post-explain">
+                                    <span>
+                                        OCTOBER 21, 2021
+                                    </span>
+                                    <span><i class="fal fa-clock"></i>2 MINUTES READ
+                                    </span>
+                                </div>
+                                <p>Python for Finance - a NEW course live on Sololearn!</p>
+                            </a>
+                            <a href="" class="blog-post-card">
+                                <img src="../img/Crushing_The_Behavioral_Interview_blog_01.webp" alt="">
+                                <span class="card-label bg-match-label-darkorange">
+                                    CAREER DEVELOPMENT
+                                </span>
+                                <div class="post-explain">
+                                    <span>
+                                        OCTOBER 21, 2021
+                                    </span>
+                                    <span><i class="fal fa-clock"></i>2 MINUTES READ
+                                    </span>
+                                </div>
+                                <p>Python for Finance - a NEW course live on Sololearn!</p>
+                            </a>
+                            <a href="" class="blog-post-card">
+                                <img src="../img/Network_Your_Way_To_Your_Next_Job_blog_01.webp" alt="">
+                                <span class="card-label bg-match-label-darkorange">
+                                    CAREER DEVELOPMENT
+                                </span>
+                                <div class="post-explain">
+                                    <span>
+                                        OCTOBER 21, 2021
+                                    </span>
+                                    <span><i class="fal fa-clock"></i>2 MINUTES READ
+                                    </span>
+                                </div>
+                                <p>Python for Finance - a NEW course live on Sololearn!</p>
+                            </a>
+                            <a href="" class="blog-post-card">
+                                <img src="../img/JavaScript_Interview_Questions_blogpost_1.webp" alt="">
+                                <span class="card-label bg-match-label-darkorange">
+                                    CAREER DEVELOPMENT
+                                </span>
+                                <div class="post-explain">
+                                    <span>
+                                        OCTOBER 21, 2021
+                                    </span>
+                                    <span><i class="fal fa-clock"></i>2 MINUTES READ
+                                    </span>
+                                </div>
+                                <p>Python for Finance - a NEW course live on Sololearn!</p>
+                            </a>
+                            <a href="" class="blog-post-card">
+                                <img src="../img/Putting_a_Networking_Plan_Together__Blog_1.webp" alt="">
+                                <span class="card-label bg-match-label-darkorange">
+                                    CAREER DEVELOPMENT
+                                </span>
+                                <div class="post-explain">
+                                    <span>
+                                        OCTOBER 21, 2021
+                                    </span>
+                                    <span><i class="fal fa-clock"></i>2 MINUTES READ
+                                    </span>
+                                </div>
+                                <p>Python for Finance - a NEW course live on Sololearn!</p>
+                            </a>
+                            <a href="" class="blog-post-card">
+                                <img src="../img/Network_Your_Way_To_Your_Next_Job_blog_01.webp" alt="">
+                                <span class="card-label bg-match-label-darkorange">
+                                    CAREER DEVELOPMENT
+                                </span>
+                                <div class="post-explain">
+                                    <span>
+                                        OCTOBER 21, 2021
+                                    </span>
+                                    <span><i class="fal fa-clock"></i>2 MINUTES READ
+                                    </span>
+                                </div>
+                                <p>Python for Finance - a NEW course live on Sololearn!</p>
+                            </a>
+                            <a href="" class="blog-post-card">
+                                <img src="../img/JavaScript_Interview_Questions_blogpost_1.webp" alt="">
+                                <span class="card-label bg-match-label-darkorange">
+                                    CAREER DEVELOPMENT
+                                </span>
+                                <div class="post-explain">
+                                    <span>
+                                        OCTOBER 21, 2021
+                                    </span>
+                                    <span><i class="fal fa-clock"></i>2 MINUTES READ
+                                    </span>
+                                </div>
+                                <p>Python for Finance - a NEW course live on Sololearn!</p>
+                            </a>
+                            <a href="" class="blog-post-card">
+                                <img src="../img/Putting_a_Networking_Plan_Together__Blog_1.webp" alt="">
+                                <span class="card-label bg-match-label-darkorange">
+                                    CAREER DEVELOPMENT
+                                </span>
+                                <div class="post-explain">
+                                    <span>
+                                        OCTOBER 21, 2021
+                                    </span>
+                                    <span><i class="fal fa-clock"></i>2 MINUTES READ
+                                    </span>
+                                </div>
+                                <p>Python for Finance - a NEW course live on Sololearn!</p>
+                            </a>
+
+                        </div>
+                        <div class="load-more"><button>LOAD MORE</button></div>
+
+                    </div>
+
+                    <!-- blog-tab-content-4 -->
+                    <div id="blog-tab-content-4">
+                        <div class="card-content">
+                            <a href="" class="blog-post-card">
+                                <img src="../img/How_Marketers_Use_HTML___CSS_blog_01.webp" alt="">
+                                <span class="card-label bg-match-label-blue">
+                                    INSIGHTS
+                                </span>
+                                <div class="post-explain">
+                                    <span>
+                                        OCTOBER 21, 2021
+                                    </span>
+                                    <span><i class="fal fa-clock"></i>2 MINUTES READ
+                                    </span>
+                                </div>
+                                <p>Python for Finance - a NEW course live on Sololearn!</p>
+                            </a>
+                            <a href="" class="blog-post-card">
+                                <img src="../img/Can_You_Learn_Two_Languages_At_The_Same_Time__blog.webp" alt="">
+                                <span class="card-label bg-match-label-blue">
+                                    INSIGHTS
+                                </span>
+                                <div class="post-explain">
+                                    <span>
+                                        OCTOBER 21, 2021
+                                    </span>
+                                    <span><i class="fal fa-clock"></i>2 MINUTES READ
+                                    </span>
+                                </div>
+                                <p>Python for Finance - a NEW course live on Sololearn!</p>
+                            </a>
+                            <a href="" class="blog-post-card">
+                                <img src="../img/How_Python_Helps_Accountants_Use_Excel_blog.webp" alt="">
+                                <span class="card-label bg-match-label-blue">
+                                    INSIGHTS
+                                </span>
+                                <div class="post-explain">
+                                    <span>
+                                        OCTOBER 21, 2021
+                                    </span>
+                                    <span><i class="fal fa-clock"></i>2 MINUTES READ
+                                    </span>
+                                </div>
+                                <p>Python for Finance - a NEW course live on Sololearn!</p>
+                            </a>
+                            <a href="" class="blog-post-card">
+                                <img src="../img/The_Coding_Skills_You_Need_For_A_Career_In_IT_blog.webp" alt="">
+                                <span class="card-label bg-match-label-blue">
+                                    INSIGHTS
+                                </span>
+                                <div class="post-explain">
+                                    <span>
+                                        OCTOBER 21, 2021
+                                    </span>
+                                    <span><i class="fal fa-clock"></i>2 MINUTES READ
+                                    </span>
+                                </div>
+                                <p>Python for Finance - a NEW course live on Sololearn!</p>
+                            </a>
+                            <a href="" class="blog-post-card">
+                                <img src="../img/Impostor_Syndrome_in_Software_Engineers__What_It_Is_and_How_to_Overcome_It_blog.webp"
+                                    alt="">
+                                <span class="card-label bg-match-label-blue">
+                                    INSIGHTS
+                                </span>
+                                <div class="post-explain">
+                                    <span>
+                                        OCTOBER 21, 2021
+                                    </span>
+                                    <span><i class="fal fa-clock"></i>2 MINUTES READ
+                                    </span>
+                                </div>
+                                <p>Python for Finance - a NEW course live on Sololearn!</p>
+                            </a>
+                            <a href="" class="blog-post-card">
+                                <img src="../img/How_Marketers_Use_HTML___CSS_blog_01.webp" alt="">
+                                <span class="card-label bg-match-label-blue">
+                                    INSIGHTS
+                                </span>
+                                <div class="post-explain">
+                                    <span>
+                                        OCTOBER 21, 2021
+                                    </span>
+                                    <span><i class="fal fa-clock"></i>2 MINUTES READ
+                                    </span>
+                                </div>
+                                <p>Python for Finance - a NEW course live on Sololearn!</p>
+                            </a>
+                            <a href="" class="blog-post-card">
+                                <img src="../img/How_Marketers_Use_HTML___CSS_blog_01.webp" alt="">
+                                <span class="card-label bg-match-label-blue">
+                                    INSIGHTS
+                                </span>
+                                <div class="post-explain">
+                                    <span>
+                                        OCTOBER 21, 2021
+                                    </span>
+                                    <span><i class="fal fa-clock"></i>2 MINUTES READ
+                                    </span>
+                                </div>
+                                <p>Python for Finance - a NEW course live on Sololearn!</p>
+                            </a>
+                            <a href="" class="blog-post-card">
+                                <img src="../img/How_Marketers_Use_HTML___CSS_blog_01.webp" alt="">
+                                <span class="card-label bg-match-label-blue">
+                                    INSIGHTS
+                                </span>
+                                <div class="post-explain">
+                                    <span>
+                                        OCTOBER 21, 2021
+                                    </span>
+                                    <span><i class="fal fa-clock"></i>2 MINUTES READ
+                                    </span>
+                                </div>
+                                <p>Python for Finance - a NEW course live on Sololearn!</p>
+                            </a>
+                            <a href="" class="blog-post-card">
+                                <img src="../img/How_Marketers_Use_HTML___CSS_blog_01.webp" alt="">
+                                <span class="card-label bg-match-label-blue">
+                                    INSIGHTS
+                                </span>
+                                <div class="post-explain">
+                                    <span>
+                                        OCTOBER 21, 2021
+                                    </span>
+                                    <span><i class="fal fa-clock"></i>2 MINUTES READ
+                                    </span>
+                                </div>
+                                <p>Python for Finance - a NEW course live on Sololearn!</p>
+                            </a>
+                        </div>
+                        <div class="load-more"><button>LOAD MORE</button></div>
+
+                    </div>
+
+
+                    <!-- blog-tab-content-5 -->
+                    <div id="blog-tab-content-5">
+                        <div class="card-content">
+                            <a href="" class="blog-post-card">
+                                <img src="../img/Coding_For_Finance_Blogpost_blog.webp" alt="">
+                                <span class="card-label">
+                                    COMPANY NEWS
+                                </span>
+                                <div class="post-explain">
+                                    <span>
+                                        OCTOBER 21, 2021
+                                    </span>
+                                    <span><i class="fal fa-clock"></i>2 MINUTES READ
+                                    </span>
+                                </div>
+                                <p>Python for Finance - a NEW course live on Sololearn!</p>
+                            </a>
+                            <a href="" class="blog-post-card">
+                                <img src="../img/r_blog_blogpost.webp" alt="">
+                                <span class="card-label">
+                                    COMPANY NEWS
+                                </span>
+                                <div class="post-explain">
+                                    <span>
+                                        OCTOBER 21, 2021
+                                    </span>
+                                    <span><i class="fal fa-clock"></i>2 MINUTES READ
+                                    </span>
+                                </div>
+                                <p>R - the lingua franca of statistics, is live now!
+                                </p>
+                            </a>
+                            <a href="" class="blog-post-card">
+                                <img src="../img/BTS_blog_blogpost.webp" alt="">
+                                <span class="card-label">
+                                    COMPANY NEWS
+                                </span>
+                                <div class="post-explain">
+                                    <span>
+                                        OCTOBER 21, 2021
+                                    </span>
+                                    <span><i class="fal fa-clock"></i>2 MINUTES READ
+                                    </span>
+                                </div>
+                                <p>Back to School is here! Get in a dream coding shape with Sololearn.
+                                </p>
+                            </a>
+                            <a href="" class="blog-post-card">
+                                <img src="../img/Coding_For_Finance_Blogpost_blog.webp" alt="">
+                                <span class="card-label">
+                                    COMPANY NEWS
+                                </span>
+                                <div class="post-explain">
+                                    <span>
+                                        OCTOBER 21, 2021
+                                    </span>
+                                    <span><i class="fal fa-clock"></i>2 MINUTES READ
+                                    </span>
+                                </div>
+                                <p>Python for Finance - a NEW course live on Sololearn!</p>
+                            </a>
+                            <a href="" class="blog-post-card">
+                                <img src="../img/r_blog_blogpost.webp" alt="">
+                                <span class="card-label">
+                                    COMPANY NEWS
+                                </span>
+                                <div class="post-explain">
+                                    <span>
+                                        OCTOBER 21, 2021
+                                    </span>
+                                    <span><i class="fal fa-clock"></i>2 MINUTES READ
+                                    </span>
+                                </div>
+                                <p>R - the lingua franca of statistics, is live now!
+                                </p>
+                            </a>
+                            <a href="" class="blog-post-card">
+                                <img src="../img/BTS_blog_blogpost.webp" alt="">
+                                <span class="card-label">
+                                    COMPANY NEWS
+                                </span>
+                                <div class="post-explain">
+                                    <span>
+                                        OCTOBER 21, 2021
+                                    </span>
+                                    <span><i class="fal fa-clock"></i>2 MINUTES READ
+                                    </span>
+                                </div>
+                                <p>Back to School is here! Get in a dream coding shape with Sololearn.
+                                </p>
+                            </a>
+                            <a href="" class="blog-post-card">
+                                <img src="../img/Coding_For_Finance_Blogpost_blog.webp" alt="">
+                                <span class="card-label">
+                                    COMPANY NEWS
+                                </span>
+                                <div class="post-explain">
+                                    <span>
+                                        OCTOBER 21, 2021
+                                    </span>
+                                    <span><i class="fal fa-clock"></i>2 MINUTES READ
+                                    </span>
+                                </div>
+                                <p>Python for Finance - a NEW course live on Sololearn!</p>
+                            </a>
+                            <a href="" class="blog-post-card">
+                                <img src="../img/r_blog_blogpost.webp" alt="">
+                                <span class="card-label">
+                                    COMPANY NEWS
+                                </span>
+                                <div class="post-explain">
+                                    <span>
+                                        OCTOBER 21, 2021
+                                    </span>
+                                    <span><i class="fal fa-clock"></i>2 MINUTES READ
+                                    </span>
+                                </div>
+                                <p>R - the lingua franca of statistics, is live now!
+                                </p>
+                            </a>
+                            <a href="" class="blog-post-card">
+                                <img src="../img/BTS_blog_blogpost.webp" alt="">
+                                <span class="card-label">
+                                    COMPANY NEWS
+                                </span>
+                                <div class="post-explain">
+                                    <span>
+                                        OCTOBER 21, 2021
+                                    </span>
+                                    <span><i class="fal fa-clock"></i>2 MINUTES READ
+                                    </span>
+                                </div>
+                                <p>Back to School is here! Get in a dream coding shape with Sololearn.
+                                </p>
+                            </a>
+                        </div>
+                        <div class="load-more"><button>LOAD MORE</button></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <section>
+            <!-- social-media-list  -->
+            <div class="social-media-list">
+                <ul>
+                    <li>
+                        <img src="../img/icons8-linkedin-2.svg" alt="">
+                        <h3>Follow us on Linkedin</h3>
+                    </li>
+                    <li>
+                        <img src="../img/icons8-facebook-f-48.png" alt="">
+                        <h3>Check out our facebook</h3>
+                    </li>
+                    <li>
+                        <img src="../img/icons8-twitter.svg" alt="">
+                        <h3>See what we tweet about</h3>
+                    </li>
+                    <li>
+                        <img src="../img/icons8-instagram.svg" alt="">
+                        <h3>Join our instagram</h3>
+                    </li>
+                    <li>
+                        <img src="../img/icons8-youtube.svg" alt="">
+                        <h3>Watch our Youtube</h3>
+                    </li>
+                </ul>
+                <div class="social-media-icon">
+                    <a href=""><img src="../img/1200px-Google_Play_Store_badge_EN.svg.png" alt=""></a>
+                    <a href=""><img src="../img/1200px-Download_on_the_App_Store_Badge.svg.png" alt=""></a>
+                </div>
+            </div>
+
+            <!-- footer-list-menu  -->
+            <div class="footer-list-menu">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Courses</a></li>
+                    <li><a href="">Code Playground</a></li>
+                    <li><a href="">Top Learners</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Pro</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Terms of Use</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                </ul>
+                <div>
+                    <p>Made with <span> &hearts; </span>
+                        by
+                        Sololearn
+                        | ©2021</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="../js/header-mode-color.js"></script>
+
+
+</body>
+
+</html>
