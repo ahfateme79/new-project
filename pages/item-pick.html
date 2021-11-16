@@ -154,14 +154,12 @@
             if (event.target.tagName !== "SPAN") {
                 return;
             }
-
+            
             // get the button text
             let buttonValue = event.target.innerText;
 
             // display the value in #result
-            document
-                .querySelector("#drop-content")
-                .innerText = buttonValue;
+            document.querySelector("#drop-content").appendChild(document.getElementById(event.target.id));
         }
 
         // add event listener to the group of buttons
