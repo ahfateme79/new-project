@@ -44,7 +44,7 @@ footer,
 
 .coming-soon h1,
 .blog-content p,
-.card-content p {
+.card-content p,.post-topic a {
     text-align: right;
 }
 
