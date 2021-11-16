@@ -356,12 +356,12 @@
         display: none;
     }
 
-    .post-details a:first-child {
+    .post-details div:first-child a:first-child {
         border-bottom: 1px solid rgb(223, 217, 217);
 
     }
 
-    .post-details a {
+    .post-details div:first-child a {
         padding: 3px;
         width: 50%;
     }
