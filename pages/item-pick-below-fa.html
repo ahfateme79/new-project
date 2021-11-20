@@ -81,7 +81,8 @@
             <h2>انتخاب نوع</h2>
             <p>انواع داده های مربوطه را به مقادیر داده شده بکشید و رها کنید:
             </p>
-            <div class="drop-content" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="drop-content drop-full-line" ondrop="drop(event)"
+                ondragover="allowDrop(event)">
 
             </div>
             <div class="drag-content" ondrop="drop(event)" ondragover="allowDrop(event)" class="items-word">
@@ -164,6 +165,7 @@
         document.querySelector(".drop-content").addEventListener("click", (event) => {
             document.querySelector(".drag-content").appendChild(document.getElementById(event.target.id));
         })
+
 
         // aside
         let popularcomment = document.querySelector('.popular-comment')

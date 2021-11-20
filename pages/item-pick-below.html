@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
 
-
 </head>
 
 <body>
@@ -78,7 +77,8 @@
         <div class="contents">
             <h2>pick type</h2>
             <p>Drag and drop the corresponding data types to the given values:</p>
-            <div class="drop-content"  ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="drop-content drop-full-line" ondrop="drop(event)"
+                ondragover="allowDrop(event)">
 
             </div>
             <div class="drag-content" ondrop="drop(event)" ondragover="allowDrop(event)" class="items-word">
@@ -165,10 +165,11 @@
         // add event listener to the group of buttons
         // and not every single button
         document.querySelector(".drag-content").addEventListener("click", handleClick);
-    // click and back to first place
+        // click and back to first place
         document.querySelector(".drop-content").addEventListener("click", (event) => {
             document.querySelector(".drag-content").appendChild(document.getElementById(event.target.id));
         })
+
 
         // pup-up
         let open_pupup = document.querySelector('.check-answer')
