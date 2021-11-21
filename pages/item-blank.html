@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Teach Wich</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -81,30 +81,19 @@
             <div class="quiz">
                 <div>
                     <span>15.2</span>
-                    <div class="drop-content" id="drop-content" data-drop="1" ondrop="drop(event)" ondragover="allowDrop(event)">
-                    </div>
+                    <div></div>
                 </div>
                 <div>
                     <span>false</span>
-                    <div class="drop-content " id="drop-content" data-drop="2" ondrop="drop(event)" ondragover="allowDrop(event)">
-                    </div>
+                    <div></div>
                 </div>
                 <div> <span>551</span>
-                    <div class="drop-content " id="drop-content" data-drop="3" ondrop="drop(event)" ondragover="allowDrop(event)">
-                    </div>
+                    <div></div>
                 </div>
                 <div>
                     <span>'a'</span>
-                    <div class="drop-content " id="drop-content" data-drop="4" ondrop="drop(event)" ondragover="allowDrop(event)">
-                    </div>
+                    <div></div>
                 </div>
-            </div>
-            <div class="drag-content" ondrop="drop(event)" ondragover="allowDrop(event)" class="items-word">
-                <span id="word1" draggable="true" ondragstart="drag(event)" >boolean&nbsp;</span>
-                <span id="word2" draggable="true" ondragstart="drag(event)" >string&nbsp;</span>
-                <span id="word3" draggable="true" ondragstart="drag(event)">integer&nbsp;</span>
-                <span id="word4" draggable="true" ondragstart="drag(event)">float&nbsp;</span>
-
             </div>
         </div>
         <div class="continue-btn btn-section">
@@ -133,22 +122,6 @@
 
 
     <script>
-        function allowDrop(ev) {
-            ev.preventDefault();
-        }
-
-        function drag(ev) {
-            ev.dataTransfer.setData("Text", ev.target.id);
-            console.log(ev.target.innerText);
-        }
-
-        function drop(ev) {
-            ev.preventDefault();
-            var data = ev.dataTransfer.getData("Text");
-            ev.target.appendChild(document.getElementById(data));
-        }
-
-
         let popularcomment = document.querySelector('.popular-comment')
         let opencomment = document.querySelector('.open-comment')
         let aside = document.querySelector('aside')
