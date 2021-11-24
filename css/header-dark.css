@@ -25,7 +25,7 @@ header {
 /* header */
 .logo {
     width: 30%;
-    color: #fff;
+    color: var(--color);
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
@@ -75,7 +75,7 @@ nav ul li {
 
 nav > ul li a {
     font-size: 1.2rem;
-    color: #c8d2db;
+    color: var(--color);
 }
 .user-information img{
     width: 40px;
@@ -93,6 +93,9 @@ nav > ul li a {
     border: none;
     align-items: center;
     display: flex;
+}
+.user-information span{
+    color: var(--color);
 }
 .login-btn-desktop,.login-btn-mobile {
     display: -ms-flexbox;
@@ -113,7 +116,7 @@ nav > ul li a {
     margin: 0 10px;
     border: 1px solid #2493df;
     background-color: transparent;
-    color: #fff;
+    color: #ffffff;
     border-radius: 5px;
     display: -ms-flexbox;
     display: flex;
@@ -130,9 +133,7 @@ nav > ul li a {
     justify-content: center;
     justify-content: center;
 }
-.login-mobile{
-    color: #fff;
-}
+
 .login-btn-desktop a:last-child, .login-btn-mobile a:last-child{
     background-color: #2493df;
     border: none;
@@ -207,12 +208,7 @@ nav > ul li a {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
-.menu-title{
-    color: #fff;
-}
-.name{
-    color: #fff;
-}
+
   /* responsive menu */
   .nav-menu{
       position: fixed;
@@ -220,8 +216,8 @@ nav > ul li a {
       top: 100px;
       left: 0;
       right: 0;
-      background-color: #1f1e28;
-      min-height: 55vh;
+      background-color: #ffffff;
+      height: 55vh;
       display: none;
       border: .2px solid #2d3846;
       -webkit-box-shadow: 0 6px 20px rgb(0 0 0 / 20%);
@@ -257,10 +253,10 @@ nav > ul li a {
   nav .nav-menu li{
       margin: 7px;
   }
-  .nav-menu ul li a{
-      color: #fff;
-  }
 
+.nav-menu li a{
+    color: var(--color);
+}
 
   /* responsive header */
 @media screen and (max-width:1100px){

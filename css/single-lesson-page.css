@@ -19,20 +19,23 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     -ms-flex-align: start;
-        align-items: flex-start;
+    align-items: flex-start;
     -webkit-box-align: flex-start;
 
 }
 
 .back-link {
     display: inline-block;
-    -webkit-transform: translate(200px, -60px);    -ms-transform: translate(200px, -60px);    transform: translate(200px, -60px);
+    -webkit-transform: translate(200px, -60px);
+    -ms-transform: translate(200px, -60px);
+    transform: translate(200px, -60px);
 }
 
 .back-link a {
     color: #fff;
 }
-.back-link i{
+
+.back-link i {
     margin: 0 10px;
 }
 
@@ -63,7 +66,9 @@
     position: absolute;
     top: 320px;
     left: 50%;
-    -webkit-transform: translateX(-50%);    -ms-transform: translateX(-50%);    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
     min-height: 100vh;
 }
 
@@ -75,6 +80,7 @@
     appearance: blue;
     padding: 25px;
     margin: 15px 0;
+    appearance: none;
 }
 
 
@@ -85,14 +91,15 @@
     margin: 0 10px;
     background-color: rgb(92, 159, 247);
 }
+
 .lesson-select-item details summary div {
     display: -webkit-flex;
     display: -webkit-box;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     -ms-flex-align: center;
-        align-items: center;
+    align-items: center;
     -webkit-box-align: center;
     display: -ms-flexbox;
     display: flex;
@@ -102,21 +109,17 @@
 .lesson-select-item details summary {
     display: -webkit-flex;
     display: -webkit-box;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-            justify-content: center;
     -ms-flex-align: center;
-        align-items: center;
+    align-items: center;
     -webkit-box-align: center;
-    -webkit-box-pack: space-between;
-    -ms-flex-pack: space-between;
-    -webkit-justify-content: space-between;
     display: -ms-flexbox;
     display: flex;
     /* justify-content: flex-start; */
-    align-items: center;
-    -webkit-box-pack: justify;    -ms-flex-pack: justify;    justify-content: space-between;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
+
 .lesson-select-item details summary span {
     background-image: url(../img/arrow-down-sign-to-navigate.png);
     width: 16px;
@@ -125,7 +128,7 @@
     background-size: contain;
 }
 
-.lesson-select-item details[open] summary span{
+.lesson-select-item details[open] summary span {
     background-image: url(../img/navigate-up-arrow.png);
 
 }
@@ -137,9 +140,9 @@
     display: -webkit-box;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     -ms-flex-align: center;
-        align-items: center;
+    align-items: center;
     -webkit-box-align: center;
     display: -ms-flexbox;
     display: flex;
@@ -166,7 +169,7 @@
     display: -webkit-flex;
     display: -webkit-box;
     -ms-flex-align: center;
-        align-items: center;
+    align-items: center;
     -webkit-box-align: center;
     display: -ms-flexbox;
     display: flex;
@@ -174,7 +177,7 @@
     /* overflow-x: scroll;
     -ms-overflow-style: none;
     /* for Internet Explorer, Edge */
-    scrollbar-width: none; 
+    scrollbar-width: none;
 }
 
 /* .lesson-tree>div::-webkit-scrollbar {
@@ -187,7 +190,9 @@
     height: 15px;
     border-radius: 100%;
     background-color: rgb(143, 138, 138);
-    -webkit-transform: translate(50%, 50px);    -ms-transform: translate(50%, 50px);    transform: translate(50%, 50px);
+    -webkit-transform: translate(50%, 50px);
+    -ms-transform: translate(50%, 50px);
+    transform: translate(50%, 50px);
     display: inline-block;
     position: relative;
     right: 48.5%;
@@ -207,11 +212,12 @@
 .lesson-tree>div:last-child a {
     width: 100%;
 }
+
 .lesson-tree>div:last-child a div {
     display: -webkit-flex;
     display: -webkit-box;
     -ms-flex-align: center;
-        align-items: center;
+    align-items: center;
     -webkit-box-align: center;
     display: -ms-flexbox;
     display: flex;
@@ -246,52 +252,64 @@
         display: none;
         /* for Chrome, Safari, and Opera */
     }
+
     .lesson-select-item {
         width: 100%;
         border-radius: 0;
         top: 350px;
     }
+
     .lesson-select-item details {
         border-radius: 0;
     }
-    
+
     .lesson-tree>div a {
         min-width: 150px;
     }
+
     .lesson-tree>span {
         right: 48%;
         top: 65%;
     }
-    .introduce{
+
+    .introduce {
         width: 80%;
         flex-wrap: wrap;
         -webkit-flex-wrap: wrap;
         padding: 30px 0;
     }
-    .introduce > div{
+
+    .introduce>div {
         width: 100%;
         text-align: center;
         padding: 20px 0;
     }
-    .introduce > div p{
+
+    .introduce>div p {
         font-size: .9rem;
         padding-bottom: 30px;
     }
-    .back-link{
-        -webkit-transform: translate(20px,20px);        -ms-transform: translate(20px,20px);        transform: translate(20px,20px);
+
+    .back-link {
+        -webkit-transform: translate(20px, 20px);
+        -ms-transform: translate(20px, 20px);
+        transform: translate(20px, 20px);
     }
-    .back-link span{
+
+    .back-link span {
         display: none;
     }
 }
-@media screen and (min-width:600px) and (max-width:1000px){
+
+@media screen and (min-width:600px) and (max-width:1000px) {
     .lesson-select-item {
         width: 90%;
         border-radius: 0;
     }
+
     .lesson-select-item details {
         border-radius: 5px;
-    }    
+    }
 }
 
 @media screen and (max-width:1200px) {
@@ -309,22 +327,27 @@
     }
 
 }
-.tick,.luck{
+
+.tick,
+.luck {
     width: 100%;
     display: -webkit-flex;
     display: -webkit-box;
     -ms-flex-align: center;
-        align-items: center;
+    align-items: center;
     -webkit-box-align: center;
     -webkit-box-pack: flex-end;
     -ms-flex-pack: flex-end;
     -webkit-justify-content: flex-end;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;    -ms-flex-pack: end;    justify-content: flex-end;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
     align-items: center;
 }
-.tick span{
+
+.tick span {
     width: 25px;
     height: 25px;
     background-color: rgb(1, 190, 127);
@@ -332,7 +355,7 @@
     display: -webkit-box;
     justify-content: center;
     -ms-flex-align: center;
-        align-items: center;
+    align-items: center;
     -webkit-box-align: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -345,7 +368,8 @@
     color: #fff;
     border-radius: 50%;
 }
-.luck span{
+
+.luck span {
     width: 25px;
     height: 25px;
     background-color: rgb(190, 183, 183);
@@ -353,7 +377,7 @@
     display: -webkit-box;
     justify-content: center;
     -ms-flex-align: center;
-        align-items: center;
+    align-items: center;
     -webkit-box-align: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
