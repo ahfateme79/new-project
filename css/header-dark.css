@@ -221,7 +221,7 @@ nav > ul li a {
       left: 0;
       right: 0;
       background-color: #1f1e28;
-      height: 55vh;
+      min-height: 55vh;
       display: none;
       border: .2px solid #2d3846;
       -webkit-box-shadow: 0 6px 20px rgb(0 0 0 / 20%);
