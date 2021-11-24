@@ -94,9 +94,6 @@ nav > ul li a {
     align-items: center;
     display: flex;
 }
-.user-information span{
-    color: white;
-}
 .login-btn-desktop,.login-btn-mobile {
     display: -ms-flexbox;
     display: flex;
@@ -133,7 +130,9 @@ nav > ul li a {
     justify-content: center;
     justify-content: center;
 }
-
+.login-mobile{
+    color: #fff;
+}
 .login-btn-desktop a:last-child, .login-btn-mobile a:last-child{
     background-color: #2493df;
     border: none;
@@ -208,7 +207,12 @@ nav > ul li a {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
-
+.menu-title{
+    color: #fff;
+}
+.name{
+    color: #fff;
+}
   /* responsive menu */
   .nav-menu{
       position: fixed;
@@ -216,7 +220,7 @@ nav > ul li a {
       top: 100px;
       left: 0;
       right: 0;
-      background-color: #ffffff;
+      background-color: #1f1e28;
       height: 55vh;
       display: none;
       border: .2px solid #2d3846;
@@ -253,7 +257,9 @@ nav > ul li a {
   nav .nav-menu li{
       margin: 7px;
   }
-
+  .nav-menu ul li a{
+      color: #fff;
+  }
 
 
   /* responsive header */

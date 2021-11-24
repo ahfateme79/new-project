@@ -1,6 +1,6 @@
 // swiper scripts***
 var swiper = new Swiper('.swiper', {
-    slidesPerView:3,
+    slidesPerView: 3,
     // direction: getDirection(),
     watchSlidesProgress: true,
     navigation: {
@@ -17,7 +17,7 @@ var swiper = new Swiper('.swiper', {
 
 // change style of elemnts when scroll
 let links = document.querySelectorAll("nav ul li a")
-window.addEventListener("scroll", function() {
+window.addEventListener("scroll", function () {
     if (window.scrollY > 500) {
         document.querySelector("header").style.background = "rgb(240, 236, 233)";
         // document.querySelector('.logo-icon').src = '../img/sololearn.png'
@@ -30,6 +30,8 @@ window.addEventListener("scroll", function() {
         document.querySelector('.nav-menu ul').style.borderColor = "#bcd0e9"
         document.querySelector('.nav-menu ul li a').style.color = "#1f1e28"
         document.querySelector('nav ul li a').style.color = "#1f1e28"
+        document.querySelector('.menu-title').style.color = "#1f1e28"
+        document.querySelector('.name').style.color = "#1f1e28"
 
 
         document.querySelector('.toggle-wrap').style.color = 'black'
@@ -41,6 +43,10 @@ window.addEventListener("scroll", function() {
         document.querySelector("header").style.background = "#1f1e28";
         document.documentElement.style.setProperty('--color', "#fff")
         document.querySelector('.nav-menu').style.background = "#1f1e28"
+        document.querySelector('.nav-menu ul li a').style.color = "#fff"
+        document.querySelector('.menu-title').style.color = "#fff"
+        document.querySelector('.name').style.color = "#fff"
+
 
         // document.querySelector('.logo-icon').src = '../img/WnyXWTp.png'
         document.querySelector('.logo').style.color = '#fff'

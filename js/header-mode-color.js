@@ -5,7 +5,7 @@ window.addEventListener("scroll", function () {
         // document.querySelector(' .logo-icon').src = '../img/sololearn.png'
         // document.documentElement.style.setProperty('--color', "black")
         document.querySelector('.logo-light-header').style.color = 'black'
-        document.querySelector('.header-light .login').style.color = '#2493df'
+        // document.querySelector('.header-light .login').style.color = '#2493df'
         document.querySelector('.header-light .login-mobile').style.color = '#2493df'
         document.querySelector('.header-light .nav-menu').style.background = "#fff"
         document.querySelector('.header-light .nav-menu').style.borderColor = "transparent"
