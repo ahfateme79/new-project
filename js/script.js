@@ -21,6 +21,8 @@ window.addEventListener("scroll", function () {
     if (window.scrollY < 500) {
         document.querySelector("header").style.background = "#1f1e28";
         document.documentElement.style.setProperty('--color', "#fff");
+        document.documentElement.style.setProperty('--bgcolor', "#fff");
+
         document.querySelector('.nav-menu').style.background = "#1f1e28";
         // document.querySelector('.nav-menu ul li a').style.color = "#fff"
         document.querySelector('.menu-title').style.color = "#fff";
@@ -39,6 +41,7 @@ window.addEventListener("scroll", function () {
         document.querySelector("header").style.background = "rgb(240, 236, 233)";
         // document.querySelector('.logo-icon').src = '../img/sololearn.png'
         document.documentElement.style.setProperty('--color', "black");
+        document.documentElement.style.setProperty('--bgcolor', "#1f1e28");
         // document.querySelector('.logo').style.color = 'black'
         document.querySelector('.login').style.color = '#2493df';
         document.querySelector('.login-mobile').style.color = '#2493df';

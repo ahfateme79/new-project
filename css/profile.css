@@ -651,6 +651,13 @@ progress::-webkit-progress-value {
 
     }
 }
+@media screen and (max-width:600px) {
+    .even {
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+
+}
 
 @media screen and (max-width:1100px) {
     .user-info {
@@ -747,10 +754,6 @@ progress::-webkit-progress-value {
         width: 60%;
     }
 
-    .even {
-        padding: 10px;
-        flex-wrap: wrap;
-    }
 
     .carousel .swiper-button-prev {
         -webkit-transform: translateX(200px) scale(.4);
