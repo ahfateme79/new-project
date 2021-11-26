@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 .single {
     overflow-x: hidden;
     overflow-y: auto;
@@ -77,9 +84,13 @@
     background-color: #fff;
     width: 100%;
     border-radius: 10px;
+    -webkit-appearance: blue;
+    -moz-appearance: blue;
     appearance: blue;
     padding: 25px;
     margin: 15px 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     appearance: none;
 }
 
@@ -114,10 +125,12 @@
     -webkit-box-align: center;
     display: -ms-flexbox;
     display: flex;
-    /* justify-content: flex-start; */
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 .lesson-select-item details summary span {
@@ -274,6 +287,7 @@
 
     .introduce {
         width: 80%;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         -webkit-flex-wrap: wrap;
         padding: 30px 0;

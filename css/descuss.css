@@ -1,6 +1,17 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 .descuss {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     padding: 50px 0;
     min-height: 200vh;
@@ -16,8 +27,14 @@
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
+    -webkit-box-shadow: 1px 1px 3px rgb(160, 159, 159);
     box-shadow: 1px 1px 3px rgb(160, 159, 159);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     background-color: white;
     padding: 20px;
@@ -35,8 +52,14 @@
 
 .question-section {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     padding: 30px 0;
 }
@@ -44,8 +67,14 @@
 .question-section a {
     width: 120px;
     height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     color: white;
     background-color: mediumseagreen;
@@ -68,9 +97,13 @@
 
 .question-section form div {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 35px;
-    border: .5px solid rgb(187, 178, 178);
+    border: 1px solid rgb(187, 178, 178);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -83,8 +116,14 @@
     background-color: rgb(5, 168, 114);
     width: 15%;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     color: white;
 }
@@ -100,6 +139,8 @@
 .question-labels {
     width: 100%;
     border-bottom: 1px solid rgb(219, 214, 214);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 40px;
 }
@@ -107,8 +148,14 @@
 .question-labels label {
     width: 100px;
     height: 41px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     color: black;
     font-size: .8rem;
@@ -164,6 +211,7 @@
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
+    -webkit-box-shadow: 1px 1px 3px rgb(160, 159, 159);
     box-shadow: 1px 1px 3px rgb(160, 159, 159);
     background-color: white;
     padding: 20px;
@@ -189,12 +237,16 @@
 
 .sidebar ul li {
     margin: 10px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 
 }
 
 .sidebar ul li a {
     color: gray;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -206,23 +258,36 @@
 .peopel-question-content li {
     min-height: 120px;
     border-bottom: 1px solid rgb(219, 214, 214);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
 .post-details {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .post-details a {
     font-size: .7rem;
     margin: 5px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
     text-align: center;
     color: rgb(104, 103, 103);
     font-weight: lighter;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -258,18 +323,31 @@
 
 .post-user-info {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
     padding: 5px 0;
 }
 
 .post-user-info>div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 .post-user-info div div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -297,9 +375,18 @@
 
 .signin-content {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     min-height: 200px;
 }
@@ -324,14 +411,21 @@
     -o-border-radius: 4px;
     background-color: rgb(5, 168, 114);
     color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     font-size: .9rem;
 }
 
 @media screen and (max-width:600px) {
     .descuss {
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
 
@@ -376,16 +470,28 @@
 
     .options {
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
 
     .options a {
         width: 100px;
         height: 30px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         color: white;
         background-color: mediumseagreen;
@@ -403,6 +509,8 @@
     }
 
     .question-section {
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
         justify-content: flex-end;
     }
 
@@ -431,7 +539,12 @@
 .discus-spost {
     width: 45%;
     min-height: 40vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     margin: 0 40px;
 }
@@ -444,20 +557,26 @@
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
+    -webkit-box-shadow: 1px 1px 3px rgb(160, 159, 159);
     box-shadow: 1px 1px 3px rgb(160, 159, 159);
     padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
-.Ask-question a,.answer-questions a{
+.Ask-question a,
+.answer-questions a {
     font-size: .8rem;
 }
 
-.Ask-question .topic-question,.answer-questions .topic-question{
+.Ask-question .topic-question,
+.answer-questions .topic-question {
     color: black;
     font-size: 1.1rem;
     font-weight: normal;
 }
+
 .Ask-question p,
 .answer-questions p {
     font-size: .8rem;
@@ -469,23 +588,33 @@
     padding: 0 15px;
     text-align: center;
 }
-.btn-control button{
+
+.btn-control button {
     background-color: transparent;
 }
-.btn-control button i{
+
+.btn-control button i {
     color: rgb(236, 230, 230);
     font-size: 20px;
 }
+
 .btn-control input {
     color: rgb(9, 170, 116);
     font-size: .7rem;
     margin: 5px auto;
-    display:block;
+    display: block;
 }
 
 .btn-control div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
 }
 
@@ -497,8 +626,14 @@
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
+    -webkit-box-shadow: 1px 1px 3px rgb(160, 159, 159);
     box-shadow: 1px 1px 3px rgb(160, 159, 159);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     min-height: 40vh;
 }
@@ -506,14 +641,22 @@
 .answer-questions {
     width: 100%;
     padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     border-bottom: 1px solid rgb(233, 226, 226);
 }
 
 .reply-control {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     min-height: 80px;
     padding: 0 5px;
@@ -522,11 +665,13 @@
 .reply-control a {
     color: rgb(104, 104, 189);
 }
-.reply-control select{
+
+.reply-control select {
     border: 1px solid rgb(190, 190, 192);
     background-color: white;
     padding: 10px;
 }
+
 @media screen and (max-width:600px) {
 
     .discus-spost {
@@ -546,45 +691,68 @@
 }
 
 /* discuss-form */
-.discuss-form{
+.discuss-form {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     margin: 20px 0;
 }
-.discuss-form form{
+
+.discuss-form form {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
-.discuss-form form label{
+
+.discuss-form form label {
     font-weight: bold;
     margin-top: 5px;
     font-size: .9rem;
 }
-.discuss-form form input ,.discuss-form form textarea{
+
+.discuss-form form input,
+.discuss-form form textarea {
     border: 1px solid rgb(209, 198, 198);
     margin: 5px 0;
-    padding:5px 10px;
+    padding: 5px 10px;
 }
-.recaptcha{
+
+.recaptcha {
     width: 100%;
     padding: 10px 0;
 }
-.form-btn{
+
+.form-btn {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
 }
-.form-btn button{
+
+.form-btn button {
     background-color: transparent;
-    margin:0 10px;
+    margin: 0 10px;
     color: gray;
     font-size: 1rem;
 }
-.form-btn button:last-child{
+
+.form-btn button:last-child {
     color: rgb(5, 168, 114);
 }
-.max-height{
+
+.max-height {
     height: 70vh;
 }

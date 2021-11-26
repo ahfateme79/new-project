@@ -1,12 +1,21 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 /* home-solo */
 
 .home-solo {
     width: 100%;
     min-height: 100vh;
     background-color: rgb(233, 238, 241);
+    display: -ms-flexbox;
     display: flex;
     justify-content: center;
-    align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
     padding: 300px 0 50px 0;
     display: -webkit-flex;
     display: -webkit-box;
@@ -16,7 +25,6 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-justify-content: center;
     justify-content: center;
 }
 
@@ -24,6 +32,7 @@
     /* position: absolute; */
     top: 200px;
     width: 90%;
+    display: -ms-grid;
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -32,23 +41,25 @@
 
 @media screen and (max-width:900px) {
     .cards {
+        -ms-grid-columns: 100%;
         grid-template-columns: 100%;
     }
 }
 
 .cards>div {
     margin: 10px 0;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: column;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
     -ms-flex-direction: column;
     background-color: #fff;
     border-radius: 5px;
     padding: 30px;
     justify-content: center;
-    align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
     display: -webkit-flex;
     display: -webkit-box;
     justify-content: center;
@@ -57,7 +68,6 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-justify-content: center;
     justify-content: center;
 display: flex;
 }
@@ -77,10 +87,11 @@ display: flex;
     flex-direction: row;
     -webkit-box-pack: justify;    -ms-flex-pack: justify;    justify-content: space-between;
     /* min-height: 480px; */
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
     grid-column: 1 / 3;
     -webkit-box-orient:vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
     -ms-flex-direction: row;
     
 
@@ -98,7 +109,8 @@ display: flex;
 .social-icon {
     width: 70%;
     display: -webkit-box;    display: -ms-flexbox;    display: flex;
-    align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
     -webkit-box-pack: justify;    -ms-flex-pack: justify;    justify-content: space-between;
     align-items: center;
     -webkit-box-align: center;
@@ -115,7 +127,8 @@ display: flex;
     .cards div:nth-child(4) {
         /* width: 100%; */
         justify-content: center;
-        align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
         -webkit-box-align: center;
         -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -130,22 +143,27 @@ display: flex;
     }
     
     .cards div:nth-child(4) {
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         /* min-height: 480px; */
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -ms-flex-align: center;
+            align-items: center;
         grid-column: auto;
         align-items: center;
         -webkit-box-align: center;
     }
 
     .social-icon {
-        flex-wrap: wrap;
-        justify-content: center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: center;
+                justify-content: center;
         width: 100%;
         -ms-flex-pack: center;
         justify-content: center;
-        -webkit-justify-content: center;
         justify-content: center;
         -webkit-flex-wrap: wrap;
 
@@ -180,4 +198,3 @@ display: flex;
     }
 
 }
-
