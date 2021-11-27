@@ -1,1 +1,2 @@
 1-change buttons tag in indexes files to a tag
+2-add "modal-open-profile.html" to pages folder 
