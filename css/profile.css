@@ -967,7 +967,7 @@ progress::-webkit-progress-value {
     padding: 5px 0;
 }
 
-.close-modal {
+.close-modal,.close-modal-mobile {
     background-color: transparent;
     color: rgb(128, 123, 123);
     position: absolute;

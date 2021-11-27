@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teach Wich</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    <style>
+        .profile-modal-parent {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header-light">
+        <div class="logo-light-header">
+            <img class="logo-icon" src="../img/Sololearn.png" alt="logo" width="50px"><span> TechWich</span>
+        </div>
+        <div class="menu">
+            <nav>
+                <!-- hamburger-button -->
+                <div class="toggle-wrap" onclick="toggleMenu(this)">Menu
+                    <span class="toggle-bar"></span>
+                </div>
+                <!-- mobile-menu -->
+                <div class="nav-menu login-menu">
+                    <ul>
+                        <li><a href="">Courses</a></li>
+                        <li><a href="">Code Playground</a></li>
+                        <li><a href="">Discuss</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Get Pro</a></li>
+                    </ul>
+                    <div class="header-user-details-mobile">
+                        <div class="user-details-mobile">
+                            <div> <button><i class="fas fa-star"></i>500</button></div>
+                        </div>
+                        <div class="profile-handle-responsive">
+                            <a href=""><img src="../img/community-user-16.png" alt=""></a>Lori A. Barlow
+                        </div>
+                        <div class="not-border"> <a href="" class="go-pro"><i class="fas fa-star"></i>Go PRO
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- desctop-menu -->
+                <ul class="deskop-menu">
+                    <li><a href="">Courses</a></li>
+                    <li><a href="">Code Playground</a></li>
+                    <li><a href="">Discuss</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+                <div class="header-user-details">
+                    <a href="" class="go-pro"><i class="fas fa-star"></i>Go PRO
+                    </a>
+                    <div class="user-details">
+                        <button><i class="fas fa-star"></i>500</button>
+                        <a href="" class="profile-handle"><img src="../img/community-user-16.png" alt=""></a>
+                        <div class="profile-option">
+                            <div>
+                                <h5>username</h5>
+                                <span>go to profile</span>
+                            </div>
+                            <ul>
+                                <li><a href="" class="setting"><i class="fas fa-cog"></i>setting</a>
+                                    <div class="profile-modal-parent">
+                                        <div class="profile-modal">
+                                            <di class="profile-links">
+                                                <h3>Edit Profile</h3>
+                                                <ul>
+                                                    <span>Information</span>
+                                                    <li><a href="">password</a></li>
+                                                    <li><a href="">Connected Accounts</a></li>
+                                                    <li><a href="">Sololearn PRO</a></li>
+                                                </ul>
+                                            </di>
+                                            <di class="profile-setting">
+                                                <div><button class="close-modal">close</button></div>
+                                                <div class="change-profile">
+                                                    <h4>Information
+                                                    </h4>
+                                                    <div class="information">
+                                                        <img src="../img/community-user-16.png" alt="" id="output">
+                                                        <div>
+                                                            <label for="image-uploader">change
+                                                                <input type="file" id="image-uploader"
+                                                                    onchange="loadFile(event)">
+                                                            </label>
+                                                            <button><i>set</i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="profile-form-info">
+                                                    <form action="">
+                                                        <label for="">Username
+                                                        </label>
+                                                        <input type="text">
+                                                        <label for="">Email address
+                                                        </label>
+                                                        <input type="email">
+                                                        <label for="">Bio
+                                                        </label>
+                                                        <textarea name="" id="" cols="30" rows="3"
+                                                            placeholder="describe yourself..."></textarea>
+                                                        <label for="">Country</label>
+                                                        <select name="" id="">
+                                                            <option value="">iran</option>
+                                                            <option value="">us</option>
+                                                        </select>
+
+                                                        <button>save</button>
+                                                    </form>
+                                                </div>
+                                            </di>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href=""><i class="fas fa-question-circle"></i>help</a></li>
+                                <li><a href=""><i class="fal fa-sign-out"></i>log out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="seting-mobile-box">
+            <div><a href="">back</a></div>
+            <div><img src="../img/community-user-16.png" alt=""><span>username</span></div>
+            <ul>
+                <li><a href="" class="open-modal-mobile"><i class="fas fa-cog"></i>setting</a></li>
+                <li><a href=""><i class="fas fa-question-circle"></i>help</a></li>
+                <li><a href=""><i class="fal fa-sign-out"></i>log out</a></li>
+            </ul>
+        </div>
+        <div class="profile-modal-parent mobile-modal">
+            <div class="profile-modal">
+                <div class="profile-links">
+                    <h3>Edit Profile</h3>
+                    <ul>
+                        <span>Information</span>
+                        <li><a href="">password</a></li>
+                        <li><a href="">Connected Accounts</a></li>
+                        <li><a href="">Sololearn PRO</a></li>
+                    </ul>
+                </div>
+                <div class="profile-setting">
+                    <div><button class="close-modal-mobile">close</button></div>
+                    <div class="change-profile">
+                        <h4>Information
+                        </h4>
+                        <div class="information">
+                            <img src="../img/community-user-16.png" alt="" id="output">
+                            <div>
+                                <label for="image-uploader">change
+                                    <input type="file" id="image-uploader" onchange="loadFile(event)">
+                                </label>
+                                <button><i>set</i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-form-info">
+                        <form action="">
+                            <label for="">Username
+                            </label>
+                            <input type="text">
+                            <label for="">Email address
+                            </label>
+                            <input type="email">
+                            <label for="">Bio
+                            </label>
+                            <textarea name="" id="" cols="30" rows="3" placeholder="describe yourself..."></textarea>
+                            <label for="">Country</label>
+                            <select name="" id="">
+                                <option value="">iran</option>
+                                <option value="">us</option>
+                            </select>
+
+                            <button>save</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- header login -->
+
+
+    <section class="profile overflow">
+        <!-- border dark blue section  -->
+        <div class="border">
+            <!-- user information -->
+            <div class="user-info">
+                <img src="../img/community-user-16.png" alt="">
+                <div>
+                    <h3>Lori A. Barlow</h3>
+                    <p><a href="">1 Following</a>&ensp;&ensp;<a href="">1 Follower
+                        </a></p>
+                    <span><i class="fas fa-star"></i> 89 XP</span>
+                    <p><i class="fas fa-star"></i>United States
+
+                        ·
+                        Lvl 2</p>
+                </div>
+            </div>
+        </div>
+        <div class="banner">
+            <div class="banner-pro">
+                <div>
+                    <h4 class="pro">TechWich</h4>
+                    <p>Get 14 days of Free PRO experience. </p>
+                </div>
+                <div>
+                    <svgg></svgg>
+                </div>
+                <div class="btn-pro"><a href="">Start Today</a></div>
+            </div>
+
+
+            <div class="ready">
+                <h3>You are ready for the Code Coach</h3>
+                <div class="even">
+                    <div>
+                        <img src="../img/ccIconEasy.png" alt="">
+                        <div>
+                            <h5>Even numbers</h5>
+                            <p>Change the code to output only the required numbers.</p>
+                        </div>
+                    </div>
+                    <div><a href="">Continue to practice (+10 XP)</a></div>
+                </div>
+            </div>
+
+
+            <section class="course-section">
+                <div class="left-section-course">
+                    <div>
+                        <div>
+                            <h3>Courses Progress</h3>
+                            <a href="" class="manage">Manage</a>
+                        </div>
+                        <a href="" class="progress">
+                            <img src="../img/1024.png" alt="">
+                            <div>
+                                <section><span>Javascript</span><span>5%</span></section>
+                                <progress max="100" value="5"></progress>
+                            </div>
+                            <i class="fas fa-check"></i>
+
+                        </a>
+                        <a href="" class="progress">
+                            <img src="../img/1024.png" alt="">
+                            <div>
+                                <section><span>Javascriptkjhkjgt</span><span>5%</span></section>
+                                <progress max="100" value="5"></progress>
+                            </div>
+                            <i class="fas fa-check"></i>
+
+                        </a><a href="" class="progress">
+                            <img src="../img/1024.png" alt="">
+                            <div>
+                                <section><span>Javascript</span><span>5%</span></section>
+                                <progress max="100" value="5"></progress>
+                            </div>
+                            <i class="fas fa-check"></i>
+
+                        </a>
+                        <div><a href="" class="course-link">Browse Courses</a></div>
+                    </div>
+                    <div>
+                        <h3>Code Bits</h3>
+                        <p class="margin-paragraph">You don’t have any saved codes yet</p>
+                        <div><a href="" class="course-link">Add New</a></div>
+                    </div>
+                </div>
+
+
+
+                <div>
+                    <div>
+                        <h3>Recent Achievements</h3>
+                        <div class="badge-item"><a href=""><img src="../img/121.png" alt=""></a><a href=""><img
+                                    src="../img/120.png" alt=""></a><a href=""><img src="../img/119.png" alt=""></a><a
+                                href=""><img src="../img/56.png" alt=""></a></div>
+                        <div>
+                            <h3>Next task</h3>
+                            <div class="company">
+                                <img src="../img/125.webp" alt="">
+                                <div>
+                                    <h5> Good company</h5>
+                                    <p>Completing a module puts you in the great company. If you got this far, finishing
+                                        the course is within your reach!</p>
+                                </div>
+                            </div>
+                            <div><a href="" class="course-link">Browse Courses</a></div>
+
+                        </div>
+                    </div>
+                    <div class="code-coach">
+                        <h3>Code Coach</h3>
+                        <p>Hey! You missed on some challenges</p>
+                        <div class="carousel">
+                            <!-- swiper slider -->
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <!-- start of slides -->
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <div class="flex-img">
+                                                <img src="../img/ccIconEasy.png" alt="">
+                                                <div><span>Your First Program</span>
+                                                    <p>JavaScript is fun! Let everyone know about it!</p>
+                                                </div>
+                                            </div>
+                                            <div class="label">
+                                                <span>JavaScript</span>
+                                                <span>pro</span>
+                                            </div>
+                                            <div><a href="">unblock<i></i>60</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <div class="flex-img">
+                                                <img src="../img/ccIconEasy.png" alt="">
+                                                <div><span>Right Expression
+                                                    </span>
+                                                    <p>Comment one line from the code to output the right expression
+                                                        about
+                                                        JavaScript.
+
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="label">
+                                                <span>JavaScript</span>
+                                                <span>pro</span>
+                                            </div>
+                                            <div><a href="">unblock<i></i>60</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div>
+                                            <div class="flex-img">
+                                                <img src="../img/ccIconEasy.png" alt="">
+                                                <div><span>Even numbers</span>
+                                                    <p>Change the code to output only the required numbers.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="label">
+                                                <span>JavaScript</span>
+                                            </div>
+                                            <div><a href="">pracrice 10XP(+)</a></div>
+                                        </div>
+                                    </div>
+
+                                    <!-- end of silder -->
+                                </div>
+                            </div>
+                            <!-- slider next/prev button -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </section>
+
+
+    <!-- footer -->
+    <footer>
+        <section>
+            <div class="social-media-list">
+                <ul>
+                    <li>
+                        <img src="../img/icons8-linkedin-2.svg" alt="">
+                        <h3>Follow us on Linkedin</h3>
+                    </li>
+                    <li>
+                        <img src="../img/icons8-facebook-f-48.png" alt="">
+                        <h3>Check out our facebook</h3>
+                    </li>
+                    <li>
+                        <img src="../img/icons8-twitter.svg" alt="">
+                        <h3>See what we tweet about</h3>
+                    </li>
+                    <li>
+                        <img src="../img/icons8-instagram.svg" alt="">
+                        <h3>Join our instagram</h3>
+                    </li>
+                    <li>
+                        <img src="../img/icons8-youtube.svg" alt="">
+                        <h3>Watch our Youtube</h3>
+                    </li>
+                </ul>
+                <div class="social-media-icon">
+                    <a href=""><img src="../img/1200px-Google_Play_Store_badge_EN.svg.png" alt=""></a>
+                    <a href=""><img src="../img/1200px-Download_on_the_App_Store_Badge.svg.png" alt=""></a>
+                </div>
+            </div>
+
+            <!-- footer-list-menu  -->
+            <div class="footer-list-menu">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Courses</a></li>
+                    <li><a href="">Code Playground</a></li>
+                    <li><a href="">Top Learners</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Pro</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Terms of Use</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                </ul>
+                <div>
+                    <p>Made with <span> &hearts; </span>
+                        by
+                        Sololearn
+                        | ©2021</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- footer -->
+
+
+
+
+
+
+
+
+
+
+    <script src="../js/swiper-bundle.min.js"></script>
+    <script src="../js/header-mode-color.js"></script>
+    <script>
+        // set rhis script ro show one slide item when click on next/prev button
+        var swiper = new Swiper('.swiper', {
+            slidesPerView: 1,
+            watchSlidesProgress: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+
+        let profile = document.querySelector('.profile-handle')
+        let profilebox = document.querySelector('.profile-option')
+        let setting = document.querySelector('.setting')
+        let closemodal = document.querySelector('.close-modal')
+        let profilemodal = document.querySelector('.profile-modal-parent')
+        let settingbox = document.querySelector('.profile-option')
+        let closemodalmobile = document.querySelector('.close-modal-mobile')
+        let mobilemodal = document.querySelector('.mobile-modal')
+        let openmodalmobile = document.querySelector('.open-modal-mobile')
+        let mobileboxhandle = document.querySelector('.profile-handle-responsive')
+        let mobilebox = document.querySelector('.seting-mobile-box')
+        let navmenu = document.querySelector('.nav-menu')
+        let togglewrap = document.querySelector('.toggle-wrap')
+        let proresize = document.querySelector('.pro-resize')
+
+        profile.addEventListener('click', (e) => {
+            e.preventDefault()
+            profilebox.classList.toggle('block-profile-box')
+        })
+
+        setting.addEventListener('click', (e) => {
+            e.preventDefault()
+            profilemodal.style.display = 'flex'
+        })
+        // closemodal.addEventListener('click', () => {
+        //     profilemodal.style.display = 'none'
+        //     profilebox.classList.toggle('block-profile-box')
+
+        // })
+        mobileboxhandle.addEventListener('click', (e) => {
+            mobilebox.style.display = 'flex'
+            navmenu.classList.toggle('fixed')
+        })
+
+        // closemodalmobile.addEventListener('click', () => {
+        //     mobilemodal.style.display = 'none'
+        //     mobilebox.style.display = 'none'
+        //     togglewrap.classList.toggle("active");
+        //     // document.querySelector('.nav-menu').classList.toggle('fixed')
+        // })
+        openmodalmobile.addEventListener('click', (e) => {
+            e.preventDefault()
+            mobilemodal.style.display = 'flex'
+            profilemobileitem.style.display = 'block'
+        })
+
+        var loadFile = function (event) {
+            var image = document.getElementById("output");
+            image.src = URL.createObjectURL(event.target.files[0]);
+        };
+
+
+        let options = [{
+                countrie: 'Afghanistan'
+            }, {
+                countrie: 'Aland Islands'
+            }, {
+                countrie: 'Albania'
+            }, {
+                countrie: 'Algeria'
+            }, {
+                countrie: 'Andorra'
+            }, {
+                countrie: 'Angola'
+            }, {
+                countrie: 'Anguilla'
+            }, {
+                countrie: 'Antarctica'
+            }, {
+                countrie: 'Antigua & Barbuda'
+            }, {
+                countrie: 'Argentina'
+            }, {
+                countrie: 'Armenia'
+            }, {
+                countrie: 'Aruba'
+            }, {
+                countrie: 'Australia'
+            }, {
+                countrie: 'Austria'
+            }, {
+                countrie: 'Azerbaijan'
+            }, {
+                countrie: 'Bahamas'
+            },
+
+        ]
+        let select = document.querySelector('select')
+        select.addEventListener('click', () => {
+            for (let i = 0; i < options.length; i++) {
+                select.innerHTML += `<option>${options[i].countrie}</option>`
+            }
+        })
+
+
+
+    </script>
+</body>
+
+</html>
