@@ -1,2 +1,7 @@
 1-change buttons tag in indexes files to a tag
 2-add "modal-open-profile.html" to pages folder 
+
+
+3-add "new-profile.html" to pages
+4-change tow html files name
+5-add div with "write-answre-box" class to single-thread.html
