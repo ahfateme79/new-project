@@ -1228,7 +1228,7 @@ progress::-webkit-progress-value {
 }
 
 .code-bite h4,
-span {
+.code-bite span {
     font-size: 13px;
     color: black;
 }

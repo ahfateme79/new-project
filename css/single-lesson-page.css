@@ -39,7 +39,7 @@
 }
 
 .back-link a {
-    color: #fff;
+    color: black;
 }
 
 .back-link i {
@@ -203,13 +203,11 @@
     height: 15px;
     border-radius: 100%;
     background-color: rgb(143, 138, 138);
-    -webkit-transform: translate(50%, 50px);
-    -ms-transform: translate(50%, 50px);
-    transform: translate(50%, 50px);
     display: inline-block;
-    position: relative;
-    right: 48.5%;
-    top: 65%;
+    position: absolute;
+    top: 65%; 
+    left: 20px;
+    margin: 30px 0;
 }
 
 
