@@ -355,9 +355,9 @@
         /* for Chrome, Safari, and Opera */
     }
     .lesson-tree>div::before {
-       z-index: 900;
+        left: 50px;
     }
-    
+        
 }
 
 .tick,
