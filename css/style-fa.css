@@ -272,9 +272,9 @@ footer,
     margin-right: 10px;
 }
 .btn-control input{
-    transform: translateX(50%);
-    -webkit-transform: translateX(50%);
-    -moz-transform: translateX(50%);
-    -ms-transform: translateX(50%);
-    -o-transform: translateX(50%);
+    transform: translateX(43%);
+    -webkit-transform: translateX(43%);
+    -moz-transform: translateX(43%);
+    -ms-transform: translateX(43%);
+    -o-transform: translateX(43%);
 }
