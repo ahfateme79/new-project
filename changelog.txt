@@ -5,3 +5,8 @@
 3-add "new-profile.html" to pages
 4-change tow html files name
 5-add div with "write-answre-box" class to single-thread.html
+
+
+
+1400/9/8
+1-add div with justify class after divs with ask-question and answre-question class in "single-thread.html" and "single-thread-fa.html

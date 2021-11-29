@@ -33,7 +33,10 @@ footer,
 .blog-container,.leaderbaord {
     direction: rtl;
 }
-.start 
+.start a{
+    width: 250px;
+    height: 60px;
+}
 .question summary {
     font-size: .8rem;
 }
