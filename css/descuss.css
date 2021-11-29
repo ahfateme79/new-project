@@ -604,11 +604,11 @@
     font-size: .65rem;
     margin: 5px 0;
     text-align: center;
-    transform: translateX(-50px);
-    -webkit-transform: translateX(-50px);
-    -moz-transform: translateX(-50px);
-    -ms-transform: translateX(-50px);
-    -o-transform: translateX(-50px);
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
     background-color: transparent;
 }
 .btn-control div {
