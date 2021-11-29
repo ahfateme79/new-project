@@ -177,7 +177,6 @@
 
 .lesson-tree>div {
     width: 80%;
-    position: relative;
     min-height: 120px;
     display: -webkit-flex;
     display: -webkit-box;
@@ -207,12 +206,14 @@
     background-color: rgb(143, 138, 138);
     display: inline-block;
     position: absolute;
-    left: 0;
-    transform: translateX(-55px);
-    -webkit-transform: translateX(-55px);
-    -moz-transform: translateX(-55px);
-    -ms-transform: translateX(-55px);
-    -o-transform: translateX(-55px);
+    left: 20px;
+    overflow: visible;
+    transform: translateX(-1px);
+    -webkit-transform: translateX(-1px);
+    -moz-transform: translateX(-1px);
+    -ms-transform: translateX(-1px);
+    -o-transform: translateX(-1px);
+
 }
 
 .lesson-tree>div:nth-child(1):before,
@@ -355,8 +356,13 @@
         /* for Chrome, Safari, and Opera */
     }
     .lesson-tree>div::before {
-        left: 50px;
-    }
+        left:20px;
+        transform: translateX(-1px);
+        -webkit-transform: translateX(-1px);
+        -moz-transform: translateX(-1px);
+        -ms-transform: translateX(-1px);
+        -o-transform: translateX(-1px);
+}
         
 }
 
