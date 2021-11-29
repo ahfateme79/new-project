@@ -293,7 +293,7 @@
 
 .post-topic {
     margin: 7px;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .post-topic a {

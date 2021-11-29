@@ -271,3 +271,10 @@ footer,
 .name{
     margin-right: 10px;
 }
+.btn-control input{
+    transform: translateX(55px);
+    -webkit-transform: translateX(55px);
+    -moz-transform: translateX(55px);
+    -ms-transform: translateX(55px);
+    -o-transform: translateX(55px);
+}
