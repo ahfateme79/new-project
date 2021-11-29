@@ -584,10 +584,9 @@
 .btn-control {
     width: 10%;
     padding: 0 15px;
-    text-align: center;
-    display: inline-flex;
+    display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
 }
 
@@ -604,9 +603,13 @@
     color: rgb(9, 170, 116);
     font-size: .65rem;
     margin: 5px 0;
-    display: inline-block;
-    width: 100%;
     text-align: center;
+    transform: translateX(-50px);
+    -webkit-transform: translateX(-50px);
+    -moz-transform: translateX(-50px);
+    -ms-transform: translateX(-50px);
+    -o-transform: translateX(-50px);
+    background-color: transparent;
 }
 .btn-control div {
     display: -webkit-box;
