@@ -238,7 +238,7 @@
     .answer>div div {
         -webkit-transform: translateY(-85px);        -ms-transform: translateY(-85px);        transform: translateY(-85px);
         text-align: center;
-        padding: 0 30px;
+        padding: 0 15px;
     }
 
 }

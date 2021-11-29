@@ -90,3 +90,10 @@
     font-family: 'Raleway', sans-serif;
 
 }
+@media screen and (max-width:600px){
+    .container {
+        margin: 0;
+        width: 90%;
+    }
+    
+}
