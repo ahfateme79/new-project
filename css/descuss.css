@@ -561,9 +561,6 @@
     -webkit-box-shadow: 1px 1px 3px rgb(160, 159, 159);
     box-shadow: 1px 1px 3px rgb(160, 159, 159);
     padding: 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
 }
 
 .Ask-question a,
@@ -588,6 +585,10 @@
     width: 10%;
     padding: 0 15px;
     text-align: center;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
 }
 
 .btn-control button {
@@ -601,11 +602,12 @@
 
 .btn-control input {
     color: rgb(9, 170, 116);
-    font-size: .7rem;
-    margin: 5px auto;
-    display: block;
+    font-size: .65rem;
+    margin: 5px 0;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
 }
-
 .btn-control div {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -642,13 +644,14 @@
 .answer-questions {
     width: 100%;
     padding: 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     border-bottom: 1px solid rgb(233, 226, 226);
+    display: flex;
+    flex-direction: column;
 }
-
-.reply-control {
+.justify{
+    display: flex;
+}
+.reply-control{
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -672,7 +675,6 @@
     background-color: white;
     padding: 10px;
 }
-
 @media screen and (max-width:600px) {
 
     .discus-spost {
