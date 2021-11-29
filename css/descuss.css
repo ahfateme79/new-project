@@ -331,6 +331,7 @@
     -ms-flex-pack: end;
     justify-content: flex-end;
     padding: 5px 0;
+    height: auto;
 }
 
 .post-user-info>div {
@@ -648,8 +649,6 @@
     width: 100%;
     padding: 15px;
     border-bottom: 1px solid rgb(233, 226, 226);
-    display: flex;
-    flex-direction: column;
 }
 .justify{
     display: flex;
