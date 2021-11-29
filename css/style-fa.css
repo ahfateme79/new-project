@@ -30,13 +30,16 @@ footer,
 .question,
 .descuss,
 .post-user-info div,
-.blog-container,.leaderbaord {
+.blog-container,
+.leaderbaord {
     direction: rtl;
 }
-.start a{
+
+.start a {
     width: 250px;
     height: 60px;
 }
+
 .question summary {
     font-size: .8rem;
 }
@@ -47,7 +50,8 @@ footer,
 
 .coming-soon h1,
 .blog-content p,
-.card-content p,.post-topic a {
+.card-content p,
+.post-topic a {
     text-align: right;
 }
 
@@ -204,6 +208,61 @@ footer,
     transform: translate(105%, 12px)
 }
 
+.name {
+    margin-right: 10px;
+}
+
+.btn-control input {
+    transform: translateX(43%);
+    -webkit-transform: translateX(43%);
+    -moz-transform: translateX(43%);
+    -ms-transform: translateX(43%);
+    -o-transform: translateX(43%);
+}
+
+.footer-list-menu ul {
+    width: 80%;
+}
+
+.social-media-list h3 {
+    inline-size: 70%;
+    font-size: .8rem;
+}
+
+.footer-list-menu div p {
+    transform: translateX(30px);
+    -webkit-transform: translateX(30px);
+    -moz-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    -o-transform: translateX(30px);
+}
+.lesson-tree>div::after {
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: rgb(143, 138, 138);
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    overflow: visible;
+    transform: translateX(1px);
+    -webkit-transform: translateX(1px);
+    -moz-transform: translateX(1px);
+    -ms-transform: translateX(1px);
+    -o-transform: translateX(1px);
+}
+.lesson-tree>div:nth-child(1):after,
+.lesson-tree>div:nth-child(4):after,
+.lesson-tree>div:nth-child(7):after{
+    background-color: rgb(1, 190, 127);
+}
+.lesson-tree>div:nth-child(2):after,
+.lesson-tree>div:nth-child(5):after,
+.lesson-tree>div:nth-child(8):after {
+    background-color: rgb(92, 159, 247);
+}
+
 @media screen and (max-width:1100px) {
     .social-media-list {
         padding: 20px;
@@ -258,26 +317,28 @@ footer,
 }
 
 
-@media screen and (max-width:600px){
-    .ledaerbaord-list-items ul li::before{
-      left: 0;
+@media screen and (max-width:600px) {
+    .ledaerbaord-list-items ul li::before {
+        left: 0;
     }
-    .ledaerbaord-list-items ul li p{
+
+    .ledaerbaord-list-items ul li p {
         left: -70px;
         top: 65%;
-}
-    .home-learn h1,.home-platform h1,.home-propage-head h1,.story-title h1,.award h1,.footer-top-section h1{
+    }
+
+    .home-learn h1,
+    .home-platform h1,
+    .home-propage-head h1,
+    .story-title h1,
+    .award h1,
+    .footer-top-section h1 {
         font-size: 2rem;
     }
-    
-}
-.name{
-    margin-right: 10px;
-}
-.btn-control input{
-    transform: translateX(43%);
-    -webkit-transform: translateX(43%);
-    -moz-transform: translateX(43%);
-    -ms-transform: translateX(43%);
-    -o-transform: translateX(43%);
+
+    .footer-list-menu ul {
+        width: 100%;
+    }
+
+
 }

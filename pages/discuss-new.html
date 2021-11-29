@@ -13,7 +13,9 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
-
+    <link href="https://unpkg.com/@yaireo/tagify/dist/tagify.css" rel="stylesheet" type="text/css" />
+    <style>
+    </style>
 </head>
 
 <body>
@@ -71,7 +73,7 @@
                     <textarea name="" id="" cols="30" rows="5" placeholder="DEscription (option)"></textarea>
 
                     <label for="">Tags</label>
-                    <input type="text" name="" id="" placeholder="Add tag">
+                    <input name='tags' placeholder='write some tags' value='java, c++,html'>
                     <div class="recaptcha">
                         <div id="html_element"></div>
                         <br>
@@ -176,24 +178,34 @@
             <div class="social-media-list">
                 <ul>
                     <li>
+                        <a href="">
                         <img src="../img/icons8-linkedin-2.svg" alt="">
                         <h3>Follow us on Linkedin</h3>
+                    </a>
                     </li>
                     <li>
+                        <a href="">
                         <img src="../img/icons8-facebook-f-48.png" alt="">
                         <h3>Check out our facebook</h3>
+                    </a>
                     </li>
                     <li>
+                        <a href="">
                         <img src="../img/icons8-twitter.svg" alt="">
                         <h3>See what we tweet about</h3>
+                    </a>
                     </li>
                     <li>
+                        <a href="">
                         <img src="../img/icons8-instagram.svg" alt="">
                         <h3>Join our instagram</h3>
+                    </a>
                     </li>
                     <li>
+                        <a href="">
                         <img src="../img/icons8-youtube.svg" alt="">
                         <h3>Watch our Youtube</h3>
+                    </a>
                     </li>
                 </ul>
                 <div class="social-media-icon">
@@ -228,16 +240,24 @@
     </footer>
 
     <!-- script -->
+    <script src="https://unpkg.com/@yaireo/tagify"></script>
+    <script src="https://unpkg.com/@yaireo/tagify/dist/tagify.polyfills.min.js"></script>
     <script src="../js/header-mode-color.js"></script>
     <!-- recaptcha script-->
-    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer>
-    </script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
     <script type="text/javascript">
         var onloadCallback = function () {
             grecaptcha.render('html_element', {
                 'sitekey': ' 6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'
             });
         };
+
+        var input1 = document.querySelector('input[name=tags]'),
+            // init Tagify script on the above inputs
+            tagify1 = new Tagify(input1, {
+                whitelist: ["html", "css", "javascript", "java", "c", "c#", "python", "c++"],
+                blacklist: ["rehu", "lweji", "woeghyuoi"]
+            })
     </script>
 </body>
 
