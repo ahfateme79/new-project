@@ -7,19 +7,17 @@ let fa_chevron_down = document.querySelectorAll('.fa-chevron-down')
 
 
 
-var clickednext = false;
-var clickedprev = false;
+var clicked = false;
 
 
 
 for (let i = 0; i < next.length; i++) {
     next[i].addEventListener('click', () => {
         // number[i].value++
-        if (!clickednext) {
+        if (!clicked) {
             // Set clicked to true
-            clickednext = true;
+            clicked = true;
             fa_chevron_up[i].classList.add('color')
-
             // Do your processing here
 
             // Re-enable after processing if you want
@@ -31,10 +29,10 @@ for (let i = 0; i < next.length; i++) {
 }
 for (let i = 0; i < prev.length; i++) {
     prev[i].addEventListener('click', () => {
-        if (!clickedprev) {
+        if (!clicked) {
             fa_chevron_down[i].classList.add('color')
 
-            clickedprev = true;
+            clicked = false;
 
             // Do your processing here
 

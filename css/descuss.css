@@ -689,8 +689,11 @@
         width: 90%;
         margin: 40px 0;
     }
+    .max-height {
+        height: 82vh;
+    }
     
-
+    
 
 }
 
@@ -789,4 +792,7 @@
 .write-answre-box p{
     color: rgb(48, 46, 46);
     margin: 5px;
+}
+.tagify {
+    --tag-bg: rgb(87, 241, 190) !important;
 }

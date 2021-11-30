@@ -73,7 +73,11 @@
                     <textarea name="" id="" cols="30" rows="5" placeholder="DEscription (option)"></textarea>
 
                     <label for="">Tags</label>
-                    <input name='tags' placeholder='write some tags' value='java, c++,html'>
+                    <div class="hide-items" style="display: none;">
+                        <span>html</span><span>css</span><span>java</span><span>c++</span><span>c#</span>
+                    </div>
+                    <!-- <input name='tags' placeholder='write some tags' value=> -->
+                    <input name='tags' class='some_class_name' placeholder='write some tags' value='' data-blacklist=''>
                     <div class="recaptcha">
                         <div id="html_element"></div>
                         <br>
@@ -243,6 +247,7 @@
     <script src="https://unpkg.com/@yaireo/tagify"></script>
     <script src="https://unpkg.com/@yaireo/tagify/dist/tagify.polyfills.min.js"></script>
     <script src="../js/header-mode-color.js"></script>
+    <script src="../js/tagify-descus.js"></script>
     <!-- recaptcha script-->
     <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
     <script type="text/javascript">
@@ -252,12 +257,8 @@
             });
         };
 
-        var input1 = document.querySelector('input[name=tags]'),
-            // init Tagify script on the above inputs
-            tagify1 = new Tagify(input1, {
-                whitelist: ["html", "css", "javascript", "java", "c", "c#", "python", "c++"],
-                blacklist: ["rehu", "lweji", "woeghyuoi"]
-            })
+
+
     </script>
 </body>
 
