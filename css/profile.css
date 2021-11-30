@@ -1379,3 +1379,23 @@ progress::-webkit-progress-value {
 }
 
 }
+.user-details a:first-child{
+    align-items: center;
+    display: flex;
+}
+
+.user-details a:first-child img{
+    width: 20px;
+    height: 20px;
+    margin: 0 3px;
+}
+.user-details-mobile a{
+    align-items: center;
+    display: flex;
+}
+
+.user-details-mobile a img{
+    width: 20px;
+    height: 20px;
+    margin: 0 3px;
+}

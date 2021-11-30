@@ -458,3 +458,12 @@
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
 }
+.pro-items span:first-child{
+    width: 40px;
+    display: flex;
+    align-items: center;
+}
+.pro-items span:first-child img{ 
+   width: 15px;
+   height: 15px;
+}
