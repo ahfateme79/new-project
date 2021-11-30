@@ -529,6 +529,8 @@
 
     .sidebar {
         width: 30%;
+        /* height: 550px; */
+
     }
 }
 
@@ -594,9 +596,11 @@
 .btn-control button {
     background-color: transparent;
 }
-.btn-control button .color{
+
+.btn-control button .color {
     color: rgb(5, 168, 114);
 }
+
 .btn-control button i {
     color: rgb(236, 230, 230);
     font-size: 20px;
@@ -614,6 +618,7 @@
     -o-transform: translateX(-43%);
     background-color: transparent;
 }
+
 .btn-control div {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -652,10 +657,12 @@
     padding: 15px;
     border-bottom: 1px solid rgb(233, 226, 226);
 }
-.justify{
+
+.justify {
     display: flex;
 }
-.reply-control{
+
+.reply-control {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -679,6 +686,7 @@
     background-color: white;
     padding: 10px;
 }
+
 .max-height {
     height: 72vh;
 }
@@ -689,22 +697,22 @@
         width: 90%;
         margin: 40px 0;
     }
+
     .max-height {
         height: 82vh;
     }
-    
-    
+
+
 
 }
-@media screen and (min-width:600px) and (max-width:900px) {
-    
 
-}
+@media screen and (min-width:600px) and (max-width:900px) {}
 
 @media screen and (min-width:600px) and (max-width:1200px) {
     .discus-spost {
         width: 60%;
     }
+
     .max-height {
         height: 82vh;
     }
@@ -774,7 +782,7 @@
     color: rgb(5, 168, 114);
 }
 
-.write-answre-box{
+.write-answre-box {
     width: 100%;
     min-height: 400px;
     border-radius: 4px;
@@ -796,10 +804,12 @@
     margin: 20px 0;
 
 }
-.write-answre-box p{
+
+.write-answre-box p {
     color: rgb(48, 46, 46);
     margin: 5px;
 }
+
 .tagify {
     --tag-bg: rgb(87, 241, 190) !important;
 }
