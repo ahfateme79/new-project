@@ -9,9 +9,14 @@
 //     .then(result => console.log(result))
 //     .catch(error => console.log('error', error));
 let list = document.querySelectorAll('.hide-items span')
+let a = []
+for (let i = 0; i < list.length; i++) {
+    a.push(list[i].innerHTML)
+
+}
 // tagify
 var inputElm = document.querySelector('input[name=tags]'),
-    whitelist = ["html", "css", "java", "c++", "c#"];
+    whitelist = a;
 
 
 // initialize Tagify on the above input node reference

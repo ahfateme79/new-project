@@ -696,10 +696,17 @@
     
 
 }
+@media screen and (min-width:600px) and (max-width:900px) {
+    
+
+}
 
 @media screen and (min-width:600px) and (max-width:1200px) {
     .discus-spost {
         width: 60%;
+    }
+    .max-height {
+        height: 82vh;
     }
 
 }
