@@ -39,7 +39,7 @@
 }
 
 .back-link a {
-    color: black;
+    color: rgb(235, 229, 229);
 }
 
 .back-link i {
@@ -169,10 +169,11 @@
 .lesson-tree:before {
     content: '';
     width: 2px;
-    height: 92%;
+    min-height: 92%;
     position: absolute;
-    background-color: rgb(143, 138, 138);
-    left: 25px;
+    background-color: rgb(182, 190, 192);
+    left: 30px;
+    top: 2px;
 }
 
 .lesson-tree>div {
@@ -206,26 +207,10 @@
     background-color: rgb(143, 138, 138);
     display: inline-block;
     position: absolute;
-    left: 20px;
+    left: 23px;
     overflow: visible;
-    transform: translateX(-1px);
-    -webkit-transform: translateX(-1px);
-    -moz-transform: translateX(-1px);
-    -ms-transform: translateX(-1px);
-    -o-transform: translateX(-1px);
-
 }
 
-.lesson-tree>div:nth-child(1):before,
-.lesson-tree>div:nth-child(7):before {
-    background-color: rgb(1, 190, 127);
-}
-
-.lesson-tree>div:nth-child(2):before,
-.lesson-tree>div:nth-child(5):before,
-.lesson-tree>div:nth-child(8):before {
-    background-color: rgb(92, 159, 247);
-}
 
 
 .lesson-tree>div a {
@@ -238,9 +223,6 @@
     position: relative;
 }
 
-.lesson-tree>div:nth-child(3) a,.lesson-tree>div:nth-child(4) a,.lesson-tree>div:nth-child(6) a {
-    cursor: no-drop;
-}
 
 .lesson-tree>div:last-child a {
     width: 100%;
@@ -360,14 +342,6 @@
         /* for Chrome, Safari, and Opera */
     }
 
-    .lesson-tree>div::before {
-        left: 20px;
-        transform: translateX(-1px);
-        -webkit-transform: translateX(-1px);
-        -moz-transform: translateX(-1px);
-        -ms-transform: translateX(-1px);
-        -o-transform: translateX(-1px);
-    }
 
 }
 
@@ -466,4 +440,20 @@
 .pro-items span:first-child img{ 
    width: 15px;
    height: 15px;
+}
+.lesson-tree > div .luck-lesson{
+    opacity: .5;
+}
+.lesson-tree div.green-tick::before{
+    background-color: rgb(1, 190, 127);
+}
+.lesson-tree div.blue-pluss::before{
+    background-color: rgb(92, 159, 247)
+}
+.lesson-tree div.disable::before{
+    background-color: rgb(132, 143, 146);
+}
+.lesson-tree div.disable a{
+    opacity: .5;
+    cursor: default;
 }

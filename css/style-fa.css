@@ -256,16 +256,6 @@ footer,
     -ms-transform: translateX(1px);
     -o-transform: translateX(1px);
 }
-.lesson-tree>div:nth-child(1):after,
-.lesson-tree>div:nth-child(4):after,
-.lesson-tree>div:nth-child(7):after{
-    background-color: rgb(1, 190, 127);
-}
-.lesson-tree>div:nth-child(2):after,
-.lesson-tree>div:nth-child(5):after,
-.lesson-tree>div:nth-child(8):after {
-    background-color: rgb(92, 159, 247);
-}
 .pro-lesson::after{
     right: 50%;
     transform: translate(-50%,-5px);
@@ -274,7 +264,22 @@ footer,
     -ms-transform: translate(-50%,-5px);
     -o-transform: translate(-50%,-5px);
 }
-
+.lesson-tree > div .luck-lesson{
+    opacity: .5;
+}
+.lesson-tree div.green-tick::after{
+    background-color: rgb(1, 190, 127);
+}
+.lesson-tree div.blue-pluss::after{
+    background-color: rgb(92, 159, 247)
+}
+.lesson-tree div.disable::after{
+    background-color: rgb(132, 143, 146);
+}
+.lesson-tree div.disable a{
+    opacity: .5;
+    cursor: default;
+}
 @media screen and (max-width:1100px) {
     .social-media-list {
         padding: 20px;
