@@ -10,3 +10,9 @@
 
 1400/9/8
 1-add div with justify class after divs with ask-question and answre-question class in "single-thread.html" and "single-thread-fa.html
+
+
+
+1400/9/9
+1-add "a" tag inner "li" in social-media-list class in footer
+

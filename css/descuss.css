@@ -14,7 +14,7 @@
     -ms-flex-pack: center;
     justify-content: center;
     padding: 50px 0;
-    min-height: 100vh;
+    min-height: 150vh;
     background-color: rgb(241, 241, 241);
     padding-top: 150px;
 }
@@ -594,7 +594,9 @@
 .btn-control button {
     background-color: transparent;
 }
-
+.btn-control button .color{
+    color: rgb(5, 168, 114);
+}
 .btn-control button i {
     color: rgb(236, 230, 230);
     font-size: 20px;
@@ -686,9 +688,6 @@
     .discus-spost {
         width: 90%;
         margin: 40px 0;
-    }
-    .max-height {
-        height: 90vh;
     }
     
 
