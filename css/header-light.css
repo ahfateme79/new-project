@@ -273,3 +273,8 @@
         left: auto;
     }
 }
+@media screen and (min-width:1100px) and (max-width:1300px) {
+    .header-light .deskop-menu li a{
+        font-size: 17px;
+    }
+ }

@@ -13,6 +13,8 @@
 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+        <link href="https://unpkg.com/@yaireo/tagify/dist/tagify.css" rel="stylesheet" type="text/css" />
+
 
 </head>
 
@@ -70,9 +72,14 @@
                     <label for="">پیام</label>
                     <textarea name="" id="" cols="30" rows="5" placeholder="توضیحات (گزینه)"></textarea>
 
-                    <label for="">برچسب ها
-                    </label>
-                    <input type="text" name="" id="" placeholder="برچسب اضافه کنید">
+                    <label for="">برچسب ها</label>
+                    <div class="hide-items" style="display: none;">
+                        <span>جاوا</span><span>اندروید استودیو</span><span>پایتون</span><span>سی پلاس پلاس</span><span>او او پی</span>
+                        <span>کبو تی</span><span>اس کیوال</span><span>نواس کیو ال</span>
+                    </div>
+                    <!-- <input name='tags' placeholder='write some tags' value=> -->
+                    <input name='tags' class='some_class_name' placeholder='چند برچسب بنویسید' value='' data-blacklist=''>
+
                     <div class="recaptcha">
                         <div id="html_element"></div>
                         <br>
@@ -256,10 +263,12 @@
 
 
     <!-- script -->
+    <script src="https://unpkg.com/@yaireo/tagify"></script>
+    <script src="https://unpkg.com/@yaireo/tagify/dist/tagify.polyfills.min.js"></script>
     <script src="../js/header-mode-color.js"></script>
+    <script src="../js/tagify-descus.js"></script>
     <!-- recaptcha script-->
-    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer>
-    </script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
     <script type="text/javascript">
         var onloadCallback = function () {
             grecaptcha.render('html_element', {

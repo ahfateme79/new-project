@@ -12,6 +12,7 @@ span,
 p,
 a,
 footer,
+label,
 .story-description,
 .home-propage-flexbox,
 .nav-menu,
@@ -33,6 +34,17 @@ footer,
 .blog-container,
 .leaderbaord {
     direction: rtl;
+}
+.banner-pro .pro::before {
+    content: 'pro';
+    color: rgb(102, 43, 4);
+    background-color: #fbb461;
+    margin: 0 10px;
+    padding: 3px 10px;
+    border-radius: 50px;
+}
+.banner-pro .pro::after {
+   display: none;
 }
 
 .start a {
@@ -230,11 +242,11 @@ footer,
 }
 
 .footer-list-menu div p {
-    transform: translateX(30px);
-    -webkit-transform: translateX(30px);
-    -moz-transform: translateX(30px);
-    -ms-transform: translateX(30px);
-    -o-transform: translateX(30px);
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
 }
 .lesson-tree>div::before {
    display: none;
@@ -325,6 +337,21 @@ footer,
     .question {
         min-height: 350vh;
     }
+    .coding-image img {
+        position: absolute;
+        top: 0;
+        width: 60px;
+        min-height: 10px;
+        right: 0px;
+    }
+    .banner-pro p {
+        font-size: 10px;
+        transform: translate(12px, 25px);
+        -webkit-transform: translate(12px, 25px);
+        -moz-transform: translate(12px, 25px);
+        -ms-transform: translate(12px, 25px);
+        -o-transform: translate(12px, 25px);
+}
 }
 
 @media screen and (min-width:768px) and (max-width:1024px) {

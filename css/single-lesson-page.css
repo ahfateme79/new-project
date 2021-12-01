@@ -52,8 +52,7 @@
     justify-content: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center;
-    justify-content: center;
+    justify-content: flex-start;
     display: -ms-flexbox;
     display: flex;
     justify-content: center;
@@ -169,7 +168,7 @@
 .lesson-tree:before {
     content: '';
     width: 2px;
-    min-height: 92%;
+    min-height: 93.5%;
     position: absolute;
     background-color: rgb(182, 190, 192);
     left: 30px;
@@ -224,11 +223,11 @@
 }
 
 
-.lesson-tree>div:last-child a {
+.lesson-tree > div.project a {
     width: 100%;
 }
 
-.lesson-tree>div:last-child a div {
+.lesson-tree > div.project a div {
     display: -webkit-flex;
     display: -webkit-box;
     -ms-flex-align: center;
@@ -239,7 +238,7 @@
     align-items: center
 }
 
-.lesson-tree>div:last-child a img {
+.lesson-tree > div.project a img {
     width: 30px;
     height: 30px;
     margin: 5px;
@@ -322,7 +321,9 @@
         width: 90%;
         border-radius: 0;
     }
-
+    .introduce{
+        width: 90%;
+    }
     .lesson-select-item details {
         border-radius: 5px;
     }
@@ -456,4 +457,11 @@
 .lesson-tree div.disable a{
     opacity: .5;
     cursor: default;
+}
+.lesson-tree div.project a .luck{
+   transform: translateY(-30px);
+   -webkit-transform: translateY(-30px);
+   -moz-transform: translateY(-30px);
+   -ms-transform: translateY(-30px);
+   -o-transform: translateY(-30px);
 }

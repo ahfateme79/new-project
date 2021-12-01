@@ -91,14 +91,14 @@ footer section {
 }
 
 .social-media-list ul {
-    width: 80%;
+    min-width: 80%;
     align-items: center;
     color: #fff;
     height: 100%;
     display: -webkit-flex;
     display: -webkit-box;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     -webkit-box-align: center;
 }
@@ -152,17 +152,16 @@ footer section {
 }
 
 .footer-list-menu ul {
-    width: 68%;
+    min-width: 68%;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
     min-height: 100px;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     display: -webkit-flex;
     display: -webkit-box;
-    justify-content: center;
     align-items: center;
     -webkit-box-align: center;
     display: flex;
@@ -313,7 +312,7 @@ footer section {
     width: 100px;
 }
 
-@media screen and (min-width:600px) and (max-width:1200px) {
+@media screen and (min-width:600px) and (max-width:900px) {
     .social-media-list li {
         margin: 10px;
     }
@@ -335,7 +334,7 @@ footer section {
     .footer-list-menu ul,
     .social-media-list ul {
        justify-content: flex-start;
-
+        width: 100%;
     }
 
     .social-media-icon {
@@ -352,4 +351,52 @@ footer section {
         padding: 10px 20px;
     }
 
+}
+@media screen and (min-width:900px) and (max-width:1200px) {
+    .social-media-list li {
+        margin: 10px;
+    }
+
+    .social-media-list ul {
+        /* width: 80%; */
+        min-height: 50px;
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+    }
+
+    .footer-list-menu,
+    .social-media-list {
+        flex-wrap: wrap;
+        padding: 20px 0;
+        -webkit-flex-wrap: wrap;
+    }
+
+    .footer-list-menu ul,
+    .social-media-list ul {
+       justify-content: flex-start;
+        width: 100%;
+    }
+    .footer-list-menu ul {
+       padding: 0 20px;
+     }
+    .social-media-icon {
+        display: flex;
+        width: 100%;
+        padding: 20px;
+        align-items: center;
+        display: -webkit-flex;
+        display: -webkit-box;
+        -webkit-box-align: center;
+    }
+
+    .footer-list-menu div {
+        padding: 10px 20px;
+    }
+    .footer-list-menu div p {
+        transform: translateX(0px);
+        -webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        -o-transform: translateX(0px);
+}
 }

@@ -105,6 +105,7 @@ nav>ul li a {
 
 .user-information span {
     color: var(--color);
+    font-size: 15px;
 }
 
 .login-btn-desktop,
