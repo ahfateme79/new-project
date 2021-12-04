@@ -53,3 +53,6 @@
 
 1400/9/13
 1-add "a" with class "flag" or "flag-profile-header" in files with header-light-logged-in and with "img" tag inner that ,inner logo class in all html file header
+
+"login-header"
+edit logged in header and add modals and add new script src in end of body
