@@ -156,7 +156,7 @@
       right: 0;
       background-color: #ffffff;
       display: none;
-      border: .2px solid #2d3846;
+      border-top: .2px solid #b1bbc7;
       box-shadow: 0 6px 20px rgb(0 0 0 / 20%);
       transition: all .2s ease-in-out
   }
@@ -174,7 +174,7 @@
       align-items: flex-start;
       padding: 20px 10px;
       height: 250px;
-      border-bottom: .2px solid #2d3846;
+      border-bottom: .2px solid #d3d8df;
 
   }
   .header-light nav .nav-menu > li{
@@ -203,7 +203,11 @@
         height: 70px;
         justify-content: center;
     }
-    
+    .header-light .go-pro{
+        width: 95%;
+        padding: 10px 0;
+        display: inline-flex;
+    }
 }
 @media screen and (min-width:700px) and (max-width:1100px){
     .header-light .nav-menu{

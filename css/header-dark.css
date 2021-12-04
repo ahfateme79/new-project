@@ -244,7 +244,7 @@ nav>ul li a {
     background-color: var(--bgcolor);
     /* min-height: 55vh; */
     display: none;
-    border: .2px solid #2d3846;
+    border-top: .2px solid #b1bbc7;
     -webkit-box-shadow: 0 6px 20px rgb(0 0 0 / 20%);
     box-shadow: 0 6px 20px rgb(0 0 0 / 20%);
     -webkit-transition: all .2s ease-in-out;

@@ -15,7 +15,7 @@
 <body>
     <header class="header-light">
         <div class="logo-light-header">
-            <a href="" class="flag"><img src="./img/iran-flag-png-large.png" alt="" width="30px" height="20px"></a>
+            <a href="" class="flag-profile-header"><img src="../img/iran-flag-png-large.png" alt="" width="30px" height="20px"></a>
 
             <img class="logo-icon" src="../img/Sololearn.png" alt="logo" width="50px"><span> TechWich</span>
         </div>
@@ -36,7 +36,7 @@
                     </ul>
                     <div class="header-user-details-mobile">
                         <div class="user-details-mobile">
-                            <div> <button><i class="fas fa-star"></i>500</button></div>
+                            <div><a href="" class="mobile-cube"><img src="../img/cube.svg" alt="">500</a></div>
                         </div>
                         <div class="profile-handle-responsive">
                             <a href=""><img src="../img/community-user-16.png" alt=""></a>Lori A. Barlow
@@ -57,7 +57,8 @@
                     <a href="" class="go-pro"><i class="fas fa-star"></i>Go PRO
                     </a>
                     <div class="user-details">
-                        <button><i class="fas fa-star"></i>500</button>
+                        <a href="" class="cube"><img src="../img/cube.svg" alt="">500</a>
+                       
                         <a href="" class="profile-handle"><img src="../img/community-user-16.png" alt=""></a>
                         <div class="profile-option">
                             <div>
@@ -184,8 +185,49 @@
                 </div>
             </div>
         </div>
-
-
+        <div class="cube-modal">
+            <div class="back-to-menu">
+                <a href="" id="back"><i class="fas fa-chevron-left"></i><span>Back</a>
+            </div>
+            <h4>Your bits</h4>
+            <div class="grid">
+                <span><img src="../img/icons8-sugar-cubes-48.png" alt="">500</span>
+                <p>Use them to unlock practice features.<br> Keep learning every day to collect more!
+                </p>
+            </div>
+            <div class="earn-bite">
+                <h5>How to earn more bits:</h5>
+                <div>
+                    <p>Complete a Code Project</p>
+                    <span>390 Bits</span>
+                </div>
+                <div>
+                    <p>Connect your social accounts </p>
+                    <span>100 Bits</span>
+                </div>
+                <div>
+                    <p>Get 10 upvotes on your code </p>
+                    <span>100 Bits</span>
+                </div>
+                <div>
+                    <p>Get 10 upvotes on your question in Discuss </p>
+                    <span>25 Bits
+                    </span>
+                </div>
+                <div>
+                    <p>Win a Code Challenge with a daily limit of 10x (Android and iOS only) </p>
+                    <span>20 Bits</span>
+                </div>
+                <div>
+                    <p>Complete a lesson </p>
+                    <span>10 Bits</span>
+                </div>
+                <div>
+                    <p>Get a new follower </p>
+                    <span>2 Bits</span>
+                </div>
+            </div>
+        </div>
     </header>
 
 
@@ -219,6 +261,13 @@
         let navmenu = document.querySelector('.nav-menu')
         let togglewrap = document.querySelector('.toggle-wrap')
         let proresize = document.querySelector('.pro-resize')
+        let cube = document.querySelector('.cube')
+        let mobile_cube = document.querySelector('.mobile-cube')
+        let cub_modal = document.querySelector('.cube-modal')
+        let back = document.querySelector('#back')
+
+        // let cub_modal_dectop = document.querySelector('.cube-modal-desctop')
+
 
         profile.addEventListener('click', (e) => {
             e.preventDefault()
@@ -255,8 +304,21 @@
             var image = document.getElementById("output");
             image.src = URL.createObjectURL(event.target.files[0]);
         };
+        cube.addEventListener("click", (e) => {
+            e.preventDefault()
+            cub_modal.classList.toggle('show-modal')
+        })
+        mobile_cube.addEventListener("click", (e) => {
+            e.preventDefault()
+            cub_modal.classList.toggle('show-modal')
+            navmenu.classList.toggle('fixed')
+        })
+        back.addEventListener('click',(e)=>{
+            e.preventDefault()
+            navmenu.classList.toggle('fixed')
+            cub_modal.classList.toggle('show-modal')
 
-
+        })
         let options = [{
                 countrie: 'Afghanistan'
             }, {
