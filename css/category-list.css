@@ -84,6 +84,11 @@
     text-align: center;
     box-shadow: 0 4px 0 rgb(107 127 153 / 50%);
     border: 1.8px solid #dce2e5;
+    transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
 }
 
 .category-list-boxes>a:hover {
