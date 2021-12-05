@@ -56,3 +56,7 @@
 
 "login-header"
 edit logged in header and add modals and add new script src in end of body
+
+
+1400/9/14
+1-handle modal and tabs inner that in all of logged-in-header in html files

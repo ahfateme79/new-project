@@ -23,8 +23,8 @@
     <!-- light-header -->
     <header class="header-light">
         <div class="logo-light-header">
-            <a href="" class="flag-profile-header"><img src="../img/united-states-of-america-flag-png-large.png" alt="" width="30px"
-                    height="20px"></a>
+            <a href="" class="flag-profile-header"><img src="../img/united-states-of-america-flag-png-large.png" alt=""
+                    width="30px" height="20px"></a>
 
             <img class="logo-icon" src="../img/Sololearn.png" alt="logo" width="50px"><span> TechWich</span>
         </div>
@@ -81,49 +81,131 @@
                                             <di class="profile-links">
                                                 <h3>ویرایش پروفایل</h3>
                                                 <ul>
-                                                    <span>اطلاعات</span>
-                                                    <li><a href="">پسورد</a></li>
-                                                    <li><a href="">حساب های </a></li>
-                                                    <li><a href="">Sololearn PRO</a></li>
+                                                    <li><a href="" class="active-tab-btn"
+                                                            data-tab='modal-tab-content-1'>اطلاعات</a></li>
+                                                    <li><a href="" data-tab='modal-tab-content-2'>پسورد</a></li>
+                                                    <li><a href="" data-tab='modal-tab-content-3'>حساب های </a></li>
+                                                    <li><a href="" data-tab='modal-tab-content-4'>Sololearn PRO</a></li>
                                                 </ul>
                                             </di>
                                             <di class="profile-setting">
                                                 <div><button class="close-modal">بستن</button></div>
-                                                <div class="change-profile">
-                                                    <h4>اطلاعات
-                                                    </h4>
-                                                    <div class="information">
-                                                        <img src="../img/community-user-16.png" alt="" id="output">
-                                                        <div>
-                                                            <label for="image-uploader">تغییرات
-                                                                <input type="file" id="image-uploader"
-                                                                    onchange="loadFile(event)">
+                                                <div id="modal-tab-content-1" class="moda-content active-tab-content">
+                                                    <div class="change-profile">
+                                                        <h4>اطلاعات
+                                                        </h4>
+                                                        <div class="information">
+                                                            <img src="../img/community-user-16.png" alt="" id="output">
+                                                            <div>
+                                                                <label for="image-uploader">تغییرات
+                                                                    <input type="file" id="image-uploader"
+                                                                        onchange="loadFile(event)">
+                                                                </label>
+                                                                <button><i>تنطیم</i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="profile-form-info">
+                                                        <form action="">
+                                                            <label for="">نام کاریری
                                                             </label>
-                                                            <button><i>تنطیم</i></button>
+                                                            <input type="text">
+                                                            <label for="">ادرس ایمیل
+                                                            </label>
+                                                            <input type="email">
+                                                            <label for="">بیوگرافی
+                                                            </label>
+                                                            <textarea name="" id="" cols="30" rows="3"
+                                                                placeholder="describe yourself..."></textarea>
+                                                            <label for="">گشور</label>
+                                                            <select name="" id="">
+                                                                <option value="">ایران</option>
+                                                                <option value="">امریکا</option>
+                                                            </select>
+
+                                                            <button>ذخیره</button>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                                <div id="modal-tab-content-2" class="moda-content">
+                                                    <div class="change-profile">
+                                                        <h4>پسورد
+                                                        </h4>
+                                                        <div class="profile-form-info">
+                                                            <form action="">
+                                                                <label for="">رمز عبور فعلی
+
+                                                                </label>
+                                                                <input type="password" name="" id="" required>
+                                                                <label for="">رمز عبور جدید
+                                                                </label>
+                                                                <input type="password" name="" id="" required>
+                                                                <button>تغیر</button>
+                                                            </form>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="profile-form-info">
-                                                    <form action="">
-                                                        <label for="">نام کاریری
-                                                        </label>
-                                                        <input type="text">
-                                                        <label for="">ادرس ایمیل
-                                                        </label>
-                                                        <input type="email">
-                                                        <label for="">بیوگرافی
-                                                        </label>
-                                                        <textarea name="" id="" cols="30" rows="3"
-                                                            placeholder="describe yourself..."></textarea>
-                                                        <label for="">گشور</label>
-                                                        <select name="" id="">
-                                                            <option value="">ایران</option>
-                                                            <option value="">امریکا</option>
-                                                        </select>
-
-                                                        <button>ذخیره</button>
-                                                    </form>
+                                                <!--  -->
+                                                <div id="modal-tab-content-3" class="moda-content">
+                                                    <div class="change-profile">
+                                                        <h4>حساب های متصل
+                                                        </h4>
+                                                        <div class="profile-form-info">
+                                                            <ul class="modal-media">
+                                                                <li>
+                                                                    <span>
+                                                                        <img src="" alt="">
+                                                                        لینکدین</span>
+                                                                    <button>متصل</button>
+                                                                </li>
+                                                                <li>
+                                                                    <span>
+                                                                        <img src="" alt="">
+                                                                        گبت هاب</span>
+                                                                    <button>متصل</button>
+                                                                </li>
+                                                                <li>
+                                                                    <span>
+                                                                        <img src="" alt="">
+                                                                        استک اورفلو</span>
+                                                                    <button>متصل</button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
                                                 </div>
+                                                <!--  -->
+                                                <div id="modal-tab-content-4" class="moda-content">
+                                                    <div class="change-profile">
+                                                        <h4>Sololearn PRO
+                                                        </h4>
+                                                        <div class="profile-form-info">
+                                                            <div class="pro-card">
+                                                                <div>
+                                                                    <h6>سالانه
+                                                                    </h6>
+                                                                    <p>$5.83<sup>/mo</sup></p>
+                                                                </div>
+                                                                <span>صورت حساب سالانه 69.99 دلار
+
+                                                                </span>
+                                                                <button>14 روز را به صورت رایگان امتحان کنید
+                                                                </button>
+                                                            </div>
+                                                            <div class="pro-card">
+                                                                <div>
+                                                                    <h6>ماهانه</h6>
+                                                                    <p>$5.83<sup>/mo</sup></p>
+                                                                </div>
+                                                                <span>صورت حساب سالانه 69.99 دلار
+                                                                </span>
+                                                                <button>طرح را انتخاب کنید
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
                                             </di>
                                         </div>
                                     </div>

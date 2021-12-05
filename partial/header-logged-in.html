@@ -15,7 +15,8 @@
 <body>
     <header class="header-light">
         <div class="logo-light-header">
-            <a href="" class="flag-profile-header"><img src="../img/iran-flag-png-large.png" alt="" width="30px" height="20px"></a>
+            <a href="" class="flag-profile-header"><img src="../img/iran-flag-png-large.png" alt="" width="30px"
+                    height="20px"></a>
 
             <img class="logo-icon" src="../img/Sololearn.png" alt="logo" width="50px"><span> TechWich</span>
         </div>
@@ -58,7 +59,7 @@
                     </a>
                     <div class="user-details">
                         <a href="" class="cube"><img src="../img/cube.svg" alt="">500</a>
-                       
+
                         <a href="" class="profile-handle"><img src="../img/community-user-16.png" alt=""></a>
                         <div class="profile-option">
                             <div>
@@ -72,50 +73,131 @@
                                             <di class="profile-links">
                                                 <h3>Edit Profile</h3>
                                                 <ul>
-                                                    <span>Information</span>
-                                                    <li><a href="">password</a></li>
-                                                    <li><a href="">Connected Accounts</a></li>
-                                                    <li><a href="">Sololearn PRO</a></li>
+                                                    <li><a href="" class="active-tab-btn"
+                                                            data-tab='modal-tab-content-1'>Information</a></li>
+                                                    <li><a href="" data-tab='modal-tab-content-2'>password</a></li>
+                                                    <li><a href="" data-tab='modal-tab-content-3'>Connected Accounts</a>
+                                                    </li>
+                                                    <li><a href="" data-tab='modal-tab-content-4'>Sololearn PRO</a></li>
                                                 </ul>
                                             </di>
-                                            <di class="profile-setting">
+                                            <div class="profile-setting">
                                                 <div><button class="close-modal">close</button></div>
-                                                <div class="change-profile">
-                                                    <h4>Information
-                                                    </h4>
-                                                    <div class="information">
-                                                        <img src="../img/community-user-16.png" alt="" id="output">
-                                                        <div>
-                                                            <label for="image-uploader">change
-                                                                <input type="file" id="image-uploader"
-                                                                    onchange="loadFile(event)">
+                                                <div id="modal-tab-content-1" class="moda-content active-tab-content">
+                                                    <div class="change-profile">
+                                                        <h4>Information
+                                                        </h4>
+                                                        <div class="information">
+                                                            <img src="../img/community-user-16.png" alt="" id="output">
+                                                            <div>
+                                                                <label for="image-uploader">change
+                                                                    <input type="file" id="image-uploader"
+                                                                        onchange="loadFile(event)">
+                                                                </label>
+                                                                <button><i>set</i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="profile-form-info">
+                                                        <form action="">
+                                                            <label for="">Username
                                                             </label>
-                                                            <button><i>set</i></button>
+                                                            <input type="text">
+                                                            <label for="">Email address
+                                                            </label>
+                                                            <input type="email">
+                                                            <label for="">Bio
+                                                            </label>
+                                                            <textarea name="" id="" cols="30" rows="3"
+                                                                placeholder="describe yourself..."></textarea>
+                                                            <label for="">Country</label>
+                                                            <select name="" id="">
+                                                                <option value="">iran</option>
+                                                                <option value="">us</option>
+                                                            </select>
+
+                                                            <button>save</button>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                                <!--  -->
+                                                <div id="modal-tab-content-2" class="moda-content">
+                                                    <div class="change-profile">
+                                                        <h4>password
+                                                        </h4>
+                                                        <div class="profile-form-info">
+                                                            <form action="">
+                                                                <label for="">Current Password
+                                                                </label>
+                                                                <input type="password" name="" id="" required>
+                                                                <label for="">New Password
+                                                                </label>
+                                                                <input type="password" name="" id="" required>
+                                                                <button>change</button>
+                                                            </form>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="profile-form-info">
-                                                    <form action="">
-                                                        <label for="">Username
-                                                        </label>
-                                                        <input type="text">
-                                                        <label for="">Email address
-                                                        </label>
-                                                        <input type="email">
-                                                        <label for="">Bio
-                                                        </label>
-                                                        <textarea name="" id="" cols="30" rows="3"
-                                                            placeholder="describe yourself..."></textarea>
-                                                        <label for="">Country</label>
-                                                        <select name="" id="">
-                                                            <option value="">iran</option>
-                                                            <option value="">us</option>
-                                                        </select>
-
-                                                        <button>save</button>
-                                                    </form>
+                                                <!--  -->
+                                                <div id="modal-tab-content-3" class="moda-content">
+                                                    <div class="change-profile">
+                                                        <h4>Connected Accounts
+                                                        </h4>
+                                                        <div class="profile-form-info">
+                                                            <ul class="modal-media">
+                                                                <li>
+                                                                    <span>
+                                                                        <img src="" alt="">
+                                                                        linkedin</span>
+                                                                    <button>connect</button>
+                                                                </li>
+                                                                <li>
+                                                                    <span>
+                                                                        <img src="" alt="">
+                                                                        github</span>
+                                                                    <button>connect</button>
+                                                                </li>
+                                                                <li>
+                                                                    <span>
+                                                                        <img src="" alt="">
+                                                                        stackoverflow</span>
+                                                                    <button>connect</button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </di>
+                                                <!--  -->
+                                                <div id="modal-tab-content-4" class="moda-content">
+                                                    <div class="change-profile">
+                                                        <h4>Sololearn PRO
+                                                        </h4>
+                                                        <div class="profile-form-info">
+                                                            <div class="pro-card">
+                                                                <div>
+                                                                    <h6>Annual</h6>
+                                                                    <p>$5.83<sup>/mo</sup></p>
+                                                                </div>
+                                                                <span>Billed annually as $69.99
+                                                                </span>
+                                                                <button>Try 14 Days For Free
+                                                                </button>
+                                                            </div>
+                                                            <div class="pro-card">
+                                                                <div>
+                                                                    <h6>Monthly</h6>
+                                                                    <p>$5.83<sup>/mo</sup></p>
+                                                                </div>
+                                                                <span>Billed annually as $69.99
+
+                                                                </span>
+                                                                <button>Select Plan
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </li>
@@ -246,121 +328,7 @@
 
 
     <script src="../js/header-mode-color.js"></script>
-    <script>
-        let profile = document.querySelector('.profile-handle')
-        let profilebox = document.querySelector('.profile-option')
-        let setting = document.querySelector('.setting')
-        let closemodal = document.querySelector('.close-modal')
-        let profilemodal = document.querySelector('.profile-modal-parent')
-        let settingbox = document.querySelector('.profile-option')
-        let closemodalmobile = document.querySelector('.close-modal-mobile')
-        let mobilemodal = document.querySelector('.mobile-modal')
-        let openmodalmobile = document.querySelector('.open-modal-mobile')
-        let mobileboxhandle = document.querySelector('.profile-handle-responsive')
-        let mobilebox = document.querySelector('.seting-mobile-box')
-        let navmenu = document.querySelector('.nav-menu')
-        let togglewrap = document.querySelector('.toggle-wrap')
-        let proresize = document.querySelector('.pro-resize')
-        let cube = document.querySelector('.cube')
-        let mobile_cube = document.querySelector('.mobile-cube')
-        let cub_modal = document.querySelector('.cube-modal')
-        let back = document.querySelector('#back')
-
-        // let cub_modal_dectop = document.querySelector('.cube-modal-desctop')
-
-
-        profile.addEventListener('click', (e) => {
-            e.preventDefault()
-            profilebox.classList.toggle('block-profile-box')
-        })
-
-        setting.addEventListener('click', (e) => {
-            e.preventDefault()
-            profilemodal.style.display = 'flex'
-        })
-        closemodal.addEventListener('click', () => {
-            profilemodal.style.display = 'none'
-            profilebox.classList.toggle('block-profile-box')
-
-        })
-        mobileboxhandle.addEventListener('click', (e) => {
-            mobilebox.style.display = 'flex'
-            navmenu.classList.toggle('fixed')
-        })
-
-        closemodalmobile.addEventListener('click', () => {
-            mobilemodal.style.display = 'none'
-            mobilebox.style.display = 'none'
-            togglewrap.classList.toggle("active");
-            // document.querySelector('.nav-menu').classList.toggle('fixed')
-        })
-        openmodalmobile.addEventListener('click', (e) => {
-            e.preventDefault()
-            mobilemodal.style.display = 'flex'
-            profilemobileitem.style.display = 'block'
-        })
-
-        var loadFile = function (event) {
-            var image = document.getElementById("output");
-            image.src = URL.createObjectURL(event.target.files[0]);
-        };
-        cube.addEventListener("click", (e) => {
-            e.preventDefault()
-            cub_modal.classList.toggle('show-modal')
-        })
-        mobile_cube.addEventListener("click", (e) => {
-            e.preventDefault()
-            cub_modal.classList.toggle('show-modal')
-            navmenu.classList.toggle('fixed')
-        })
-        back.addEventListener('click',(e)=>{
-            e.preventDefault()
-            navmenu.classList.toggle('fixed')
-            cub_modal.classList.toggle('show-modal')
-
-        })
-        let options = [{
-                countrie: 'Afghanistan'
-            }, {
-                countrie: 'Aland Islands'
-            }, {
-                countrie: 'Albania'
-            }, {
-                countrie: 'Algeria'
-            }, {
-                countrie: 'Andorra'
-            }, {
-                countrie: 'Angola'
-            }, {
-                countrie: 'Anguilla'
-            }, {
-                countrie: 'Antarctica'
-            }, {
-                countrie: 'Antigua & Barbuda'
-            }, {
-                countrie: 'Argentina'
-            }, {
-                countrie: 'Armenia'
-            }, {
-                countrie: 'Aruba'
-            }, {
-                countrie: 'Australia'
-            }, {
-                countrie: 'Austria'
-            }, {
-                countrie: 'Azerbaijan'
-            }, {
-                countrie: 'Bahamas'
-            },
-
-        ]
-        let select = document.querySelector('select')
-        select.addEventListener('click', () => {
-            for (let i = 0; i < options.length; i++) {
-                select.innerHTML += `<option>${options[i].countrie}</option>`
-            }
-        })
-    </script>
+    <script src="../js/handle-modal.js"></script>
 </body>
 
 </html>
