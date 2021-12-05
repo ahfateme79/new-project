@@ -935,7 +935,7 @@ progress::-webkit-progress-value {
 
 .profile-modal {
     width: 550px;
-    height: 450px;
+    height: 460px;
     display: flex;
     background-color: #e4e7ee;
     border-radius: 10px;
@@ -1073,13 +1073,18 @@ progress::-webkit-progress-value {
 }
 
 .profile-setting form button {
-    margin: 5px 0;
-    width: 90px;
+    /*margin: 5px 0;
+    */width: 90px;
     height: 30px;
     background-color: #2493df;
     color: #fff;
     border-radius: 5px;
     font-size: 1rem;
+    transform: translateY(5px);
+    -webkit-transform: translateY(5px);
+    -moz-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    -o-transform: translateY(5px);
 }
 
 .profile-setting textarea::-webkit-input-placeholder {
