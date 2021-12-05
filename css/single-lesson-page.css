@@ -168,7 +168,7 @@
 .lesson-tree:before {
     content: '';
     width: 2px;
-    min-height: 93.5%;
+    min-height: 100%;
     position: absolute;
     background-color: rgb(182, 190, 192);
     left: 30px;
@@ -209,6 +209,17 @@
     left: 23px;
     overflow: visible;
 }
+.lesson-tree>div:last-child::after {
+    content: '';
+    background-color: rgb(255, 255, 255);
+    left: 23px;
+    position: absolute;
+    overflow: hidden;
+    height: auto;
+    height: 61px;
+    width: 15px;
+    bottom: 0;
+}
 
 
 
@@ -223,11 +234,11 @@
 }
 
 
-.lesson-tree > div.project a {
+.lesson-tree>div.project a {
     width: 100%;
 }
 
-.lesson-tree > div.project a div {
+.lesson-tree>div.project a div {
     display: -webkit-flex;
     display: -webkit-box;
     -ms-flex-align: center;
@@ -238,7 +249,7 @@
     align-items: center
 }
 
-.lesson-tree > div.project a img {
+.lesson-tree>div.project a img {
     width: 30px;
     height: 30px;
     margin: 5px;
@@ -321,9 +332,11 @@
         width: 90%;
         border-radius: 0;
     }
-    .introduce{
+
+    .introduce {
         width: 90%;
     }
+
     .lesson-select-item details {
         border-radius: 5px;
     }
@@ -433,35 +446,43 @@
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
 }
-.pro-items span:first-child{
+
+.pro-items span:first-child {
     width: 40px;
     display: flex;
     align-items: center;
 }
-.pro-items span:first-child img{ 
-   width: 15px;
-   height: 15px;
+
+.pro-items span:first-child img {
+    width: 15px;
+    height: 15px;
 }
-.lesson-tree > div .luck-lesson{
+
+.lesson-tree>div .luck-lesson {
     opacity: .5;
 }
-.lesson-tree div.green-tick::before{
+
+.lesson-tree div.green-tick::before {
     background-color: rgb(1, 190, 127);
 }
-.lesson-tree div.blue-pluss::before{
+
+.lesson-tree div.blue-pluss::before {
     background-color: rgb(92, 159, 247)
 }
-.lesson-tree div.disable::before{
+
+.lesson-tree div.disable::before {
     background-color: rgb(132, 143, 146);
 }
-.lesson-tree div.disable a{
+
+.lesson-tree div.disable a {
     opacity: .5;
     cursor: default;
 }
-.lesson-tree div.project a .luck{
-   transform: translateY(-30px);
-   -webkit-transform: translateY(-30px);
-   -moz-transform: translateY(-30px);
-   -ms-transform: translateY(-30px);
-   -o-transform: translateY(-30px);
+
+.lesson-tree div.project a .luck {
+    transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -o-transform: translateY(-30px);
 }

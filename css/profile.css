@@ -880,7 +880,7 @@ progress::-webkit-progress-value {
 
 .profile-option>ul li {
     width: 100%;
-    padding:7px 5px;
+    padding: 7px 5px;
     margin: 0;
 }
 
@@ -969,7 +969,25 @@ progress::-webkit-progress-value {
 
 .profile-links ul li a {
     font-size: .9rem;
-    color: rgb(80, 105, 105);
+    color: rgb(131, 134, 134) !important;
+}
+
+.profile-links ul li a.active-tab-btn {
+    color: black !important;
+}
+
+#modal-tab-content-1,
+#modal-tab-content-2,
+#modal-tab-content-3,
+#modal-tab-content-4 {
+    display: none;
+}
+
+#modal-tab-content-1.active-tab-content,
+#modal-tab-content-2.active-tab-content,
+#modal-tab-content-3.active-tab-content,
+#modal-tab-content-4.active-tab-content {
+    display: block;
 }
 
 .profile-setting {
@@ -1074,7 +1092,8 @@ progress::-webkit-progress-value {
 
 .profile-setting form button {
     /*margin: 5px 0;
-    */width: 90px;
+    */
+    width: 90px;
     height: 30px;
     background-color: #2493df;
     color: #fff;
@@ -1674,11 +1693,13 @@ progress::-webkit-progress-value {
     font-weight: bold;
     display: none;
 }
-.cube{
+
+.cube {
     padding: 5px;
 
 }
-.cube:hover{
+
+.cube:hover {
     background-color: rgb(223, 229, 235);
     border-radius: 2px;
     -webkit-border-radius: 2px;
@@ -1686,6 +1707,7 @@ progress::-webkit-progress-value {
     -ms-border-radius: 2px;
     -o-border-radius: 2px;
 }
+
 @media screen and (max-width:600px) {
     .cube-modal {
         position: fixed;

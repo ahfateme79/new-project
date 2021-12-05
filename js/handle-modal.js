@@ -16,6 +16,24 @@ let cube = document.querySelector('.cube')
 let mobile_cube = document.querySelector('.mobile-cube')
 let cub_modal = document.querySelector('.cube-modal')
 let back = document.querySelector('#back')
+let tab_link_section = document.querySelector('.profile-links ul')
+let tab_link = document.querySelectorAll('.profile-links ul li a')
+let tab_content = document.querySelectorAll('.moda-content')
+
+tab_link_section.addEventListener('click', (e) => {
+    e.preventDefault()
+    for (let i = 0; i < tab_link.length; i++) {
+        tab_link[i].classList.remove('active-tab-btn')
+    }
+    e.target.classList.toggle('active-tab-btn')
+
+    for (i = 0; i < tab_content.length; i++) {
+        tab_content[i].classList.remove('active-tab-content');
+    }
+
+    var tabId = '#' + e.target.dataset.tab;
+    document.querySelector(tabId).classList.toggle('active-tab-content');
+})
 
 // let cub_modal_dectop = document.querySelector('.cube-modal-desctop')
 
@@ -64,7 +82,7 @@ mobile_cube.addEventListener("click", (e) => {
     cub_modal.classList.toggle('show-modal')
     navmenu.classList.toggle('fixed')
 })
-back.addEventListener('click',(e)=>{
+back.addEventListener('click', (e) => {
     e.preventDefault()
     navmenu.classList.toggle('fixed')
     cub_modal.classList.toggle('show-modal')
