@@ -70,7 +70,7 @@
 }
 
 .item-content aside {
-    position: absolute;
+    position: fixed;
     right: -100%;
     top: 0;
     z-index: 5;
@@ -326,9 +326,13 @@
     .contents {
         width: 60%;
     }
+}
+@media screen and (max-width:600px){
+    .contents {
+      min-height: 400px;
+    }
 
 }
-
 
 /* date-sicencs */
 .date-sicencs {
@@ -452,7 +456,7 @@
     padding: 0 20px;
 }
 
-.quiz div > div {
+.quiz div>div {
     width: 100px;
     min-height: 40px;
     background-color: rgb(250, 249, 249);
