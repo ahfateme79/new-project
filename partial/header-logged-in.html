@@ -210,7 +210,7 @@
             </nav>
         </div>
         <div class="seting-mobile-box">
-            <div><a href="">back</a></div>
+            <div><a href="" id="back-menu">back</a></div>
             <div><img src="../img/community-user-16.png" alt=""><span>username</span></div>
             <ul>
                 <li><a href="" class="open-modal-mobile"><i class="fas fa-cog"></i>setting</a></li>
@@ -219,12 +219,12 @@
             </ul>
         </div>
         <div class="modal-menu">
-            <h3><span><</span>Edit Profile</h3>
+            <h3 class="edit">Edit Profile</h3>
             <ul>
-                <li><a href="" data-tabid='mobile-content-1'>Information</a>></li>
-                <li><a href="" data-tabid='mobile-content-2'>password</a>></li>
-                 <li><a href="" data-tabid='mobile-content-3'>Connected Accounts</a>></li>
-                <li><a href="" data-tabid='mobile-content-4'>Sololearn PRO</a>></li>
+                <li><a href="" data-tabid='mobile-content-1'>Information</a></li>
+                <li><a href="" data-tabid='mobile-content-2'>password</a></li>
+                <li><a href="" data-tabid='mobile-content-3'>Connected Accounts</a></li>
+                <li><a href="" data-tabid='mobile-content-4'>Sololearn PRO</a></li>
             </ul>
         </div>
         <div class="profile-modal-parent mobile-modal">
@@ -241,9 +241,8 @@
                 <div class="profile-setting">
                     <div><button class="close-modal-mobile">close</button></div>
                     <div id="mobile-content-1" class="mobile-content active-tab-content">
+                        <input type="hidden" value="information">
                         <div class="change-profile">
-                            <h4>Information
-                            </h4>
                             <div class="information">
                                 <img src="../img/community-user-16.png" alt="" id="output">
                                 <div>
@@ -276,9 +275,77 @@
                             </form>
                         </div>
                     </div>
-                    <div id="mobile-content-2" class="mobile-content">pass</div>
-                    <div id="mobile-content-3" class="mobile-content">con</div>
-                    <div id="mobile-content-4" class="mobile-content">slo</div>
+                    <div id="mobile-content-2" class="mobile-content">
+                        <input type="hidden" value="password">
+                        <div class="change-profile">
+                            <div class="profile-form-info">
+                                <form action="">
+                                    <label for="">Current Password
+                                    </label>
+                                    <input type="password" name="" id="" required>
+                                    <label for="">New Password
+                                    </label>
+                                    <input type="password" name="" id="" required>
+                                    <button>change</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="mobile-content-3" class="mobile-content">
+                        <input type="hidden" value="Connected Accounts">
+                        <div class="change-profile">
+                            <div class="profile-form-info">
+                                <ul class="modal-media">
+                                    <li>
+                                        <span>
+                                            <img src="" alt="">
+                                            linkedin</span>
+                                        <button>connect</button>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <img src="" alt="">
+                                            github</span>
+                                        <button>connect</button>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <img src="" alt="">
+                                            stackoverflow</span>
+                                        <button>connect</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="mobile-content-4" class="mobile-content">
+                        <input type="hidden" value="Sololearn PRO">
+                        <div class="change-profile">
+                            <div class="profile-form-info">
+                                <div class="pro-card">
+                                    <div>
+                                        <h6>Annual</h6>
+                                        <p>$5.83<sup>/mo</sup></p>
+                                    </div>
+                                    <span>Billed annually as $69.99
+                                    </span>
+                                    <button>Try 14 Days For Free
+                                    </button>
+                                </div>
+                                <div class="pro-card">
+                                    <div>
+                                        <h6>Monthly</h6>
+                                        <p>$5.83<sup>/mo</sup></p>
+                                    </div>
+                                    <span>Billed annually as $69.99
+
+                                    </span>
+                                    <button>Select Plan
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

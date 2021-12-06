@@ -79,7 +79,9 @@ changes();
 
 
 // menu function
+let mobilebox = document.querySelector('.seting-mobile-box')
 function toggleMenu(e) {
     e.classList.toggle("active");
     document.querySelector('.nav-menu').classList.toggle('fixed')
+    mobilebox.classList.toggle('fixed')
 }

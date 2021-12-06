@@ -25,7 +25,21 @@ let mobile_tab = document.querySelectorAll('.modal-menu ul li')
 let mobile_content = document.querySelectorAll('.mobile-content')
 let mobile_tab_link = document.querySelectorAll('.mobile-modal .profile-links ul li a')
 let mobile_tab_link_section = document.querySelector('.mobile-modal .profile-links ul')
+let edit = document.querySelector('.edit')
+let back_menu = document.querySelector('#back-menu')
 
+back_menu.addEventListener('click', (e) => {
+    e.preventDefault()
+    navmenu.classList.toggle('fixed')
+    mobilebox.style.display = 'none'
+
+})
+
+
+edit.addEventListener('click', () => {
+    modal_menu.style.display = 'none'
+    mobilebox.style.display = 'flex'
+})
 
 
 mobile_tab_section.addEventListener('click', (e) => {
@@ -35,8 +49,13 @@ mobile_tab_section.addEventListener('click', (e) => {
     for (let i = 0; i < mobile_content.length; i++) {
         mobile_content[i].classList.remove('active-tab-content')
     }
+
     var tabId = '#' + e.target.dataset.tabid;
     document.querySelector(tabId).classList.toggle('active-tab-content');
+    let conten = document.querySelector(tabId)
+    if (window.innerWidth < 601) {
+        closemodalmobile.innerHTML = conten.querySelector('input').value
+    }
 })
 
 
@@ -95,10 +114,17 @@ mobileboxhandle.addEventListener('click', (e) => {
 })
 
 closemodalmobile.addEventListener('click', () => {
+    modal_menu.style.display = 'block'
     mobilemodal.style.display = 'none'
-    mobilebox.style.display = 'none'
-    togglewrap.classList.toggle("active");
-    // document.querySelector('.nav-menu').classList.toggle('fixed')
+    if (window.innerWidth < 601) {
+        modal_menu.style.display = 'block'
+        mobilemodal.style.display = 'none'
+    } else {
+        modal_menu.style.display = 'none'
+
+        mobilemodal.style.display = 'none'
+        togglewrap.classList.toggle('active')
+    }
 })
 openmodalmobile.addEventListener('click', (e) => {
     e.preventDefault()
@@ -135,7 +161,6 @@ openmodalmobile.addEventListener('click', () => {
     } else if (window.innerWidth > 601) {
         mobilemodal.style.display = 'flex'
         modal_menu.style.display = 'none'
-
     }
 
 })
