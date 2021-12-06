@@ -365,3 +365,13 @@ nav .nav-menu li {
     -ms-transform: translate(-20px,-9px);
     -o-transform: translate(-20px,-9px);
 }
+@media screen and (max-width:600px){
+    .flag{
+        transform: translate(-5px,-9px);
+        -webkit-transform: translate(-5px,-9px);
+        -moz-transform: translate(-5px,-9px);
+        -ms-transform: translate(-5px,-9px);
+        -o-transform: translate(-5px,-9px);
+}
+    
+}

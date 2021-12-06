@@ -218,52 +218,67 @@
                 <li><a href=""><i class="fal fa-sign-out"></i>log out</a></li>
             </ul>
         </div>
+        <div class="modal-menu">
+            <h3><span><</span>Edit Profile</h3>
+            <ul>
+                <li><a href="" data-tabid='mobile-content-1'>Information</a>></li>
+                <li><a href="" data-tabid='mobile-content-2'>password</a>></li>
+                 <li><a href="" data-tabid='mobile-content-3'>Connected Accounts</a>></li>
+                <li><a href="" data-tabid='mobile-content-4'>Sololearn PRO</a>></li>
+            </ul>
+        </div>
         <div class="profile-modal-parent mobile-modal">
             <div class="profile-modal">
                 <div class="profile-links">
                     <h3>Edit Profile</h3>
                     <ul>
-                        <span>Information</span>
-                        <li><a href="">password</a></li>
-                        <li><a href="">Connected Accounts</a></li>
-                        <li><a href="">Sololearn PRO</a></li>
+                        <li><a href="" data-tabid='mobile-content-1' class="active-tab-btn">Information</a></li>
+                        <li><a href="" data-tabid='mobile-content-2'>password</a></li>
+                        <li><a href="" data-tabid='mobile-content-3'>Connected Accounts</a></li>
+                        <li><a href="" data-tabid='mobile-content-4'>Sololearn PRO</a></li>
                     </ul>
                 </div>
                 <div class="profile-setting">
                     <div><button class="close-modal-mobile">close</button></div>
-                    <div class="change-profile">
-                        <h4>Information
-                        </h4>
-                        <div class="information">
-                            <img src="../img/community-user-16.png" alt="" id="output">
-                            <div>
-                                <label for="image-uploader">change
-                                    <input type="file" id="image-uploader" onchange="loadFile(event)">
-                                </label>
-                                <button><i>set</i></button>
+                    <div id="mobile-content-1" class="mobile-content active-tab-content">
+                        <div class="change-profile">
+                            <h4>Information
+                            </h4>
+                            <div class="information">
+                                <img src="../img/community-user-16.png" alt="" id="output">
+                                <div>
+                                    <label for="image-uploader">change
+                                        <input type="file" id="image-uploader" onchange="loadFile(event)">
+                                    </label>
+                                    <button><i>set</i></button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="profile-form-info">
-                        <form action="">
-                            <label for="">Username
-                            </label>
-                            <input type="text">
-                            <label for="">Email address
-                            </label>
-                            <input type="email">
-                            <label for="">Bio
-                            </label>
-                            <textarea name="" id="" cols="30" rows="3" placeholder="describe yourself..."></textarea>
-                            <label for="">Country</label>
-                            <select name="" id="">
-                                <option value="">iran</option>
-                                <option value="">us</option>
-                            </select>
+                        <div class="profile-form-info">
+                            <form action="">
+                                <label for="">Username
+                                </label>
+                                <input type="text">
+                                <label for="">Email address
+                                </label>
+                                <input type="email">
+                                <label for="">Bio
+                                </label>
+                                <textarea name="" id="" cols="30" rows="3"
+                                    placeholder="describe yourself..."></textarea>
+                                <label for="">Country</label>
+                                <select name="" id="">
+                                    <option value="">iran</option>
+                                    <option value="">us</option>
+                                </select>
 
-                            <button>save</button>
-                        </form>
+                                <button>save</button>
+                            </form>
+                        </div>
                     </div>
+                    <div id="mobile-content-2" class="mobile-content">pass</div>
+                    <div id="mobile-content-3" class="mobile-content">con</div>
+                    <div id="mobile-content-4" class="mobile-content">slo</div>
                 </div>
             </div>
         </div>

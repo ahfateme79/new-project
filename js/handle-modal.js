@@ -19,6 +19,26 @@ let back = document.querySelector('#back')
 let tab_link_section = document.querySelector('.profile-links ul')
 let tab_link = document.querySelectorAll('.profile-links ul li a')
 let tab_content = document.querySelectorAll('.moda-content')
+let modal_menu = document.querySelector('.modal-menu')
+let mobile_tab_section = document.querySelector('.modal-menu ul')
+let mobile_tab = document.querySelectorAll('.modal-menu ul li')
+let mobile_content = document.querySelectorAll('.mobile-content')
+let mobile_tab_link = document.querySelectorAll('.mobile-modal .profile-links ul li a')
+let mobile_tab_link_section = document.querySelector('.mobile-modal .profile-links ul')
+
+
+
+mobile_tab_section.addEventListener('click', (e) => {
+    e.preventDefault()
+    modal_menu.style.display = 'none'
+    mobilemodal.style.display = 'block'
+    for (let i = 0; i < mobile_content.length; i++) {
+        mobile_content[i].classList.remove('active-tab-content')
+    }
+    var tabId = '#' + e.target.dataset.tabid;
+    document.querySelector(tabId).classList.toggle('active-tab-content');
+})
+
 
 tab_link_section.addEventListener('click', (e) => {
     e.preventDefault()
@@ -34,6 +54,23 @@ tab_link_section.addEventListener('click', (e) => {
     var tabId = '#' + e.target.dataset.tab;
     document.querySelector(tabId).classList.toggle('active-tab-content');
 })
+
+mobile_tab_link_section.addEventListener('click', (e) => {
+    e.preventDefault()
+    for (let i = 0; i < mobile_tab_link.length; i++) {
+        mobile_tab_link[i].classList.remove('active-tab-btn')
+    }
+    e.target.classList.toggle('active-tab-btn')
+
+    for (i = 0; i < mobile_content.length; i++) {
+        mobile_content[i].classList.remove('active-tab-content');
+    }
+
+    var tabId = '#' + e.target.dataset.tabid;
+    console.log(tabId)
+    document.querySelector(tabId).classList.toggle('active-tab-content');
+})
+
 
 // let cub_modal_dectop = document.querySelector('.cube-modal-desctop')
 
@@ -65,8 +102,8 @@ closemodalmobile.addEventListener('click', () => {
 })
 openmodalmobile.addEventListener('click', (e) => {
     e.preventDefault()
-    mobilemodal.style.display = 'flex'
-    profilemobileitem.style.display = 'block'
+    modal_menu.style.display = 'block'
+    mobilebox.style.display = 'none'
 })
 
 var loadFile = function (event) {
@@ -88,6 +125,22 @@ back.addEventListener('click', (e) => {
     cub_modal.classList.toggle('show-modal')
 
 })
+
+// window.addEventListener('scroll', () => {
+console.log(window.innerWidth)
+openmodalmobile.addEventListener('click', () => {
+    if (window.innerWidth < 601) {
+        modal_menu.style.display = 'block'
+
+    } else if (window.innerWidth > 601) {
+        mobilemodal.style.display = 'flex'
+        modal_menu.style.display = 'none'
+
+    }
+
+})
+// })
+
 let options = [{
         countrie: 'Afghanistan'
     }, {

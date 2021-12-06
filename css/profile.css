@@ -825,6 +825,15 @@ progress::-webkit-progress-value {
         -webkit-transform: translateX(200px) scale(.4);
         -ms-transform: translateX(200px) scale(.4);
         transform: translateX(200px) scale(.4);
+        -moz-transform: translateX(200px) scale(.4);
+        -o-transform: translateX(200px) scale(.4);
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    .seting-mobile-box {
+        width: 100% !important;
     }
 
 }
@@ -988,6 +997,20 @@ progress::-webkit-progress-value {
 #modal-tab-content-3.active-tab-content,
 #modal-tab-content-4.active-tab-content {
     display: block;
+}
+
+#mobile-content-1.active-tab-content,
+#mobile-content-2.active-tab-content,
+#mobile-content-3.active-tab-content,
+#mobile-content-4.active-tab-content {
+    display: block;
+}
+
+#mobile-content-1,
+#mobile-content-2,
+#mobile-content-3,
+#mobile-content-4 {
+    display: none;
 }
 
 .profile-setting {
@@ -1708,7 +1731,7 @@ progress::-webkit-progress-value {
     -o-border-radius: 2px;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:500px) {
     .cube-modal {
         position: fixed;
         width: 100%;
@@ -1725,7 +1748,22 @@ progress::-webkit-progress-value {
         display: flex;
     }
 
+    .mobile-modal .profile-modal .profile-setting {
+        width: 100%;
+    }
 
+    .mobile-modal .profile-modal .profile-setting img {
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+    .mobile-modal .profile-modal .profile-setting textarea {
+        height: 100px;
+    }
+
+    .mobile-modal .profile-modal .profile-links {
+        display: none;
+    }
 }
 
 @media screen and (min-width:600px) and (max-width:1100px) {
@@ -1836,17 +1874,38 @@ progress::-webkit-progress-value {
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
+
 .pro-card:last-child button {
     background-color: transparent;
     color: #2493df;
 
 }
 
-.pro-card sup{
+.pro-card sup {
     color: gray;
 }
-.pro-card span{
+
+.pro-card span {
     font-size: 13px !important;
     margin: 5px 0;
     display: inline-block;
+}
+
+.mobile-modal .profile-modal {
+    justify-content: center;
+}
+
+.seting-mobile-box i,
+.profile-option i {
+    color: #374277;
+}
+
+.modal-menu {
+    width: 100%;
+    position: absolute;
+    min-height: 100vh;
+    left: 0;
+    top: 0;
+    display: none;
+    background-color: #fff;
 }
