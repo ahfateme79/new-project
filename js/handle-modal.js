@@ -28,6 +28,17 @@ let mobile_tab_link_section = document.querySelector('.mobile-modal .profile-lin
 let edit = document.querySelector('.edit')
 let back_menu = document.querySelector('#back-menu')
 
+// document.querySelector('.profile').addEventListener('click',()=>{
+//     profilebox.classList.remove('block-profile-box')
+//     cub_modal.classList.remove('show-modal')
+// })
+
+// document.querySelector('.descuss').addEventListener('click',()=>{
+//     profilebox.classList.toggle('block-profile-box')
+//     cub_modal.classList.toggle('show-modal')
+// })
+
+
 back_menu.addEventListener('click', (e) => {
     e.preventDefault()
     navmenu.classList.toggle('fixed')
@@ -38,7 +49,8 @@ back_menu.addEventListener('click', (e) => {
 
 edit.addEventListener('click', () => {
     modal_menu.style.display = 'none'
-    mobilebox.style.display = 'flex'
+    mobilebox.style.display = 'none'
+    togglewrap.classList.toggle('active')
 })
 
 

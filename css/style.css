@@ -54,6 +54,8 @@
 @import './leaderbaord.css';
 /* blog */
 @import './blog.css';
+/* dark-bordered */
+@import './dark-border.css';
 
 :root {
     --color: #fff;

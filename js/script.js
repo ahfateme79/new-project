@@ -80,6 +80,8 @@ changes();
 
 // menu function
 let mobilebox = document.querySelector('.seting-mobile-box')
+let mobile_cube = document.querySelector('.mobile-cube')
+
 function toggleMenu(e) {
     e.classList.toggle("active");
     document.querySelector('.nav-menu').classList.toggle('fixed')
