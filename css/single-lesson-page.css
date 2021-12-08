@@ -33,9 +33,9 @@
 
 .back-link {
     display: inline-block;
-    -webkit-transform: translate(200px, -60px);
-    -ms-transform: translate(200px, -60px);
-    transform: translate(200px, -60px);
+    position: absolute;
+    left: 15%;
+    top: 30px;
 }
 
 .back-link a {
@@ -56,7 +56,7 @@
     display: -ms-flexbox;
     display: flex;
     justify-content: center;
-    width: 50%;
+    width: 40%;
     margin: 0 auto;
 }
 
@@ -334,7 +334,7 @@
     }
 
     .introduce {
-        width: 90%;
+        width: 70%;
     }
 
     .lesson-select-item details {

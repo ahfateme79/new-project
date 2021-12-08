@@ -28,17 +28,6 @@ let mobile_tab_link_section = document.querySelector('.mobile-modal .profile-lin
 let edit = document.querySelector('.edit')
 let back_menu = document.querySelector('#back-menu')
 
-// document.querySelector('.profile').addEventListener('click',()=>{
-//     profilebox.classList.remove('block-profile-box')
-//     cub_modal.classList.remove('show-modal')
-// })
-
-// document.querySelector('.descuss').addEventListener('click',()=>{
-//     profilebox.classList.toggle('block-profile-box')
-//     cub_modal.classList.toggle('show-modal')
-// })
-
-
 back_menu.addEventListener('click', (e) => {
     e.preventDefault()
     navmenu.classList.toggle('fixed')
@@ -109,6 +98,14 @@ mobile_tab_link_section.addEventListener('click', (e) => {
 profile.addEventListener('click', (e) => {
     e.preventDefault()
     profilebox.classList.toggle('block-profile-box')
+    cub_modal.classList.remove('show-modal')
+
+})
+
+profilemodal.addEventListener('click',()=>{
+    profilemodal.style.display='none'
+    profilebox.classList.remove('block-profile-box')
+
 })
 
 setting.addEventListener('click', (e) => {
@@ -151,6 +148,7 @@ var loadFile = function (event) {
 cube.addEventListener("click", (e) => {
     e.preventDefault()
     cub_modal.classList.toggle('show-modal')
+    profilebox.classList.remove('block-profile-box')
 })
 mobile_cube.addEventListener("click", (e) => {
     e.preventDefault()
@@ -173,9 +171,22 @@ openmodalmobile.addEventListener('click', () => {
     } else if (window.innerWidth > 601) {
         mobilemodal.style.display = 'flex'
         modal_menu.style.display = 'none'
+
+        mobilemodal.addEventListener('click',()=>{
+            mobilemodal.style.display='none'
+            profilebox.classList.remove('block-profile-box')
+            togglewrap.classList.toggle('active')
+
+        })
     }
 
 })
+
+function toggleMenu(e) {
+    e.classList.toggle("active");
+    document.querySelector('.nav-menu').classList.toggle('fixed')
+    mobilebox.classList.toggle('fixed')
+}
 // })
 
 let options = [{

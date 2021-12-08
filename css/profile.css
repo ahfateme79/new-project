@@ -91,7 +91,7 @@ header i {
     flex-direction: column;
     position: relative;
     padding-bottom: 50px;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 /* create div with border */
