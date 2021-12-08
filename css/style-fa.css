@@ -385,7 +385,9 @@ label,
     .footer-list-menu ul {
         width: 100%;
     }
-
+    .close-modal-mobile {
+        right: 0
+    }
 
 }
 .header-light .profile-links ul li a {
@@ -404,9 +406,16 @@ label,
 .profile-links{
     order: 2;
 }
-.close-modal, .close-modal-mobile{
+.close-modal{
     right: 250px;
 }
 .mobile-modal .profile-modal{
     justify-content: center;
 }
+@media screen and (min-width:600px) and (max-width:1000px) {
+    .close-modal-mobile {
+        right: 280px
+    }
+
+}
+

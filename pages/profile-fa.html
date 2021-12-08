@@ -218,13 +218,23 @@
                 </div>
             </nav>
         </div>
+                <!-- responsive modal -->
         <div class="seting-mobile-box">
-            <div><a href="">back</a></div>
-            <div><img src="../img/community-user-16.png" alt=""><span>نام کاربری</span></div>
+            <div><a href="" id="back-menu">بازگشت</a></div>
+            <div><img src="../img/community-user-16.png" alt=""><span>نام کاریری</span></div>
             <ul>
                 <li><a href="" class="open-modal-mobile"><i class="fas fa-cog"></i>تنظیمات</a></li>
                 <li><a href=""><i class="fas fa-question-circle"></i>کمک</a></li>
                 <li><a href=""><i class="fal fa-sign-out"></i>خروج</a></li>
+            </ul>
+        </div>
+        <div class="modal-menu">
+            <h3 class="edit">ویرایش پروقایل</h3>
+            <ul>
+                <li><a href="" data-tabid='mobile-content-1'>اطلاعات</a></li>
+                <li><a href="" data-tabid='mobile-content-2'>پسورد</a></li>
+                <li><a href="" data-tabid='mobile-content-3'>حساب های متصل</a></li>
+                <li><a href="" data-tabid='mobile-content-4'>Sololearn PRO</a></li>
             </ul>
         </div>
         <div class="profile-modal-parent mobile-modal">
@@ -232,50 +242,124 @@
                 <div class="profile-links">
                     <h3>ویرایش پروقایل</h3>
                     <ul>
-                        <span>اطلاعات</span>
-                        <li><a href="">پسورد</a></li>
-                        <li><a href="">حساب های متصل</a></li>
-                        <li><a href="">Sololearn PRO</a></li>
+                        <li><a href="" data-tabid='mobile-content-1' class="active-tab-btn">اطلاعات</a></li>
+                        <li><a href="" data-tabid='mobile-content-2'>پسورد</a></li>
+                        <li><a href="" data-tabid='mobile-content-3'>حساب هاب متصل</a></li>
+                        <li><a href="" data-tabid='mobile-content-4'>Sololearn PRO</a></li>
                     </ul>
                 </div>
                 <div class="profile-setting">
                     <div><button class="close-modal-mobile">بستن</button></div>
-                    <div class="change-profile">
-                        <h4>اطلاعات
-                        </h4>
-                        <div class="information">
-                            <img src="../img/community-user-16.png" alt="" id="output">
-                            <div>
-                                <label for="image-uploader">تغییرات
-                                    <input type="file" id="image-uploader" onchange="loadFile(event)">
+                    <div id="mobile-content-1" class="mobile-content active-tab-content">
+                        <input type="hidden" value="information">
+                        <div class="change-profile">
+                            <div class="information">
+                                <img src="../img/community-user-16.png" alt="" id="output">
+                                <div>
+                                    <label for="image-uploader">تغییرات
+                                        <input type="file" id="image-uploader" onchange="loadFile(event)">
+                                    </label>
+                                    <button><i>set</i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-form-info">
+                            <form action="">
+                                <label for="">نام کاربری
                                 </label>
-                                <button><i>تنظیم</i></button>
+                                <input type="text">
+                                <label for="">ادرس ایمیل
+                                </label>
+                                <input type="email">
+                                <label for="">بیوپرافی
+                                </label>
+                                <textarea name="" id="" cols="30" rows="3"
+                                    placeholder="describe yourself..."></textarea>
+                                <label for="">کشور</label>
+                                <select name="" id="">
+                                    <option value="">ایران</option>
+                                    <option value="">امریکا</option>
+                                </select>
+
+                                <button>ذخیره</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="mobile-content-2" class="mobile-content">
+                        <input type="hidden" value="password">
+                        <div class="change-profile">
+                            <div class="profile-form-info">
+                                <form action="">
+                                    <label for="">پسورد فعلی
+                                    </label>
+                                    <input type="password" name="" id="" required>
+                                    <label for="">پسورد جدبد
+                                    </label> 
+                                    <input type="password" name="" id="" required>
+                                    <button>تغییرات</button>
+                                </form>
                             </div>
                         </div>
                     </div>
-                    <div class="profile-form-info">
-                        <form action="">
-                            <label for="">نام کاربری
-                            </label>
-                            <input type="text">
-                            <label for="">ادرس ایمیل
-                            </label>
-                            <input type="email">
-                            <label for="">بیوگرافی
-                            </label>
-                            <textarea name="" id="" cols="30" rows="3" placeholder="describe yourself..."></textarea>
-                            <label for="">کشور</label>
-                            <select name="" id="">
-                                <option value="">ایران</option>
-                                <option value="">امریکا</option>
-                            </select>
+                    <div id="mobile-content-3" class="mobile-content">
+                        <input type="hidden" value="Connected Accounts">
+                        <div class="change-profile">
+                            <div class="profile-form-info">
+                                <ul class="modal-media">
+                                    <li>
+                                        <span>
+                                            <img src="" alt="">
+                                            لینکدین</span>
+                                        <button>متصل</button>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <img src="" alt="">
+                                            گیت هاب</span>
+                                        <button>متصل</button>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <img src="" alt="">
+                                            استک اورفلو</span>
+                                        <button>متصل</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="mobile-content-4" class="mobile-content">
+                        <input type="hidden" value="Sololearn PRO">
+                        <div class="change-profile">
+                            <div class="profile-form-info">
+                                <div class="pro-card">
+                                    <div>
+                                        <h6>سالانه</h6>
+                                        <p>$5.83<sup>/mo</sup></p>
+                                    </div>
+                                    <span>صورت حساب سالانه 69.99 دلار
+                                    </span>
+                                    <button>طرح را انتخاب کنید
+                                    </button>
+                                </div>
+                                <div class="pro-card">
+                                    <div>
+                                        <h6>ماهانه</h6>
+                                        <p>$5.83<sup>/mo</sup></p>
+                                    </div>
+                                    <span>صورت حساب سالانه 69.99 دلار
 
-                            <button>ذخیره</button>
-                        </form>
+                                    </span>
+                                    <button>طرح را انتخاب کنید
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="cube-modal">
             <div class="back-to-menu">
                 <a href="" id="back"><i class="fas fa-chevron-left"></i><span>یازگشت</a>
