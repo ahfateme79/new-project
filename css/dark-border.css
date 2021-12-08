@@ -113,12 +113,12 @@
 .sl-payment-plan__discount {
     background-color: #ef4343;
     position: absolute;
-    top: -1px;
+    top: 0;
     right: 17px;
     width: 58px;
     height: 78px;
     color: #fff;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 113.2%;
     letter-spacing: .02em;
     font-weight: 700;
