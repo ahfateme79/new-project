@@ -28,6 +28,8 @@ let mobile_tab_link_section = document.querySelector('.mobile-modal .profile-lin
 let edit = document.querySelector('.edit')
 let back_menu = document.querySelector('#back-menu')
 
+
+
 back_menu.addEventListener('click', (e) => {
     e.preventDefault()
     navmenu.classList.toggle('fixed')
@@ -102,10 +104,11 @@ profile.addEventListener('click', (e) => {
 
 })
 
-profilemodal.addEventListener('click',()=>{
-    profilemodal.style.display='none'
-    profilebox.classList.remove('block-profile-box')
-
+window.addEventListener('click', (event) => {
+    if (event.target == profilemodal) {
+        profilemodal.style.display = 'none'
+        profilebox.classList.remove('block-profile-box')
+    }
 })
 
 setting.addEventListener('click', (e) => {
@@ -172,10 +175,13 @@ openmodalmobile.addEventListener('click', () => {
         mobilemodal.style.display = 'flex'
         modal_menu.style.display = 'none'
 
-        mobilemodal.addEventListener('click',()=>{
-            mobilemodal.style.display='none'
-            profilebox.classList.remove('block-profile-box')
-            togglewrap.classList.toggle('active')
+        window.addEventListener('click', (e) => {
+            if (e.target==mobilemodal) {
+                mobilemodal.style.display = 'none'
+                profilebox.classList.remove('block-profile-box')
+                togglewrap.classList.toggle('active')
+    
+            }
 
         })
     }
