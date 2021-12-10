@@ -28,6 +28,8 @@
     -ms-flex-align: start;
     align-items: flex-start;
     -webkit-box-align: flex-start;
+    top: 90px;
+    position: absolute;
 
 }
 
@@ -70,7 +72,7 @@
 .lesson-select-item {
     width: 50%;
     position: absolute;
-    top: 320px;
+    top: 300px;
     left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
@@ -302,11 +304,11 @@
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         -webkit-flex-wrap: wrap;
-        padding: 30px 0;
+        padding:30px 0;
     }
 
     .introduce>div {
-        width: 100%;
+        width: 90%;
         text-align: center;
         padding: 20px 0;
     }

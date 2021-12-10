@@ -32,8 +32,9 @@ let back_menu = document.querySelector('#back-menu')
 
 back_menu.addEventListener('click', (e) => {
     e.preventDefault()
-    navmenu.classList.toggle('fixed')
+    navmenu.classList.add('fixed')
     mobilebox.style.display = 'none'
+    navmenu.classList.remove('opacity')
 
 })
 
@@ -42,6 +43,10 @@ edit.addEventListener('click', () => {
     modal_menu.style.display = 'none'
     mobilebox.style.display = 'none'
     togglewrap.classList.toggle('active')
+    document.querySelector('.nav-menu').classList.toggle('fixed')
+    document.querySelector('.profile-content').classList.toggle('blo')
+    navmenu.classList.remove('opacity')
+
 })
 
 
@@ -94,6 +99,15 @@ mobile_tab_link_section.addEventListener('click', (e) => {
 })
 
 
+window.addEventListener('click', (e) => {
+    if (e.target.parentNode == document.querySelector('body') || e.target.parentNode == document.querySelector('.profile') || e.target.parentNode == document.querySelector('.header-light')) {
+        profilebox.classList.remove('block-profile-box')
+        cub_modal.classList.remove('show-modal')
+        navmenu.classList.toggle('fixed')
+        togglewrap.classList.toggle('active')
+        mobilebox.classList.toggle('fixed')
+    }
+})
 // let cub_modal_dectop = document.querySelector('.cube-modal-desctop')
 
 
@@ -122,7 +136,7 @@ closemodal.addEventListener('click', () => {
 })
 mobileboxhandle.addEventListener('click', (e) => {
     mobilebox.style.display = 'flex'
-    navmenu.classList.toggle('fixed')
+    navmenu.classList.toggle('opacity')
 })
 
 closemodalmobile.addEventListener('click', () => {
@@ -176,11 +190,12 @@ openmodalmobile.addEventListener('click', () => {
         modal_menu.style.display = 'none'
 
         window.addEventListener('click', (e) => {
-            if (e.target==mobilemodal) {
+            if (e.target == mobilemodal) {
                 mobilemodal.style.display = 'none'
                 profilebox.classList.remove('block-profile-box')
-                togglewrap.classList.toggle('active')
-    
+                togglewrap.classList.remove('active')
+                navmenu.classList.remove('fixed')
+
             }
 
         })
@@ -188,12 +203,6 @@ openmodalmobile.addEventListener('click', () => {
 
 })
 
-function toggleMenu(e) {
-    e.classList.toggle("active");
-    document.querySelector('.nav-menu').classList.toggle('fixed')
-    mobilebox.classList.toggle('fixed')
-}
-// })
 
 let options = [{
         countrie: 'Afghanistan'
@@ -230,9 +239,9 @@ let options = [{
     },
 
 ]
-let select = document.querySelector('select')
-select.addEventListener('click', () => {
-    for (let i = 0; i < options.length; i++) {
-        select.innerHTML += `<option>${options[i].countrie}</option>`
-    }
-})
+// let select = document.querySelector('select')
+// select.addEventListener('click', () => {
+//     for (let i = 0; i < options.length; i++) {
+//         select.innerHTML += `<option>${options[i].countrie}</option>`
+//     }
+// })

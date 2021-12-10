@@ -75,7 +75,7 @@ header i {
 /* profile section style */
 .profile {
     width: 100%;
-    min-height: 190vh;
+    min-height: 100vh;
     background-color: hsl(0, 0%, 92%);
     position: relative;
     display: -webkit-flex;
@@ -90,8 +90,8 @@ header i {
     align-items: center;
     flex-direction: column;
     position: relative;
-    padding-bottom: 50px;
     overflow-x: hidden;
+    padding-bottom: 20px;
 }
 
 /* create div with border */
@@ -111,9 +111,10 @@ header i {
     -ms-flex-align: center;
     align-items: center;
     min-width: 130vw;
-    position: absolute;
+    position: relative;
     border-bottom-right-radius: 50%;
     border-bottom-left-radius: 50%;
+    overflow: hidden;
 
 }
 
@@ -150,13 +151,6 @@ header i {
 }
 
 .banner {
-    width: 48%;
-    position: absolute;
-    left: 50%;
-    top: 330px;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
     display: -webkit-flex;
     display: -webkit-box;
     -ms-flex-align: center;
@@ -175,22 +169,31 @@ header i {
     -ms-flex-pack: justify;
     justify-content: space-between;
     align-items: center;
-    min-width: 70vh;
+    max-width: 750px;
+    margin:auto;
+    position: relative;
+    z-index: 2;
+    margin-top: 50px;
 }
 
 
 .banner-pro {
+    height: 96px;
     width: 100%;
-    min-height: 90px;
-    border-radius: 5px;
     background-color: #2d3846;
-    padding: 20px 30px;
-    color: #fff;
-    overflow-y: hidden;
-    position: relative;
+    border-radius: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 27px 32px;
+    color: #fff;
+
 }
 
 .pro::after {
@@ -653,7 +656,6 @@ progress::-webkit-progress-value {
     .border {
         width: 100%;
         border-radius: 0;
-
     }
 }
 
@@ -677,8 +679,7 @@ progress::-webkit-progress-value {
         justify-content: flex-start;
     }
 }
-
-@media screen and (max-width:1100px) {
+@media screen and (max-width:800px) {
 
     .course-section>div {
         width: 100%;
@@ -697,18 +698,12 @@ progress::-webkit-progress-value {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
+}
 
-    .profile {
-        min-height: 250vh;
-    }
+@media screen and (max-width:1100px) {
 
     .header-user-details {
         display: none;
-    }
-
-    .banner {
-        width: 100%;
-
     }
 
     .course-section>div>div {
@@ -732,39 +727,21 @@ progress::-webkit-progress-value {
     }
 }
 
-@media screen and (max-width:400px) {
-    .border {
-        height: 350px;
-    }
+@media screen and (max-width:500px) {
 
     .user-info {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
+        padding: 10px 0;
+
     }
 
     .user-info div {
         width: 100%;
         text-align: center;
-        margin-bottom: 50px;
         font-size: .9rem;
     }
-
-    .banner {
-        top: 390px;
-    }
-
-
-    .course-section {
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        width: 60%;
-    }
-
-
-
-
     .carousel .swiper-button-prev {
         transform: translateX(250px) scale(.4);
         -moz-transform: translateX(250px) scale(.4);
@@ -797,30 +774,6 @@ progress::-webkit-progress-value {
 
 }
 
-@media screen and (min-width:401px) and (max-width:1100px) {
-    .course-section {
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        width: 60%;
-    }
-
-    .banner-pro {
-        width: 80%;
-    }
-
-    .ready {
-        width: 60%;
-    }
-
-}
-
-@media screen and (min-width:1000px) and (max-width:1200px) {
-    .banner {
-        width: 60%;
-    }
-
-}
 
 @media screen and (min-width:1200px) {
     .carousel .swiper-button-prev {
@@ -1152,9 +1105,8 @@ progress::-webkit-progress-value {
 }
 
 .seting-mobile-box {
-
     display: none;
-    position: fixed;
+    position: fixed ;
     right: 0;
     top: 100px;
     background-color: rgb(255, 254, 254);
@@ -1173,6 +1125,17 @@ progress::-webkit-progress-value {
 .seting-mobile-box>div,
 .seting-mobile-box ul {
     padding: 20px;
+}
+.seting-mobile-box ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column !important;
+    -ms-flex-align: start !important;
+    -webkit-box-align: start !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+
 }
 
 .seting-mobile-box>div {
@@ -1214,7 +1177,9 @@ progress::-webkit-progress-value {
 }
 
 @media screen and (max-width:500px) {
-
+    .border{
+        height: 300px;
+    }
     .profile-mobile-items,
     .back-btn,
     .hide {
@@ -1520,7 +1485,7 @@ progress::-webkit-progress-value {
 .coding-image img {
     position: absolute;
     top: 0;
-    width: 200px;
+    width: 100px;
     min-height: 100px;
     left: 50%;
     transform: translateX(-50%);
@@ -1535,16 +1500,7 @@ progress::-webkit-progress-value {
         display: none;
     }
 
-    .banner-pro,
     .user-info {
-        width: 70%;
-    }
-
-    .ready {
-        width: 70%;
-    }
-
-    .course-section {
         width: 70%;
     }
 
@@ -1553,8 +1509,12 @@ progress::-webkit-progress-value {
         top: 0;
         width: 70px;
         min-height: 10px;
-        left: 50px;
-    }
+        transform: translateX(-170px);
+        -webkit-transform: translateX(-170px);
+        -moz-transform: translateX(-170px);
+        -ms-transform: translateX(-170px);
+        -o-transform: translateX(-170px);
+}
 
     .banner-pro p {
         font-size: 11px;
@@ -1565,6 +1525,7 @@ progress::-webkit-progress-value {
         -o-transform: translate(-12px, 25px);
 
     }
+
 }
 
 @media screen and (max-width:480px) {
@@ -1590,13 +1551,6 @@ progress::-webkit-progress-value {
 }
 
 @media screen and (min-width:480px) and (max-width:600px) {
-    .user-info div {
-        transform: translateY(0);
-        -webkit-transform: translateY(0);
-        -moz-transform: translateY(0);
-        -ms-transform: translateY(0);
-        -o-transform: translateY(0);
-    }
 
     .user-info-new div.media-info {
         transform: translate(70px, -145px);
@@ -1608,11 +1562,14 @@ progress::-webkit-progress-value {
 }
 
 @media screen and (max-width:1000px) {
-
-    .banner-pro,
     .user-info {
-        width: 70%;
+        width: 65%;
     }
+    .banner{
+        width: 90%;
+        margin: 60px 0;
+    }
+
 }
 
 @media screen and (min-width:600px) and (max-width:1000px) {
@@ -1805,6 +1762,11 @@ progress::-webkit-progress-value {
     }
 
 }
+@media screen and (min-width:500px) and (max-width:1000px) {
+    .ready,.course-section{
+        width: 80%;
+    }
+}
 
 .modal-media {
     display: flex;
@@ -1949,7 +1911,7 @@ progress::-webkit-progress-value {
 
 .modal-menu ul {
     width: 100%;
-    height: 500px;
+    /* height: 500px; */
     display: flex;
     flex-direction: column;
 }
@@ -1974,4 +1936,10 @@ progress::-webkit-progress-value {
     align-items: center;
     justify-content: space-between;
 
+}
+.profile-content{
+    display: none;
+}
+.profile-content.blo{
+    display: block;
 }

@@ -6,7 +6,7 @@ window.addEventListener("scroll", function () {
         // document.documentElement.style.setProperty('--color', "black")
         document.querySelector('.logo-light-header').style.color = 'black'
         // document.querySelector('.header-light .login').style.color = '#2493df'
-        document.querySelector('.header-light .login-mobile').style.color = '#2493df'
+        // document.querySelector('.header-light .login-mobile').style.color = '#2493df'
         document.querySelector('.header-light .nav-menu').style.background = "#fff"
         document.querySelector('.header-light .nav-menu').style.borderColor = "transparent"
         document.querySelector('.header-light .nav-menu ul').style.borderColor = "#bcd0e9"
@@ -37,4 +37,7 @@ window.addEventListener("scroll", function () {
 function toggleMenu(e) {
     e.classList.toggle("active");
     document.querySelector('.nav-menu').classList.toggle('fixed')
+    document.querySelector('.profile-content').classList.toggle('blo')
+    navmenu.classList.remove('opacity')
+
 }
