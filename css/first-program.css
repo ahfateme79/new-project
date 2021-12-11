@@ -254,3 +254,29 @@
     border-bottom: 6px solid blue;
     color: black;
 }
+@media screen and (max-width:768px){
+    .tab-content{
+        padding: 50px 20px;
+    }
+    .tab-item{
+        padding: 0;
+    }
+
+}
+
+@media screen and (max-width:500px){
+    .coding{
+        flex-wrap: wrap;
+    }
+    .code-result,.write-code{
+        width: 100%;
+    }
+    .code-result{
+        order: 2;
+    }
+    .write-code{
+        order: 1;
+        height: 50vh;
+    }
+}
+
