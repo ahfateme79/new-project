@@ -100,12 +100,9 @@ mobile_tab_link_section.addEventListener('click', (e) => {
 
 
 window.addEventListener('click', (e) => {
-    if (e.target.parentNode == document.querySelector('body') || e.target.parentNode == document.querySelector('.profile') || e.target.parentNode == document.querySelector('.header-light')) {
+    if (e.target.parentNode == document.querySelector('body') || e.target.parentNode == document.querySelector('.profile')) {
         profilebox.classList.remove('block-profile-box')
         cub_modal.classList.remove('show-modal')
-        navmenu.classList.toggle('fixed')
-        togglewrap.classList.toggle('active')
-        mobilebox.classList.toggle('fixed')
     }
 })
 // let cub_modal_dectop = document.querySelector('.cube-modal-desctop')
@@ -170,7 +167,7 @@ cube.addEventListener("click", (e) => {
 mobile_cube.addEventListener("click", (e) => {
     e.preventDefault()
     cub_modal.classList.toggle('show-modal')
-    navmenu.classList.toggle('fixed')
+    navmenu.classList.add('opacity')
 })
 back.addEventListener('click', (e) => {
     e.preventDefault()
@@ -195,6 +192,7 @@ openmodalmobile.addEventListener('click', () => {
                 profilebox.classList.remove('block-profile-box')
                 togglewrap.classList.remove('active')
                 navmenu.classList.remove('fixed')
+                document.querySelector('.profile-content').classList.remove('blo')
 
             }
 
@@ -202,6 +200,14 @@ openmodalmobile.addEventListener('click', () => {
     }
 
 })
+function toggleMenu(e) {
+    cub_modal.classList.remove('show-modal')
+    e.classList.toggle("active");
+    document.querySelector('.nav-menu').classList.toggle('fixed')
+    document.querySelector('.profile-content').classList.toggle('blo')
+    navmenu.classList.remove('opacity')
+
+}
 
 
 let options = [{

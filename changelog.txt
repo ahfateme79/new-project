@@ -60,3 +60,10 @@ edit logged in header and add modals and add new script src in end of body
 
 1400/9/14
 1-handle modal and tabs inner that in all of logged-in-header in html files
+
+
+1400/9/19
+1-update css files and js files
+2-have a Little change in all html files with header-logged-in-light(with-modal)
+3-add div with class "profile-content" as parent of "nav-menu"
+4-replace "seting-mobile-box" to after "nav-menu"

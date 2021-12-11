@@ -37,7 +37,5 @@ window.addEventListener("scroll", function () {
 function toggleMenu(e) {
     e.classList.toggle("active");
     document.querySelector('.nav-menu').classList.toggle('fixed')
-    document.querySelector('.profile-content').classList.toggle('blo')
-    navmenu.classList.remove('opacity')
 
 }
