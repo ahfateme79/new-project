@@ -248,14 +248,14 @@ label,
     -ms-transform: translateX(0px);
     -o-transform: translateX(0px);
 }
-.lesson-tree>div::before {
+.lesson-tree>div:not(:last-child):before {
    display: none;
 }
 
 .lesson-tree>div::after {
     content: '';
     width: 15px;
-    height: 15px;
+    height: 15px !important;
     border-radius: 100%;
     background-color: rgb(143, 138, 138);
     display: inline-block;
@@ -267,7 +267,10 @@ label,
     -moz-transform: translateX(1px);
     -ms-transform: translateX(1px);
     -o-transform: translateX(1px);
+    bottom: auto !important;
 }
+
+
 .pro-lesson::after{
     right: 50%;
     transform: translate(-50%,-5px);
@@ -292,6 +295,17 @@ label,
     opacity: .5;
     cursor: default;
 }
+.lesson-tree>div:last-child::before {
+    content: '' ;
+    background-color: rgb(255, 255, 255) ;
+    right: 20px;
+    position: absolute ;
+    overflow: hidden ;
+    height: 65px ;
+    width: 15px ;
+    bottom: 0;
+}
+
 @media screen and (max-width:1100px) {
     .social-media-list {
         padding: 20px;
