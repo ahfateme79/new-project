@@ -54,13 +54,16 @@ mobile_tab_section.addEventListener('click', (e) => {
     e.preventDefault()
     modal_menu.style.display = 'none'
     mobilemodal.style.display = 'block'
-    for (let i = 0; i < mobile_content.length; i++) {
-        mobile_content[i].classList.remove('active-tab-content')
-    }
+    if (e.target && e.target.nodeName === 'A') {
 
-    var tabId = '#' + e.target.dataset.tabid;
-    document.querySelector(tabId).classList.toggle('active-tab-content');
-    let conten = document.querySelector(tabId)
+        for (let i = 0; i < mobile_content.length; i++) {
+            mobile_content[i].classList.remove('active-tab-content')
+        }
+
+        var tabId = '#' + e.target.dataset.tabid;
+        document.querySelector(tabId).classList.toggle('active-tab-content');
+        let conten = document.querySelector(tabId)
+    }
     if (window.innerWidth < 601) {
         closemodalmobile.innerHTML = conten.querySelector('input').value
     }
@@ -69,33 +72,40 @@ mobile_tab_section.addEventListener('click', (e) => {
 
 tab_link_section.addEventListener('click', (e) => {
     e.preventDefault()
-    for (let i = 0; i < tab_link.length; i++) {
-        tab_link[i].classList.remove('active-tab-btn')
-    }
-    e.target.classList.toggle('active-tab-btn')
+    if (e.target && e.target.nodeName === 'A') {
 
-    for (i = 0; i < tab_content.length; i++) {
-        tab_content[i].classList.remove('active-tab-content');
-    }
+        for (let i = 0; i < tab_link.length; i++) {
+            tab_link[i].classList.remove('active-tab-btn')
+        }
+        e.target.classList.toggle('active-tab-btn')
 
-    var tabId = '#' + e.target.dataset.tab;
-    document.querySelector(tabId).classList.toggle('active-tab-content');
+        for (i = 0; i < tab_content.length; i++) {
+            tab_content[i].classList.remove('active-tab-content');
+        }
+
+        var tabId = '#' + e.target.dataset.tab;
+        document.querySelector(tabId).classList.toggle('active-tab-content');
+    }
 })
+
 
 mobile_tab_link_section.addEventListener('click', (e) => {
     e.preventDefault()
-    for (let i = 0; i < mobile_tab_link.length; i++) {
-        mobile_tab_link[i].classList.remove('active-tab-btn')
-    }
-    e.target.classList.toggle('active-tab-btn')
+    if (e.target && e.target.nodeName === 'A') {
 
-    for (i = 0; i < mobile_content.length; i++) {
-        mobile_content[i].classList.remove('active-tab-content');
-    }
+        for (let i = 0; i < mobile_tab_link.length; i++) {
+            mobile_tab_link[i].classList.remove('active-tab-btn')
+        }
+        e.target.classList.toggle('active-tab-btn')
 
-    var tabId = '#' + e.target.dataset.tabid;
-    console.log(tabId)
-    document.querySelector(tabId).classList.toggle('active-tab-content');
+        for (i = 0; i < mobile_content.length; i++) {
+            mobile_content[i].classList.remove('active-tab-content');
+        }
+
+        var tabId = '#' + e.target.dataset.tabid;
+        console.log(tabId)
+        document.querySelector(tabId).classList.toggle('active-tab-content');
+    }
 })
 
 
@@ -171,7 +181,7 @@ mobile_cube.addEventListener("click", (e) => {
 })
 back.addEventListener('click', (e) => {
     e.preventDefault()
-    navmenu.classList.toggle('fixed')
+    navmenu.classList.remove('opacity')
     cub_modal.classList.toggle('show-modal')
 
 })
@@ -200,6 +210,7 @@ openmodalmobile.addEventListener('click', () => {
     }
 
 })
+
 function toggleMenu(e) {
     cub_modal.classList.remove('show-modal')
     e.classList.toggle("active");
